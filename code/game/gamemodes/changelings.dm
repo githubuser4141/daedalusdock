@@ -1,6 +1,5 @@
 /datum/game_mode/one_antag/changeling
 	name = "Changeling"
-	config_key = "changeling"
 
 	weight = GAMEMODE_WEIGHT_NEVER
 

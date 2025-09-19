@@ -1,6 +1,5 @@
 /datum/game_mode/one_antag/brothers
 	name = "Blood Brothers"
-	config_key = "bloodbrothers"
 
 	weight = GAMEMODE_WEIGHT_RARE
 	required_enemies = /datum/antagonist_selector/bloodbrother::minimum_team_size

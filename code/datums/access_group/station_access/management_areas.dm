@@ -16,7 +16,6 @@
 		ACCESS_DELEGATE,
 		ACCESS_VAULT,
 		ACCESS_CAPTAIN,
-		ACCESS_MANAGEMENT,
 	)
 
 /datum/access_group/station/management/other

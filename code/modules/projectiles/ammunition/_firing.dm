@@ -56,7 +56,6 @@
 		var/obj/item/gun/G = fired_from
 		loaded_projectile.damage *= G.projectile_damage_multiplier
 		loaded_projectile.stamina *= G.projectile_damage_multiplier
-		loaded_projectile.speed += G.speedValueMod
 
 	if(tk_firing(user, fired_from))
 		loaded_projectile.ignore_source_check = TRUE
