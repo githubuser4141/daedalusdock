@@ -103,9 +103,7 @@ GLOBAL_VAR_INIT(fresh_ghost_adjectives, __fresh_ghost_adjectives())
 			if(body.real_name)
 				mind_or_body_name = body.real_name
 			else
-				var/datum/name_generator/human/name_gen = new()
-				name_gen.ensure_unique = TRUE
-				mind_or_body_name = name_gen.Generate()
+				mind_or_body_name = random_unique_name(gender)
 
 		// If they actually died in round, copy their body.
 		if(!(started_as_observer || admin_ghost))
@@ -113,9 +111,7 @@ GLOBAL_VAR_INIT(fresh_ghost_adjectives, __fresh_ghost_adjectives())
 			ghost_adjective = pick(GLOB.fresh_ghost_adjectives)
 
 	if(!mind_or_body_name) //To prevent nameless ghosts
-		var/datum/name_generator/human/name_gen = new()
-		name_gen.ensure_unique = TRUE
-		mind_or_body_name = name_gen.Generate()
+		mind_or_body_name = random_unique_name(gender)
 
 	set_real_name(mind_or_body_name)
 

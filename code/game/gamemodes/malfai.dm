@@ -1,6 +1,5 @@
 /datum/game_mode/one_antag/malf
 	name = "Malfunctioning AI"
-	config_key = "malfai"
 
 	weight = GAMEMODE_WEIGHT_EPIC
 	antag_selector = /datum/antagonist_selector/malfai

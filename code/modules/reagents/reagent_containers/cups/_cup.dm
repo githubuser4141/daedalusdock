@@ -169,9 +169,6 @@
 		var/trans = target.reagents.trans_to(src, amount_per_transfer_from_this, transfered_by = user)
 		to_chat(user, span_notice("You fill [src] with [trans] unit\s of the contents of [target]."))
 
-	else
-		return NONE
-
 	target.update_appearance()
 
 	return ITEM_INTERACT_SUCCESS
