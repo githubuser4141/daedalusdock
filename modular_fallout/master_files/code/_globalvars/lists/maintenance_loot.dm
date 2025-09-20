@@ -264,22 +264,6 @@ GLOBAL_LIST_INIT(loot_t3_armor, list(
 	/obj/item/clothing/head/helmet/f13/sulphitehelm
 ))
 
-GLOBAL_LIST_INIT(loot_t4_armor, list(
-	/obj/item/clothing/head/helmet/f13/power_armor/t45b,
-	/obj/item/clothing/suit/armor/f13/power_armor/t45b,
-	/obj/item/clothing/suit/armored/heavy/riotpolice,
-	/obj/item/clothing/head/helmet/f13/rangerbroken,
-	/obj/item/clothing/suit/armor/f13/combat/mk2,
-	/obj/item/clothing/head/helmet/f13/combat/mk2
-))
-
-GLOBAL_LIST_INIT(loot_t5_armor, list(
-	/obj/item/clothing/suit/armor/f13/power_armor/t45d,
-	/obj/item/clothing/head/helmet/f13/power_armor/t45d,
-	/obj/item/clothing/suit/armor/f13/power_armor/t51b,
-	/obj/item/clothing/head/helmet/f13/power_armor/t51b
-))
-
 GLOBAL_LIST_INIT(loot_medical_tool, list(
 	/obj/item/hemostat,
 	/obj/item/surgicaldrill,
