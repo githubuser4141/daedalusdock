@@ -179,7 +179,6 @@
 			burst_size = 1
 			fire_delay = 5
 			burst_shot_delay = 4
-			extra_damage = 0
 			to_chat(user, "<span class='notice'>You prepare to slamfire the shotgun for a rapid burst of shots.</span>")
 		if(1)
 			select = 0
@@ -197,7 +196,6 @@
 /obj/item/gun/ballistic/shotgun/automatic/combat
 	name = "semi-auto shotgun template"
 	fire_delay = 6
-	extra_damage = 0
 	recoil = 0.1
 	spread = 2
 

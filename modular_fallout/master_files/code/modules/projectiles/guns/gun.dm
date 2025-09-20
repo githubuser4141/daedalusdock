@@ -1,7 +1,4 @@
 /obj/item/gun
-	var/extra_damage = 0
-	var/extra_penetration = 0
-	var/extra_speed = 0
 	var/inaccuracy_modifier = 1
 
 	var/flight_y_offset = 0
@@ -106,7 +103,6 @@
 		. += ("[initial(icon_state)]_worn")
 		src.fire_delay += 0.1
 		src.spread += 2
-		src.extra_damage -= 1
 /*
 /obj/item/gun/try_fire_gun(atom/target, mob/living/user, proximity, params)
 	.=..()

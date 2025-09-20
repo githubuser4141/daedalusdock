@@ -1,5 +1,7 @@
+TYPEINFO_DEF(/obj/item/clothing/gloves/f13)
+	default_armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 10, rad = 10, fire = 10, acid = 10)
+
 /obj/item/clothing/gloves/f13
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 10, rad = 10, fire = 10, acid = 10)
 
 /obj/item/clothing/gloves/f13/baseball
 	name = "baseball glove"
@@ -55,7 +57,6 @@
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 80, rad = 80, fire = 80, acid = 50)
 
 /obj/item/clothing/gloves/f13/handwraps
 	name = "handwraps"
@@ -106,7 +107,6 @@
 	desc = "(IV) A pair of metal tubes with rope on the inside."
 	icon_state = "mutie_bracer"
 	inhand_icon_state = "mutie_bracer"
-	armor = list("tier" = 4, ENERGY = 40, BOMB = 50, BIO = 60, RAD = 10, FIRE = 60, ACID = 20)
 
 /obj/item/clothing/gloves/f13/mutant/mk2
 	name = "mutant bracers"
@@ -146,16 +146,20 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
 
+TYPEINFO_DEF(/obj/item/clothing/gloves/legion/plated)
+	default_armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 10, rad = 10, fire = 10, acid = 10)
+
 /obj/item/clothing/gloves/legion/plated
 	name = "plated gloves"
 	desc = "Leather gloves with metal reinforcement."
 	icon_state = "legion_plated"
 	inhand_icon_state = "legion_plated"
-	armor = list(BLUNT = 20, PUNCTURE = 15, LASER = 10, ENERGY = 10, BOMB = 10, BIO = 0, RAD = 10, FIRE = 10, ACID = 10)
+
+TYPEINFO_DEF(/obj/item/clothing/gloves/legion/legate)
+	default_armor =  list(BLUNT = 25, PUNCTURE = 25, LASER = 35, ENERGY = 20, BOMB = 35, BIO = 35, RAD = 35, FIRE = 0, ACID = 0)
 
 /obj/item/clothing/gloves/legion/legate
 	name = "brass gauntlets"
 	desc = "Heavy finely crafted metal gloves."
 	icon_state = "legion_legate"
 	inhand_icon_state = "legion_legate"
-	armor = list(BLUNT = 25, PUNCTURE = 25, LASER = 35, ENERGY = 20, BOMB = 35, BIO = 35, RAD = 35, FIRE = 0, ACID = 0)

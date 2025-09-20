@@ -58,3 +58,34 @@
 #define CALIBER_TENTACLE "tentacle"
 /// The caliber used by the tranquilizer rifle
 #define CALIBER_308_DART ".308 dart"
+
+
+// Rifle grade sharp
+#define BULLET_SHARP 1>>0
+// Riot control
+#define BULLET_ROUNDED 1>>1
+// Very sharp. Tank Ammunition grade
+#define BULLET_ULTRASHARP 1>>2
+// Fragmented bullet tip, unpredictable performance.
+#define BULLET_FRAGMENTED 1>>3
+// A flat bullet head
+#define BULLET_FLAT 1>>4
+
+
+#define BULLET_SPEED_PISTOL -0.1
+#define BULLET_SPEED_SMG -0.3
+#define BULLET_SPEED_CARBINE -0.5
+#define BULLET_SPEED_RIFLE -0.7
+#define BULLET_SPEED_RIFLE_PLUS -0.9
+
+#define BULLET_SPEED_SLOWED 0.1
+#define BULLET_SPEED_SNAIL 0.4
+
+#define BULLET_FOAM list(BLUNT = 0, PUNCTURE = 0, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+#define BULLET_RUBBER list(BLUNT = 0, PUNCTURE = 5, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+#define BULLET_FRAG list(BLUNT = 0, PUNCTURE = 15, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+#define BULLET_FMJ list(BLUNT = 0, PUNCTURE = 30, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+#define BULLET_SOLID list(BLUNT = 0, PUNCTURE = 60, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+#define BULLET_HARDENED list(BLUNT = 0, PUNCTURE = 120, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+#define BULLET_ARMOR_PIERCING list(BLUNT = 0, PUNCTURE = 200, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+#define BULLET_ANTI_MAT list(BLUNT = 0, PUNCTURE = 350, SLASH = 0, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)

@@ -60,8 +60,6 @@
 	burst_size = 3
 	fire_delay = 2
 	burst_shot_delay = 2
-	extra_penetration = 0.1
-	extra_damage = 5
 
 /obj/item/gun/ballistic/automatic/smg/greasegun/mid/enable_burst()
 	. = ..()
@@ -119,8 +117,6 @@
 */
 /obj/item/gun/ballistic/automatic/smg/smg10mm/mid
 	name = "enhanced 10mm submachine gun"
-	extra_penetration = 0
-	extra_damage = 0
 
 /obj/item/gun/ballistic/automatic/smg/smg10mm/mid/enable_burst()
 	. = ..()
@@ -158,8 +154,6 @@
 	burst_size = 3
 	fire_delay = 2
 	burst_shot_delay = 2
-	extra_damage = 6
-	extra_penetration = 0.12
 
 /obj/item/gun/ballistic/automatic/smg/smg10mm/high/enable_burst()
 	. = ..()
@@ -217,8 +211,6 @@
 /obj/item/gun/ballistic/automatic/smg/ppsh/mid
 	name = "enhanced ppsh-41"
 	fire_delay = 5
-	extra_damage = -9
-	extra_penetration = 0
 
 /obj/item/gun/ballistic/automatic/smg/ppsh/mid/enable_burst()
 	. = ..()
@@ -252,8 +244,6 @@
 */
 /obj/item/gun/ballistic/automatic/smg/ppsh/high
 	name = "advanced ppsh41"
-	extra_damage = 0
-	extra_penetration = 0.1
 
 /obj/item/gun/ballistic/automatic/smg/ppsh/high/enable_burst()
 	. = ..()
@@ -334,8 +324,6 @@
 /obj/item/gun/ballistic/automatic/smg/mini_uzi/mid
 	name = "enhanced uzi"
 	fire_delay = 4
-	extra_penetration = 0
-	extra_damage = 0
 
 /obj/item/gun/ballistic/automatic/smg/mini_uzi/mid/enable_burst()
 	. = ..()
@@ -370,8 +358,6 @@
 /obj/item/gun/ballistic/automatic/smg/mini_uzi/high
 	name = "advanced uzi"
 	fire_delay = 3
-	extra_damage = 5
-	extra_penetration = 0.1
 
 /obj/item/gun/ballistic/automatic/smg/mini_uzi/high/enable_burst()
 	. = ..()
@@ -455,8 +441,6 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/mid
 	name = "enhanced r91 assault rifle"
 	fire_delay = 3
-	extra_penetration = 0
-	extra_damage = 0
 	burst_shot_delay = 2
 
 /obj/item/gun/ballistic/automatic/assault_rifle/mid/enable_burst()
@@ -494,8 +478,6 @@
 /obj/item/gun/ballistic/automatic/assault_rifle/high
 	name = "advanced r91 assault rifle"
 	fire_delay = 3
-	extra_damage = 6
-	extra_penetration = 0.12
 	burst_shot_delay = 2
 	burst_size = 3
 
@@ -535,8 +517,6 @@
 	name = "service rifle (improved)"
 	randomspread = 0
 	fire_delay = 4
-	extra_damage = 0
-	extra_penetration = 0
 /*
 /obj/item/gun/ballistic/automatic/service/mid/attackby(obj/item/W, mob/user, params)
 	if(istype(W,/obj/item/screwdriver))
@@ -562,8 +542,6 @@
 	name = "service rifle (masterwork)"
 	randomspread = 0
 	fire_delay = 3
-	extra_damage = 10
-	extra_penetration = 0.2
 	weapon_weight = WEAPON_LIGHT
 /*
 /obj/item/gun/ballistic/automatic/service/high/attackby(obj/item/W, mob/user, params)
@@ -613,8 +591,6 @@
 */
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/mid
 	name = "enhanced colt rangemaster"
-	extra_penetration = 0
-	extra_damage = 0
 /*
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/mid/attackby(obj/item/W, mob/user, params)
 	if(istype(W,/obj/item/screwdriver))
@@ -643,8 +619,6 @@
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/high
 	name = "advanced colt rangemaster"
 	fire_delay = 4
-	extra_penetration = 0.14
-	extra_damage = 7
 /*
 /obj/item/gun/ballistic/automatic/rangemaster/scoped/high/attackby(obj/item/W, mob/user, params)
 	if(istype(W,/obj/item/screwdriver))

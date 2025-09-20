@@ -99,8 +99,6 @@
 	can_attachments = FALSE
 	can_automatic = FALSE
 
-	extra_penetration = 5
-	extra_damage = 2
 	force = 18
 
 //Type 17								Keywords: 10mm, Semi-auto, 12/24 round magazine. Special modifiers: damage +1, spread +1
@@ -139,9 +137,6 @@
 	icon_state = "maria"
 
 	fire_delay = 1
-	extra_damage = 5
-	extra_penetration = 5
-
 
 //Sig Sauer P220						Keywords: 9mm, Semi-auto, 10 round magazine
 /obj/item/gun/ballistic/automatic/pistol/sig
@@ -158,7 +153,6 @@
 	fire_sound = 'modular_fallout/master_files/sound/weapons/9mm.ogg'
 
 	fire_delay = 3
-	extra_damage = -2
 
 //side grade to the peacemaker 		    Keywords: OASIS, 9mm, Semi-auto, +5 damage, 10 round magazine, 0 spread, faster rate of fire, bullet speed +100, probably needs a new sprite
 /obj/item/gun/ballistic/automatic/pistol/sig/commissioner
@@ -168,7 +162,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 
 	fire_delay = 1
-	extra_damage = -1
 	spread = 0
 
 //Beretta M9FS							Keywords: 9mm, Semi-auto, 15 round magazine. Special modifiers: spread -1
@@ -260,7 +253,6 @@
 	suppressor_x_offset = 29
 	suppressor_y_offset = 21
 
-	extra_damage = -2
 	fire_delay = 3
 	spread = 4
 
@@ -286,7 +278,6 @@
 
 	fire_delay = 2
 	spread = 1
-	extra_damage = 2
 
 /////////////////
 //HEAVY PISTOLS//
@@ -360,7 +351,6 @@
 	icon_state = "pistol14_compact"
 
 	w_class = WEIGHT_CLASS_SMALL
-	extra_damage = -5
 	spread = 5
 	fire_delay = 7
 	recoil = 0.7
@@ -383,5 +373,3 @@
 /obj/item/gun/ballistic/automatic/pistol/pistoltesting
 	name = "pistol"
 	mag_type = /obj/item/ammo_box/magazine/testbullet
-
-	extra_damage = 18

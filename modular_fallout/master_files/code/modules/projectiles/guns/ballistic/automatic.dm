@@ -175,8 +175,6 @@
 	base_icon_state = "smg9mm"
 	mag_type = /obj/item/ammo_box/magazine/greasegun
 	spread = 8
-	extra_damage = 3
-	extra_speed = 100
 	burst_shot_delay = 3.25 //Slow rate of fire
 	can_attachments = TRUE
 	suppressor_state = "uzi_suppressor"
@@ -213,8 +211,6 @@
 	desc = "What was once an inexpensive, but reliable submachine gun is now an inexpensive piece of shit. It's impressive this thing still fires at all."
 	can_attachments = FALSE
 	recoil = 0.3
-	extra_damage = -4
-	extra_penetration = -0.1
 
 /obj/item/gun/ballistic/automatic/smg/greasegun/worn/burst_select()
 	var/mob/living/carbon/human/user = usr
@@ -249,8 +245,6 @@
 	mag_type = /obj/item/ammo_box/magazine/m10mm_adv
 	init_mag_type = /obj/item/ammo_box/magazine/m10mm_adv/ext
 	fire_delay = 3.75
-	extra_damage = 3
-	extra_speed = 100
 	recoil = 0.3
 	can_attachments = TRUE
 	suppressor_state = "10mm_suppressor" //activate if sprited
@@ -357,8 +351,6 @@
 	burst_size = 3
 	burst_shot_delay = 3.25
 	fire_delay = 5
-	extra_damage = -3
-	extra_speed = -50
 	spread = 10
 	recoil = 0.2
 
@@ -375,8 +367,6 @@
 	fire_delay = 3
 	spread = 7
 	burst_shot_delay = 2.5
-	extra_damage = 3
-	extra_penetration = 5
 	recoil = 0.2
 	can_suppress = TRUE
 	suppressor_state = "pistol_suppressor"
@@ -401,7 +391,6 @@
 	spread = 8
 	fire_delay = 3.5
 	burst_shot_delay = 2
-	extra_damage = 3
 	suppressed = 1
 	recoil = 0.2
 	can_attachments = TRUE
@@ -446,7 +435,6 @@
 	burst_size = 1
 	fire_delay = 5
 	spread = 2
-	extra_damage = 2
 	automatic_burst_overlay = FALSE
 	can_bayonet = TRUE
 	bayonet_state = "bayonet"
@@ -474,8 +462,6 @@
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/battle_rifle.dmi'
 	icon_state = "ncr-m1carbine"
 	base_icon_state = "rifle"
-	extra_damage = 3
-
 
 //M1A1 Carbine				Keywords: 10mm, Semi-auto, 12/24 rounds, Long barrel, Folding stock.
 /obj/item/gun/ballistic/automatic/m1carbine/compact
@@ -530,8 +516,6 @@
 	fire_delay = 5
 	burst_size = 1
 	spread = 0
-	extra_damage = -3
-	extra_penetration = -3
 	can_bayonet = FALSE
 	semi_auto = TRUE
 	automatic_burst_overlay = FALSE
@@ -552,8 +536,6 @@
 	icon_state = "delisle"
 	base_icon_state = "varmintrifle"
 	mag_type = /obj/item/ammo_box/magazine/m9mmds
-	extra_damage = 5
-	extra_penetration = 10
 	fire_delay = 5
 	burst_size = 1
 	spread = 0
@@ -584,9 +566,6 @@
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/assault_rifle.dmi'
 	icon_state = "ratslayer"
 	base_icon_state = "ratslayer"
-	extra_damage = 7
-	extra_penetration = 7
-	extra_speed = 200
 	recoil = 0.1
 	spread = 0
 	suppressed = 1
@@ -603,8 +582,6 @@
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/assault_rifle.dmi'
 	icon_state = "service_rifle"
 	base_icon_state = "servicerifle"
-	extra_damage = -3
-	extra_penetration = -5
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 3
 	burst_size = 1
@@ -645,8 +622,6 @@
 	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/carbine.dmi'
 	icon_state = "scout_carbine"
-	extra_damage = -5
-	extra_penetration = -7
 	fire_delay = 2.5
 	spread = 1
 	can_scope = TRUE
@@ -667,7 +642,6 @@
 	icon_state = "rifle-police"
 	base_icon_state = "assault_carbine"
 	init_mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = -3
 	spread = 1.1
 	fire_delay = 4.2
 	can_suppress = FALSE
@@ -684,9 +658,6 @@
 	base_icon_state = "marksman"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 4
-	extra_penetration = 5
-	extra_damage = 5
-	extra_speed = 100
 	burst_size = 1
 	spread = 1
 	can_attachments = TRUE
@@ -801,7 +772,6 @@
 	name = "Old Glory"
 	desc = "This Machine kills communists!"
 	icon_state = "oldglory"
-	extra_damage = 10
 
 //Republics Pride			Keywords: UNIQUE, 7.62mm, Semi-auto, 8 rounds internal, Scoped, Damage +8, Penetration +0.1
 /obj/item/gun/ballistic/automatic/m1garand/republicspride
@@ -809,8 +779,6 @@
 	desc = "A well-tuned scoped M1C rifle crafted by master gunsmith from the Gunrunners. Chambered in 7.62x51."
 	icon_state = "republics_pride"
 	base_icon_state = "scoped308"
-	extra_damage = 5
-	extra_penetration = 5
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -849,9 +817,6 @@
 	fire_delay = 7
 	recoil = 0.35
 	burst_size = 1
-	extra_speed = 200
-	extra_penetration = 5
-	extra_damage = 5
 	zoom_amt = 10
 	zoom_out_amt = 13
 	semi_auto = TRUE
@@ -881,9 +846,6 @@
 	base_icon_state = "R84"
 	fire_delay = 2
 	recoil = 0.1
-	extra_damage = 3
-	extra_penetration = 3
-	extra_speed = 100
 	can_suppress = TRUE
 	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
@@ -922,8 +884,6 @@
 	icon_state = "infiltrator"
 	base_icon_state = "fnfal"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = -5
-	extra_penetration = -5
 	spread = 9
 	fire_delay = 2
 	burst_shot_delay = 2
@@ -948,8 +908,6 @@
 	icon_state = "r93"
 	base_icon_state = "r93"
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
-	extra_damage = -5
-	extra_penetration = -5
 	fire_delay = 3.25
 	spread = 1
 	can_attachments = FALSE
@@ -1014,7 +972,6 @@
 	base_icon_state = "handmade_rifle"
 	fire_delay = 5
 	spread = 13
-	extra_damage = -3
 	can_suppress = FALSE
 
 
@@ -1048,8 +1005,6 @@
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/carbine.dmi'
 	icon_state = "assault_carbine"
 	base_icon_state = "assault_carbine"
-	extra_damage = -3
-	extra_penetration = -5
 	slot_flags = 0
 	mag_type = /obj/item/ammo_box/magazine/m556/rifle
 	fire_delay = 3
@@ -1098,7 +1053,6 @@
 	icon_state = "g11"
 	base_icon_state = "g11"
 	mag_type = /obj/item/ammo_box/magazine/m473
-	extra_damage = 5
 	fire_delay = 2.5
 	burst_shot_delay = 1.5
 	can_attachments = TRUE
@@ -1183,14 +1137,12 @@
 			select += 1
 			burst_size = 2
 			spread = 10
-			extra_damage = -3
 			recoil = 0.25
 			to_chat(user, "<span class='notice'>You switch to burst fire.</span>")
 		if(1)
 			select = 0
 			burst_size = 4
 			spread = 14
-			extra_damage = -6
 			recoil = 0.5
 			to_chat(user, "<span class='notice'>You switch to full auto.</span>")
 	playsound(user, 'modular_fallout/master_files/sound/weapons/empty.ogg', 100, 1)
@@ -1323,14 +1275,11 @@
 /obj/item/gun/ballistic/automatic/smgtesting
 	name = "SMG"
 	mag_type = /obj/item/ammo_box/magazine/testbullet
-	extra_damage = 20
 
 /obj/item/gun/ballistic/automatic/snipertesting
 	name = "sniper rifle"
 	mag_type = /obj/item/ammo_box/magazine/testbullet
-	extra_damage = 25
 
 /obj/item/gun/ballistic/automatic/rifletesting
 	name = "rifle"
 	mag_type = /obj/item/ammo_box/magazine/testbullet
-	extra_damage = 22

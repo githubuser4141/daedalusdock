@@ -171,7 +171,6 @@
 	burst_size = 1
 	fire_delay = 2
 	select = 0
-	extra_speed = 100
 	actions_types = list()
 	casing_ejector = FALSE
 	isbow = TRUE
@@ -203,7 +202,6 @@
 	burst_size = 1
 	fire_delay = 1
 	select = 0
-	extra_speed = 300
 	actions_types = list()
 	casing_ejector = FALSE
 	isbow = TRUE
@@ -266,7 +264,6 @@
 	burst_size = 1
 	fire_delay = 1.5
 	select = 0
-	extra_speed = 400
 	actions_types = list()
 	casing_ejector = FALSE
 	isbow = TRUE

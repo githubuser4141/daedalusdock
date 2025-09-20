@@ -136,7 +136,6 @@
 	w_class = WEIGHT_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev38
 	force = 10
-	extra_damage = -2
 	spread = 4
 	obj_flags = UNIQUE_RENAME
 	var/list/safe_calibers
@@ -212,7 +211,6 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/rev357
 	w_class = WEIGHT_CLASS_SMALL
 	spread = 2
-	extra_damage = -1
 	recoil = 0.5
 	fire_delay = 5
 	fire_sound = 'modular_fallout/master_files/sound/weapons/policepistol.ogg'
@@ -253,7 +251,6 @@
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/revolver.dmi'
 	inhand_icon_state  = "m29peace"
 	icon_state = "m29peace"
-	extra_damage = 5
 	fire_delay = 3
 	burst_size = 1
 	actions_types = list(/datum/action/item_action/toggle_firemode)
@@ -289,7 +286,6 @@
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/revolver.dmi'
 	icon_state = "m29_snub"
 	w_class = WEIGHT_CLASS_SMALL
-	extra_damage = -2
 	recoil = 0.6
 	fire_delay = 5
 	spread = 3
@@ -395,8 +391,6 @@
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ballistic/pistol.dmi'
 	icon_state = "thatgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/cylinder/thatgun
-	extra_damage = -10
-	extra_penetration = -15
 	spread = 4
 	recoil = 0.5
 	fire_sound = 'modular_fallout/master_files/sound/weapons/magnum_fire.ogg'

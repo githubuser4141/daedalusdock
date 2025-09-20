@@ -122,7 +122,7 @@
 	health = 400
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/projectile/bullet/a762/sport/simple
+	projectiletype = /obj/projectile/bullet/rifle/a762/sport/simple
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/hunting_rifle.ogg'
 	loot = list(/obj/item/ammo_box/a308)
 
@@ -194,7 +194,7 @@
 	extra_projectiles = 1
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/projectile/bullet/a556/simple
+	projectiletype = /obj/projectile/bullet/rifle/a556/simple
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/assaultrifle_fire.ogg'
 	loot = list(/obj/item/ammo_box/magazine/m556/rifle)
 

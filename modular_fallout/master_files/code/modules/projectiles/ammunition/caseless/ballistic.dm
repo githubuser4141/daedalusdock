@@ -4,4 +4,4 @@
 	caliber = "473mm"
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "762-casing"
-	projectile_type = /obj/projectile/bullet/a473
+	projectile_type = /obj/projectile/bullet/rifle/a473

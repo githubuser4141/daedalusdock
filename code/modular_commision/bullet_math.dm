@@ -132,6 +132,16 @@
 	. = ..()
 	atomHitbox = new /datum/hitbox/standardWall(src)
 
+// ****
+
+/obj/New()
+	.=..()
+	atomHitbox = new /datum/hitbox/standardWall(src)
+
+/mob/New()
+	.=..()
+	atomHitbox = new /datum/hitbox/standardWall(src)
+
 /datum/hitbox/standardWall
 	hitboxLines = list(
 		BM_LINE(0,0,0,32),

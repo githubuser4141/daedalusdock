@@ -82,7 +82,7 @@
 	health = 115
 	retreat_distance = 4
 	minimum_distance = 6
-	projectiletype = /obj/projectile/bullet/c9mm/op
+	projectiletype = /obj/projectile/bullet/pistol/c9mm/op
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/ninemil.ogg'
 	loot = list(/obj/effect/mob_spawn/human/corpse/npc_raider)
 
@@ -119,7 +119,7 @@
 	health = 600
 	retreat_distance = 1
 	minimum_distance = 2
-	projectiletype = /obj/projectile/bullet/m44
+	projectiletype = /obj/projectile/bullet/pistol/m44
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/44mag.ogg'
 	extra_projectiles = 1
 	aggro_vision_range = 15
@@ -135,7 +135,7 @@
 	maxHealth = 170
 	health = 170
 	extra_projectiles = 3
-	projectiletype = /obj/projectile/bullet/c45/op
+	projectiletype = /obj/projectile/bullet/pistol/c45/op
 	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/f13/medium/combat/mk2/dark, /obj/item/clothing/suit/f13/medium/combat/mk2, /obj/item/clothing/under/f13/ravenharness)
 
 /mob/living/simple_animal/hostile/raider/ranged/boss/Aggro()
@@ -159,7 +159,7 @@
 	melee_damage_upper = 20
 	maxHealth = 200
 	health = 200
-	projectiletype = /obj/projectile/bullet/a556/match
+	projectiletype = /obj/projectile/bullet/rifle/a556/match
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/magnum_fire.ogg'
 	casingtype = /obj/item/ammo_casing/a556
 	loot = list(/obj/item/gun/ballistic/revolver/thatgun, /obj/item/clothing/suit/f13/medium/combat/rusted, /obj/item/clothing/head/helmet/f13/raidercombathelmet)
@@ -241,7 +241,7 @@
 	icon_dead = "metal_raider_dead"
 	maxHealth = 180
 	health = 180
-	projectiletype = /obj/projectile/bullet/c45/op
+	projectiletype = /obj/projectile/bullet/pistol/c45/op
 	projectilesound = 'modular_fallout/master_files/sound/weapons/gunshot.ogg'
 	loot = list(/obj/item/gun/ballistic/automatic/pistol/m1911/custom, /obj/item/clothing/suit/armored/heavy/metal, /obj/item/clothing/head/helmet/f13/metalmask/mk2)
 
@@ -282,7 +282,7 @@
 	ranged = TRUE
 	retreat_distance = 6
 	minimum_distance = 8
-	projectiletype = /obj/projectile/bullet/c45/op
+	projectiletype = /obj/projectile/bullet/pistol/c45/op
 	projectilesound = 'modular_fallout/master_files/sound/weapons/gunshot.ogg'
 	var/list/spawned_mobs = list()
 	var/max_mobs = 3

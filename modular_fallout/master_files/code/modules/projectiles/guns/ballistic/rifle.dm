@@ -106,8 +106,6 @@
 	icon_state = "cowboyrepeater"
 	inhand_icon_state  = "cowboyrepeater"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube357
-	extra_damage = 5
-	extra_penetration = 5
 	fire_delay = 4.5
 	recoil = 0.15
 	fire_sound = 'modular_fallout/master_files/sound/weapons/cowboyrepeaterfire.ogg'
@@ -120,8 +118,6 @@
 	icon_state = "trailcarbine"
 	inhand_icon_state  = "trailcarbine"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube44
-	extra_damage = 5
-	extra_penetration = 5
 	fire_delay = 4.5
 	recoil = 0.25
 	fire_sound = 'modular_fallout/master_files/sound/weapons/44mag.ogg'
@@ -134,8 +130,6 @@
 	icon_state = "brushgun"
 	inhand_icon_state  = "brushgun"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube4570
-	extra_damage = 7
-	extra_penetration = 5
 	fire_delay = 4.5
 	recoil = 0.25
 	fire_sound = 'modular_fallout/master_files/sound/weapons/brushgunfire.ogg'
@@ -158,8 +152,6 @@
 	sawn_desc = "A hunting rifle, crudely shortened with a saw. It's far from accurate, but the short barrel makes it quite portable."
 	fire_delay = 4.5
 	recoil = 0.35
-	extra_damage = -5
-	extra_penetration = -5
 	spread = 1
 	force = 20
 	can_scope = TRUE
@@ -207,8 +199,6 @@
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/paciencia
 	fire_delay = 7
 	recoil = 0.1
-	extra_damage = 10
-	extra_penetration = 5
 	zoomable = TRUE
 	zoom_amt = 10
 	zoom_out_amt = 13
@@ -254,9 +244,6 @@
 	icon_state = "enfield2"
 	inhand_icon_state  = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
-	extra_damage = -3
-	extra_penetration = -5
-	extra_speed = -100
 	fire_delay = 12
 	slowdown = 0.35
 	force = 15
@@ -282,7 +269,6 @@
 /obj/item/gun/ballistic/rifle/mag
 	name = "magazine fed bolt-action rifle template"
 	desc = "should not exist."
-	extra_speed = 800
 
 /obj/item/gun/ballistic/rifle/mag/examine(mob/user)
 	. = ..()
@@ -337,4 +323,3 @@
 /obj/item/gun/ballistic/rifle/rifletesting
 	name = "hunting"
 	mag_type = /obj/item/ammo_box/magazine/testbullet
-	extra_damage = 30

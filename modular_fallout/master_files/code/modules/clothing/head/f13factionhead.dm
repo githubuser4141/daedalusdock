@@ -448,7 +448,6 @@
 //	playsound(src.loc, "[active_sound]", 100, 0, 4)
 
 	if(iscarbon(user))
-		var/mob/living/carbon/C = user
 		flags_1 ^= visor_flags
 		flags_inv ^= visor_flags_inv
 		flags_cover ^= visor_flags_cover

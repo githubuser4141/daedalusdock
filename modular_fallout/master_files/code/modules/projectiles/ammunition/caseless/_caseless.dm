@@ -20,7 +20,7 @@
 	icon_state = "needler-casing"
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ammo.dmi'
 	caliber = "needle"
-	projectile_type = /obj/projectile/bullet/needle
+	projectile_type = /obj/projectile/bullet/pistol/needle
 	var/reagent_amount = 15
 
 /obj/item/ammo_casing/caseless/musketball
@@ -28,7 +28,7 @@
 	desc = "This is a lead ball for a musket."
 	icon = 'modular_fallout/master_files/icons/fallout/objects/guns/ammo.dmi'
 	caliber = "musketball"
-	projectile_type = /obj/projectile/bullet/F13/musketball
+	projectile_type = /obj/projectile/bullet/rifle/F13/musketball
 
 /obj/item/ammo_casing/caseless/lasermusket
 	name = "Battery"

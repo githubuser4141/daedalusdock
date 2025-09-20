@@ -216,7 +216,7 @@
 	move_to_delay = 4
 	ranged = TRUE
 	ranged_cooldown_time = 200
-	projectiletype = /obj/projectile/bullet/c9mm/simple
+	projectiletype = /obj/projectile/bullet/pistol/c9mm/simple
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/hunting_rifle.ogg'
 	faction = list("scorched", "hostile")
 	melee_damage_lower = 15
