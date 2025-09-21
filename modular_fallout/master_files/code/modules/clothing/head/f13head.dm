@@ -53,7 +53,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/combat)
 
 /obj/item/clothing/head/helmet/f13/combat
 	name = "combat helmet"
-	desc = "(V) An old military grade pre-war combat helmet."
+	desc = "An old military grade pre-war combat helmet."
 	icon_state = "combat_helmet"
 	inhand_icon_state = "combat_helmet"
 	strip_delay = 50
@@ -73,7 +73,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/combat/mk2)
 
 /obj/item/clothing/head/helmet/f13/combat/mk2
 	name = "reinforced combat helmet"
-	desc = "(VI) An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
+	desc = "An advanced pre-war titanium plated, ceramic coated, kevlar, padded helmet designed to withstand extreme punishment of all forms."
 	icon_state = "combat_helmet_mk2"
 	inhand_icon_state = "combat_helmet_mk2"
 
@@ -88,12 +88,12 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/combat/mk2)
 	inhand_icon_state = "combat_helmet_raider"
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/rangerbroken)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/helmet/f13/rangerbroken
 	name = "broken riot helmet"
 	icon_state = "ranger_broken"
-	desc = "(VII) An old riot police helmet, out of use around the time of the war."
+	desc = "An old riot police helmet, out of use around the time of the war."
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
@@ -106,14 +106,13 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/rangerbroken)
 	inhand_icon_state = "swatsyndie"
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/combat/environmental)
-	default_armor = BODYARMOR_KEVLAR_MEDIUM
+	default_armor = BODYARMOR_KEVLAR_HAZARD
 
 /obj/item/clothing/head/helmet/f13/combat/environmental
 	name = "environmental armor helmet"
-	desc = "(V) A full head helmet and gas mask, developed for use in heavily contaminated environments."
+	desc = "A full head helmet and gas mask, developed for use in heavily contaminated environments."
 	icon_state = "env_helmet"
 	inhand_icon_state = "env_helmet"
-	armor = list("tier" = 5,ENERGY = 45, BOMB = 55, BIO = 70, RAD = 100, FIRE = 60, ACID = 50)
 	strip_delay = 60
 	equip_delay_other = 60
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
@@ -125,7 +124,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/combat/environmental)
 //Sulphite Helm
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/sulphitehelm)
-	default_armor = BODYARMOR_WASTES_SCRAP_HEAVY
+	default_armor = BODYARMOR_SCRAP_HEAVY
 
 /obj/item/clothing/head/helmet/f13/sulphitehelm
 	name = "sulphite helmet"
@@ -138,7 +137,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/sulphitehelm)
 //Metal
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/knight/f13/metal)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/helmet/knight/f13/metal
 	name = "metal helmet"
@@ -148,7 +147,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/knight/f13/metal)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/knight/f13/metal/reinforced)
-	default_armor = BODYARMOR_WASTES_SCRAP_HEAVY
+	default_armor = BODYARMOR_SCRAP_HEAVY
 
 /obj/item/clothing/head/helmet/knight/f13/metal/reinforced
 	name = "reinforced metal helmet"
@@ -163,7 +162,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/knight/f13/metal/reinforced)
 	inhand_icon_state = "rider"
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/metalmask)
-	default_armor = BODYARMOR_WASTES_SCRAP_MINIMAL
+	default_armor = BODYARMOR_SCRAP_MINIMAL
 
 /obj/item/clothing/head/helmet/f13/metalmask
 	name = "metal mask"
@@ -186,7 +185,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/metalmask)
 	ADD_TRAIT(src, TRAIT_SPRAY_PAINTABLE, INNATE_TRAIT)
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/metalmask/mk2)
-	default_armor = BODYARMOR_WASTES_SCRAP_MINIMAL
+	default_armor = BODYARMOR_SCRAP_MINIMAL
 
 /obj/item/clothing/head/helmet/f13/metalmask/mk2
 	name = "reinforced metal mask"
@@ -301,7 +300,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/tesla)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/f13/pot)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/f13/pot
 	name = "metal cooking pot"
@@ -334,7 +333,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/f13/pot)
 	flags_inv = HIDEHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/motorcycle)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/helmet/f13/motorcycle
 	name = "motorcycle helmet"
@@ -346,7 +345,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/motorcycle)
 	strip_delay = 10
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/firefighter)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/helmet/f13/firefighter
 	name = "firefighter helmet"
@@ -384,7 +383,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/wastewarhat)
 	flags_inv = HIDEEARS|HIDEHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/hoodedmask)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/helmet/f13/hoodedmask
 	name = "hooded mask"
@@ -430,7 +429,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/f13/police)
 	color = "#999999"
 
 TYPEINFO_DEF(/obj/item/clothing/head/f13/riderw)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/f13/riderw
 	name = "Reinforced Rider Helmet" //Not raider. Rider. //Count up your sins
@@ -503,7 +502,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/f13/riderw)
 	toggle_cooldown = 0
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/ncr/rangercombat/degancustom)
-	default_armor = BODYARMOR_STEEL_ROYALHEAVY
+	default_armor = BODYARMOR_MEDIEVAL_ROYALHEAVY
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/degancustom
 	name = "reclaimed ranger-hunter combat helmet"
@@ -531,11 +530,11 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/ncr/rangercombat/degancustom)
 	inhand_icon_state = "midwestpa_helm"
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/f13/jasonmask)
-	default_armor = BODYARMOR_WASTES_SCRAP_DECENT
+	default_armor = BODYARMOR_SCRAP_DECENT
 
 /obj/item/clothing/head/helmet/f13/jasonmask
 	name = "jasons mask"
-	desc = "(II) A metal mask made specifically for jason."
+	desc = "A metal mask made specifically for jason."
 	icon_state = "jasonmask"
 	inhand_icon_state = "jasonmask"
 

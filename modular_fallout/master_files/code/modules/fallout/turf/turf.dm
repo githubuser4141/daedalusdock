@@ -26,7 +26,6 @@
 			if(SUNLIGHT_BORDER)
 				border_neighbors = null
 				smooth_sunlight_border()
-	..()
 
 /turf/proc/get_Dug()
 	is_dug = TRUE
