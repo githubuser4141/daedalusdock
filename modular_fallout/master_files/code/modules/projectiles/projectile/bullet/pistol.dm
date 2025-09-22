@@ -21,8 +21,6 @@ TYPEINFO_DEF(/obj/projectile/bullet/pistol)
 
 /obj/projectile/bullet/pistol
 	armor_penetration = 0
-	penetration_falloff = 0
-	damage_falloff = 0
 	speed = BULLET_SPEED_PISTOL
 	bulletTipType = BULLET_ROUNDED
 

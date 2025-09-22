@@ -65,8 +65,6 @@ TYPEINFO_DEF(/obj/projectile/bullet/rifle)
 	speed = BULLET_SPEED_RIFLE
 	bulletTipType = BULLET_SHARP
 	armor_penetration = 0
-	penetration_falloff = 0
-	damage_falloff = 0
 
 /obj/projectile/bullet/rifle/a556
 	name = "5.56 FMJ bullet"
