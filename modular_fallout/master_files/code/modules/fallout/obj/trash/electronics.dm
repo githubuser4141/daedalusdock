@@ -6,6 +6,7 @@
 	name = "toaster"
 	desc = "A working toaster of prewar design, for making toast. You can insert various things inside the slot. This General Electronics model has two slots."
 	icon_state = "toaster"
+	base_icon_state = "toaster"
 	components = list(	/obj/item/stock_parts/capacitor=1,
 						/obj/item/stock_parts/matter_bin=1,
 						/obj/item/stock_parts/micro_laser=2,
@@ -141,6 +142,7 @@
 	name = "bagel"
 	desc = "A rounded, dense, donut-like loop of bread. Perfect for toasting, as they're rather chewy untoasted."
 	icon_state = "donut1"// need bagel sprite pfffffffffffffff
+	base_icon_state = "donut1"
 	bite_consumption = 3
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6, /datum/reagent/consumable/nutriment/vitamin = 2)
 	tastes = list("bagelness" = 1)
@@ -152,6 +154,7 @@
 	name = "pristine General Atomics toaster"
 	desc = "An incredibly rare General Atomics nuclear-powered toaster. It can be used to make some excellent toast, or disassembled for parts. It has two slots for bread."
 	icon_state = "toaster" //Can probably find a better one oh well
+	base_icon_state = "toaster"
 	toast_time = 3
 	fork_damage = 20
 	power_use = 0
@@ -167,6 +170,7 @@
 	name = "toaster oven"
 	desc = "A large, unwieldy device meant to sit on a counter and slowly, painstakingly toast bread. It's clearly inferior to the double-slot models but it may be useful for toast heathens who prefer quantity over quality."
 	icon_state = "toaster" //ToDO COME ON how is there no toaster oven sprite
+	base_icon_state = "toaster"
 	toast_slots = 4
 	toast_time = 70
 	power_use = 20

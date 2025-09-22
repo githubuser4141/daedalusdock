@@ -3,6 +3,7 @@
 /obj/item/storage/bag/money
 	name = "money bag"
 	icon_state = "moneybag"
+	base_icon_state = "moneybag"
 	force = 10
 	throwforce = 0
 	resistance_flags = FLAMMABLE
@@ -38,6 +39,7 @@
 /obj/item/storage/bag/money/small
 	name = "money stash"
 	icon_state = "moneypouch"
+	base_icon_state = "moneypouch"
 	force = 10
 	throwforce = 0
 	resistance_flags = FLAMMABLE
