@@ -245,6 +245,8 @@ TYPEINFO_DEF(/obj/projectile)
 /obj/projectile/proc/getRelativeArmorRatingMultiplier(turf/closed/wall/target, datum/armor/targetArmor, datum/armor/bulletArmor)
 	if(targetArmor == null || bulletArmor == null || bulletArmorType == "")
 		return 0
+	if(speed == 0)
+		return 0
 	var/ratingDiff = (bulletArmor.vars[bulletArmorType] * bIntegrity / initial(bIntegrity)) * initial(speed) / speed - targetArmor.vars[bulletArmorType] * target.bIntegrity / initial(target.bIntegrity)
 //message_admins("relative armor returning [ratingDiff / bulletArmor.vars[damage_type]]")
 	return (ratingDiff+0.001) / bulletArmor.vars[bulletArmorType]
