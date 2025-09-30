@@ -1,3 +1,5 @@
+/*
+
 TYPEINFO_DEF(/obj/item/clothing/suit/ghost_sheet)
 	default_armor = (BODYARMOR_THIN_CLOTHES)
 
@@ -260,3 +262,4 @@ TYPEINFO_DEF(/obj/item/clothing/head/hooded/cloakhood/desert/raven_hood)
 	desc = "A hood fashioned out of patchwork and feathers"
 	icon_state = "raven_hood"
 	inhand_icon_state = "raven_hood"
+*/

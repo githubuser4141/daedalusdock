@@ -136,7 +136,7 @@
 	health = 170
 	extra_projectiles = 3
 	projectiletype = /obj/projectile/bullet/pistol/c45/op
-	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/f13/medium/combat/mk2/dark, /obj/item/clothing/suit/f13/medium/combat/mk2, /obj/item/clothing/under/f13/ravenharness)
+	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/armor/ms13/combat/advanced, /obj/item/clothing/under/ms13/wasteland/warboypants)
 
 /mob/living/simple_animal/hostile/raider/ranged/boss/Aggro()
 	..()
@@ -162,7 +162,7 @@
 	projectiletype = /obj/projectile/bullet/rifle/a556/match
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/magnum_fire.ogg'
 	casingtype = /obj/item/ammo_casing/a556
-	loot = list(/obj/item/gun/ballistic/revolver/thatgun, /obj/item/clothing/suit/f13/medium/combat/rusted, /obj/item/clothing/head/helmet/f13/raidercombathelmet)
+	loot = list(/obj/item/gun/ballistic/revolver/thatgun, /obj/item/clothing/suit/ms13/raider/plated, /obj/item/clothing/head/ms13/hood/sack/metal)
 
 /datum/outfit/raider_biker
 	uniform = /obj/item/clothing/under/f13/ncrcf
@@ -224,15 +224,15 @@
 //Sulphite Brawler Mob
 /mob/living/simple_animal/hostile/raider/sulphite
 	name = "Sulphite Brawler"
-	desc = "A raider with low military grade armor and a shishkebab"
+	desc = "A raider with simple armor and a shishkebab"
 	icon_state = "melee_sulphite"
 	icon_living = "melee_sulphite"
 	icon_dead= "melee_sulphite_dead"
-	maxHealth = 220
-	health = 220
+	maxHealth = 180
+	health = 180
 	melee_damage_lower = 40
 	melee_damage_upper = 55
-	loot = list(/obj/item/gun/ballistic/automatic/pistol/m1911/custom, /obj/item/clothing/suit/armored/heavy/metal, /obj/item/clothing/head/helmet/f13/metalmask/mk2)
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/m1911/custom, /obj/item/clothing/suit/armor/ms13/metal/heavy, /obj/item/clothing/head/helmet/ms13/flight)
 
 //Metal Raider Mob
 /mob/living/simple_animal/hostile/raider/ranged/sulphiteranged
@@ -243,7 +243,7 @@
 	health = 180
 	projectiletype = /obj/projectile/bullet/pistol/c45/op
 	projectilesound = 'modular_fallout/master_files/sound/weapons/gunshot.ogg'
-	loot = list(/obj/item/gun/ballistic/automatic/pistol/m1911/custom, /obj/item/clothing/suit/armored/heavy/metal, /obj/item/clothing/head/helmet/f13/metalmask/mk2)
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/m1911/custom, /obj/item/clothing/suit/armor/ms13/metal/heavy, /obj/item/clothing/head/helmet/ms13/assaultron)
 
 //Junkers
 /mob/living/simple_animal/hostile/raider/junker
