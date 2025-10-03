@@ -12,11 +12,6 @@
 	equip_delay_self = 0.25 SECONDS
 	equip_delay_other = 0.35 SECONDS
 
-/obj/item/clothing/glasses/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/glasses_inventory.dmi')
-
-
 /obj/item/clothing/glasses/ms13/black
 	name = "black glasses"
 	desc = "Very plain black glasses. Normally used by hipsters and the near-blind."

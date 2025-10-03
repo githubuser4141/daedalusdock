@@ -50,10 +50,6 @@
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 
-/obj/item/clothing/suit/armor/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/suits_inventory.dmi')
-
 /obj/item/clothing/suit/hooded/ms13
 	name = "generic ms13 hooded clothing"
 	desc = "BASE CLASE BASE CLASS. AAAAAAAAAAAAAAA"
@@ -62,10 +58,6 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	hoodtype = /obj/item/clothing/head/hooded/ms13
-
-/obj/item/clothing/suit/hooded/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/suits_inventory.dmi')
 
 // Armor Kits //
 
@@ -400,7 +392,7 @@ TYPEINFO_DEF(/obj/item/clothing/suit/ms13/trench/boss)
 	body_parts_covered = CHEST|GROIN
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
-	pocket_storage_component_path = /datum/component/storage/concrete/ms13/suit/med
+	pocket_storage_component_path = /datum/storage/concrete/pockets/small
 
 TYPEINFO_DEF(/obj/item/clothing/suit/ms13/raider)
 	default_armor = list(

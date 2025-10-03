@@ -5,10 +5,6 @@
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 4 SECONDS // have you ever put shoes on a full grown adult before
 
-/obj/item/clothing/shoes/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/shoes_inventory.dmi')
-
 /obj/item/clothing/shoes/ms13/rag
 	name = "footcloths"
 	desc = "Simple ragged cloth for your feet. Anything is better than nothing."

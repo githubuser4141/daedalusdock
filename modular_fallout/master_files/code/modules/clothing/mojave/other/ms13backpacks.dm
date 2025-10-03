@@ -14,7 +14,6 @@
 	righthand_file = 'mojave/icons/mob/inhands/equipment/backpack_righthand.dmi'
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	storage_flags = STORAGE_NO_WORN_ACCESS
 	resistance_flags = NONE
 	max_integrity = 300
 	drag_slowdown = 2
@@ -29,10 +28,6 @@
 	inhand_icon_state = icon_state
 	worn_icon_state = icon_state
 */
-/obj/item/storage/ms13/Initialize()
-	atom_storage.max_specific_storage = WEIGHT_CLASS_BULKY
-	atom_storage.max_total_storage = 36
-	atom_storage.max_slots = 100
 
 //STANDARD BACKPACKS
 
@@ -42,11 +37,9 @@
 	icon_state = "satchel"
 	storage_type = /datum/storage/backpack/satchel
 
-/obj/item/storage/ms13/satchel/Initialize()
-	.=..()
-	atom_storage.max_specific_storage = WEIGHT_CLASS_NORMAL
-	atom_storage.max_total_storage = 24
-	atom_storage.max_slots = 100
+/datum/storage/backpack/satchel
+	max_slots = 5
+	max_total_storage = 8
 
 /obj/item/storage/ms13/nuka_bag
 	name = "\improper Nuka Cola backpack"
@@ -86,12 +79,12 @@
 	name = "military backpack"
 	desc = "A tactical green storage device, made of sturdy materials and has enough pockets to hold anything you would ever need for wasteland combat."
 	icon_state = "military"
-	storage_type = /datum/storage/backpack
+	storage_type = /datum/storage/backpack/large
 
-/obj/item/storage/ms13/military/Initialize()
-	atom_storage.max_w_class = WEIGHT_CLASS_BULKY
-	atom_storage.max_total_storage = 42
-	atom_storage.max_slots = 100
+/datum/storage/backpack/large
+	max_slots = 100
+	max_total_storage = 42
+	max_w_class = WEIGHT_CLASS_BULKY
 
 /obj/item/storage/ms13/military_duffel
 	name = "military duffel bag"
@@ -102,11 +95,12 @@
 	item_flags = SLOWS_WHILE_IN_HAND
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2.25 SECONDS
+	storage_type = /datum/storage/backpack/duffel
 
-/obj/item/storage/ms13/military_duffel/Initialize()
-	.=..()
-	atom_storage.max_specific_storage = WEIGHT_CLASS_HUGE
-	atom_storage.max_total_storage = 60
+/datum/storage/backpack/duffel
+	max_slots = 140
+	max_total_storage = 60
+	max_w_class = WEIGHT_CLASS_BULKY
 
 //HARVESTING SACK
 
@@ -119,10 +113,9 @@
 	storage_type = /datum/storage/concrete/ms13/h_bag
 	equip_delay_self = 0.65 SECONDS
 	equip_delay_other = 1.5 SECONDS
+	storage_type = /datum/storage/harvest_sack
 
-/obj/item/storage/ms13/harvest_sack/Initialize()
-	.=..()
-	atom_storage.max_specific_storage = WEIGHT_CLASS_SMALL
-	atom_storage.max_total_storage = 16
-	atom_storage.max_slots = 100
-
+/datum/storage/harvest_sack
+	max_slots = 100
+	max_total_storage = 5
+	max_w_class = WEIGHT_CLASS_SMALL

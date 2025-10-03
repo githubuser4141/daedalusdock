@@ -135,8 +135,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/assaultron)
 	slowdown = WEIGHT_LIGHT
 	max_integrity = 325
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
-	has_fov = TRUE
-	fov_angle = 120
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -287,7 +285,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/medical)
 	desc = "A protective helmet likely used by pre-war doctors in the event of emergency or in dangerous areas."
 	icon_state = "medical"
 	inhand_icon_state = "combathelmet_mk2"
-	slowdown = WEIGHT_FEATHE
+	slowdown = WEIGHT_FEATHER
 	max_integrity = 260
 	flags_inv = HIDEEARS|HIDEHAIR
 	equip_delay_self = 1.5 SECONDS
@@ -1415,7 +1413,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/beret)
 	icon_state = "ncr_officer_beret"
 	inhand_icon_state = "ncr_officer_beret"
 	slowdown = WEIGHT_FEATHER
-	has_fov = FALSE
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
 

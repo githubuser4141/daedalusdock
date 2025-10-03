@@ -1,5 +1,5 @@
 /obj/item/clothing/under/ms13
-	fitted = NO_FEMALE_UNIFORM
+	female_sprite_flags = NO_FEMALE_UNIFORM
 	///femstatics destroyed (Also stops it going invisible when someone dosent make a thottiana version.)
 	can_adjust = FALSE
 	has_sensor = NO_SENSORS // For the crew computer
@@ -13,7 +13,7 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	repairable_by = /obj/item/stack/sheet/ms13/cloth
+	repairable_by = /obj/item/stack/sheet/cloth
 	limb_integrity = 100
 	max_integrity = 350
 	equip_delay_self = 1.5 SECONDS
@@ -21,12 +21,12 @@
 
 /obj/item/clothing/under/ms13/attackby(obj/item/W, mob/user, params)
 	if(!istype(W, repairable_by))
-		if(W.tool_behaviour == TOOL_KNIFE)
+		if(W.sharpness)
 			user.show_message(span_notice("You begin shredding [src]."), MSG_VISUAL)
-			if(do_after(user, 4.5 SECONDS, target = src, interaction_key = DOAFTER_SOURCE_CLOTHSHRED))
+			if(do_after(user, 4.5 SECONDS, target = src, interaction_key = "SLAPCRAFT"))
 				user.show_message(span_notice("You get cloth and thread from [src]!"), MSG_VISUAL)
-				new /obj/item/stack/sheet/ms13/thread(user.loc)
-				new /obj/item/stack/sheet/ms13/cloth(user.loc, 2)
+//				new /obj/item/stack/sheet/thread(user.loc)
+				new /obj/item/stack/sheet/cloth(user.loc, 2)
 				qdel(src)
 		else
 			return..()
@@ -51,10 +51,6 @@
 			return TRUE
 
 	return ..()
-
-/obj/item/clothing/under/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/uniforms_inventory.dmi')
 
 /obj/item/clothing/under/ms13/wasteland
 	can_adjust = FALSE
@@ -185,11 +181,6 @@
 	desc = "A snazzy set of clothes with a stylish black vest."
 	icon_state = "vestandslacks"
 	inhand_icon_state = "ro_suit"
-
-/obj/item/clothing/under/ms13/wasteland/vestslacks/Initialize()
-	. = ..()
-	AddComponent(/datum/component/machine_washable,\
-	clean_sprite = "vestandslacks_c")
 
 /obj/item/clothing/under/ms13/wasteland/merchant
 	name = "merchants' clothes"
@@ -439,6 +430,8 @@
 	var/snatched = TRUE // For taking gold chains off the clothes n shit...
 	var/has_gold_states = FALSE // Can you even put gold on it
 
+/*
+
 /obj/item/clothing/under/ms13/slickback/examine(mob/user)
 	. = ..()
 	if(!snatched)
@@ -460,7 +453,7 @@
 	if(do_after(user, 2.5 SECONDS))
 		user.visible_message( \
 			"[user] finishes tearing the chains off of \the [src].", \
-			span_notice("You finish tearing the chains off \the [src]"),
+			span_notice("You finish tearing the chains off \the [src]"))
 			span_hear("You hear chains rattling with an abrupt stop."))
 		playsound(src, 'mojave/sound/ms13effects/jewelry_chain2.ogg', 15, TRUE)
 		icon_state = initial(icon_state)+"_snatched"
@@ -475,7 +468,7 @@
 /obj/item/clothing/under/ms13/slickback/attackby(obj/item/W, mob/user, params)
 	. = ..()
 
-	if(istype(W, /obj/item/stack/sheet/ms13/scrap_gold))
+	if(istype(W, /obj/item/stack/sheet/gold))
 		if(!has_gold_states)
 			to_chat(user, span_notice("Looks dope enough. Not needed."))
 			return
@@ -490,12 +483,14 @@
 			icon_state = initial(icon_state)
 			worn_icon_state = initial(icon_state)
 			update_appearance(updates = UPDATE_ICON)
-			user.update_inv_w_uniform()
+//			user.update_inv_w_uniform()
 			user.update_body()
 			snatched = FALSE
 			W.use(1)
 			playsound(src, 'mojave/sound/ms13effects/jewelry_chain2.ogg', 15, TRUE)
 			return
+
+*/
 
 /obj/item/clothing/under/ms13/slickback/shotcaller
 	name = "\improper Slickback shot caller outfit"

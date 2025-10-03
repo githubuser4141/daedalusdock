@@ -7,10 +7,6 @@
 	equip_delay_self = 0.5 SECONDS
 	equip_delay_other = 1 SECONDS
 
-/obj/item/clothing/gloves/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/gloves_inventory.dmi')
-
 /obj/item/clothing/gloves/ms13/winter
 	name = "brown winter gloves"
 	desc = "A plain pair of brown winter gloves. Nice and warm."

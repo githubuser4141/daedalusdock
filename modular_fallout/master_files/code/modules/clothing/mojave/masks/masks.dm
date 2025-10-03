@@ -9,10 +9,6 @@
 	equip_delay_self = 0.75 SECONDS
 	equip_delay_other = 2 SECONDS
 
-/obj/item/clothing/mask/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/masks_inventory.dmi')
-
 // Bandanas //
 
 /obj/item/clothing/mask/ms13/bandana
@@ -170,16 +166,12 @@
 	inhand_icon_state = "gasmask"
 	var/adjusted = FALSE
 	var/adjustable = TRUE
-	has_fov = FALSE //placeholder for now until we make this more useful to justify a FOV
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 	w_class = WEIGHT_CLASS_NORMAL
-	clothing_traits = list(TRAIT_WEARING_GAS_MASK)
+	clothing_flags = BLOCK_GAS_SMOKE_EFFECT | MASKINTERNALS | GAS_FILTERING
+	flags_cover = MASKCOVERSEYES | MASKCOVERSMOUTH | PEPPERPROOF
 	slowdown = 0.05 // Will they even notice..?
-
-/obj/item/clothing/mask/gas/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/masks_inventory.dmi')
 
 /obj/item/clothing/mask/gas/ms13/examine(mob/user)
 	return

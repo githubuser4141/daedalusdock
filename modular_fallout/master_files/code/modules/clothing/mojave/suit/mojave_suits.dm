@@ -13,10 +13,6 @@
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
-/obj/item/clothing/suit/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/suits_inventory.dmi')
-
 /obj/item/clothing/suit/toggle/ms13
 	name = "generic ms13 toggleable"
 	desc = "Don't look. Don't look. NIGHTMARE NIGHTMARE NIGHTMARE."
@@ -472,7 +468,7 @@
 	pocket_storage_component_path = /datum/storage/concrete/pockets/huge
 	var/snatched = TRUE // For taking gold chains off the clothes n shit...
 	var/has_gold_states = FALSE // Can you even put gold on it
-
+/*
 /obj/item/clothing/suit/ms13/slickback/examine(mob/user)
 	. = ..()
 
@@ -507,7 +503,7 @@
 		snatched = TRUE
 		var/obj/item/stack/sheet/ms13/scrap_gold/G = new /obj/item/stack/sheet/ms13/scrap_gold
 		user.put_in_hands(G)
-
+*/
 /* Broken because of the pockets. Idk... it's here for now.
 /obj/item/clothing/suit/ms13/slickback/attackby(obj/item/W, mob/user, params)
 	. = ..()
