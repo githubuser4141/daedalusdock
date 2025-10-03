@@ -18,7 +18,7 @@
 	resistance_flags = NONE
 	max_integrity = 300
 	drag_slowdown = 2
-	storage_type = /datum/storage/concrete/ms13/grid
+	storage_type = /datum/storage/backpack
 	equip_delay_self = 0.75 SECONDS
 	equip_delay_other = 2 SECONDS
 /*
@@ -40,9 +40,10 @@
 	name = "leather satchel"
 	desc = "A simple leather satchel. Easy to access but can't hold much."
 	icon_state = "satchel"
-	storage_type = /datum/storage/concrete/ms13/satchel
+	storage_type = /datum/storage/backpack/satchel
 
 /obj/item/storage/ms13/satchel/Initialize()
+	.=..()
 	atom_storage.max_specific_storage = WEIGHT_CLASS_NORMAL
 	atom_storage.max_total_storage = 24
 	atom_storage.max_slots = 100
@@ -85,7 +86,7 @@
 	name = "military backpack"
 	desc = "A tactical green storage device, made of sturdy materials and has enough pockets to hold anything you would ever need for wasteland combat."
 	icon_state = "military"
-	storage_type = /datum/storage/concrete/ms13/biggie_bag
+	storage_type = /datum/storage/backpack
 
 /obj/item/storage/ms13/military/Initialize()
 	atom_storage.max_w_class = WEIGHT_CLASS_BULKY
@@ -101,12 +102,11 @@
 	item_flags = SLOWS_WHILE_IN_HAND
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2.25 SECONDS
-	storage_type = /datum/storage/concrete/ms13/big_duffel
 
 /obj/item/storage/ms13/military_duffel/Initialize()
+	.=..()
 	atom_storage.max_specific_storage = WEIGHT_CLASS_HUGE
-	atom_storage.max_items = 35
-	atom_storage.max_combined_w_class = 100
+	atom_storage.max_total_storage = 60
 
 //HARVESTING SACK
 
@@ -121,7 +121,8 @@
 	equip_delay_other = 1.5 SECONDS
 
 /obj/item/storage/ms13/harvest_sack/Initialize()
-	atom_storage.max_w_class = WEIGHT_CLASS_SMALL
+	.=..()
+	atom_storage.max_specific_storage = WEIGHT_CLASS_SMALL
 	atom_storage.max_total_storage = 16
 	atom_storage.max_slots = 100
 

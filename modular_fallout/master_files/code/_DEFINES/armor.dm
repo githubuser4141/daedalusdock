@@ -70,6 +70,17 @@
 #define CLASS7_LASER		90
 #define CLASS8_LASER		100
 
+#define WEIGHT_NONE			0
+#define WEIGHT_FEATHER		0.02
+#define WEIGHT_LIGHT		0.05
+#define WEIGHT_BULKY		0.08
+#define WEIGHT_MEDIUM		0.1
+#define WEIGHT_CHUNKY		0.15
+#define WEIGHT_HEAVY		0.2
+
+#define WEIGHT_HEFTY		0.3
+#define WEIGHT_HEAVY_PLUS	0.5
+
 /*
 
 // Ordinary clothing with some defensive value

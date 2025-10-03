@@ -17,6 +17,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13)
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	slowdown = WEIGHT_FEATHER
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 	max_integrity = 150
@@ -42,6 +43,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood)
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	slowdown = WEIGHT_FEATHER
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 	max_integrity = 150
@@ -69,6 +71,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/hooded/ms13)
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	slowdown = WEIGHT_FEATHER
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 
@@ -91,6 +94,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/soft/ms13)
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
+	slowdown = WEIGHT_NONE
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall)
 	default_armor = list(
@@ -128,6 +132,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/assaultron)
 	desc = "A hollowed out and re-fitted head of an assaultron robot, being made of metal won't help it at all in protecting from lasers."
 	icon_state = "assaultron"
 	inhand_icon_state = "metalhelmet"
+	slowdown = WEIGHT_LIGHT
 	max_integrity = 325
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	has_fov = TRUE
@@ -152,6 +157,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/flight)
 	desc = "A good looking brown pre-war flight helmet in decent condition."
 	icon_state = "flightbrown"
 	inhand_icon_state = "combathelmet_mk2"
+	slowdown = WEIGHT_FEATHER
 	max_integrity = 260
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
@@ -185,6 +191,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/bladed)
 	desc = "A menancing metal helmet, adorned with two huge blades on the side."
 	icon_state = "bladed"
 	inhand_icon_state = "metalhelmet"
+	slowdown = WEIGHT_LIGHT
 	max_integrity = 325
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -206,6 +213,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/junk)
 	desc = "An intimidating helmet crudely made from metal scrap."
 	icon_state = "junk"
 	inhand_icon_state = "combathelmet_mk2"
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -228,6 +236,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/skull)
 	icon_state = "radstag"
 	inhand_icon_state = "w_shoes"
 	max_integrity = 200
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -255,6 +264,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/eyebot)
 	icon_state = "eyebot"
 	inhand_icon_state = "weldingoff"
 	max_integrity = 325
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -277,6 +287,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/medical)
 	desc = "A protective helmet likely used by pre-war doctors in the event of emergency or in dangerous areas."
 	icon_state = "medical"
 	inhand_icon_state = "combathelmet_mk2"
+	slowdown = WEIGHT_FEATHE
 	max_integrity = 260
 	flags_inv = HIDEEARS|HIDEHAIR
 	equip_delay_self = 1.5 SECONDS
@@ -299,6 +310,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/batter)
 	desc = "A dark pre-war baseball batters helmet, helps protect your noggin a little."
 	icon_state = "batter"
 	inhand_icon_state = "combathelmet"
+	slowdown = WEIGHT_LIGHT
 	max_integrity = 260
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -330,6 +342,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/hardhat)
 	desc = "A blue pre-war construction hat."
 	icon_state = "hardhat"
 	inhand_icon_state = "vaultvanarmor"
+	slowdown = WEIGHT_FEATHER
 	max_integrity = 260
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -370,6 +383,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/welding/ms13)
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	inhand_icon_state = "welding"
+	slowdown = WEIGHT_FEATHER
 	resistance_flags = FIRE_PROOF
 	max_integrity = 325
 	w_class = WEIGHT_CLASS_NORMAL
@@ -393,6 +407,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/army)
 	desc = "An old pre-war helmet. Seems someone added quite a bit of ballistic padding on the inside, likely to try and modernize it."
 	icon_state = "armyhelmet"
 	inhand_icon_state = "combathelmet"
+	slowdown = WEIGHT_LIGHT
 	max_integrity = 325
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -422,6 +437,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/hooded/ms13/hubologist)
 	desc = "A mysterious hood worn by Hubologists."
 	icon_state = "hubologist"
 	inhand_icon_state = "hubologist"
+	slowdown = WEIGHT_FEATHER
 
 TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/banded)
 	default_armor = list(
@@ -441,6 +457,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/banded)
 	icon_state = "banded"
 	max_integrity = 325
 	inhand_icon_state = "harmorkit"
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -464,6 +481,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/plated)
 	icon_state = "plated"
 	max_integrity = 300
 	inhand_icon_state = "armorkit"
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -485,6 +503,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/cowl)
 	desc = "A plain cloth cowl."
 	icon_state = "cowl"
 	inhand_icon_state = "winterglovesbrown"
+	slowdown = WEIGHT_FEATHER
 	flags_inv = HIDEEARS|HIDEHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/inquisitor)
@@ -505,6 +524,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/inquisitor)
 	icon_state = "inquisitor"
 	max_integrity = 325
 	inhand_icon_state = "headdress_l"
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -527,6 +547,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/sack)
 	desc = "A simple sack with some holes poked in it, for concealing your identity as you pillage the wasteland."
 	icon_state = "sack"
 	inhand_icon_state = "tribalrag"
+	slowdown = WEIGHT_FEATHER
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/sack/padded)
@@ -545,6 +566,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/sack/padded)
 	name = "padded sack hood"
 	desc = "A sack hood with the addition of some padding and leather strips for extra protection."
 	icon_state = "sackstrap"
+	slowdown = WEIGHT_LIGHT
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
@@ -564,6 +586,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/sack/metal)
 	name = "reinforced sack hood"
 	desc = "A sack hood reinforced with metal and crude spikes. Looks quite intimidating... for a sack."
 	icon_state = "sackmetal"
+	slowdown = WEIGHT_LIGHT
 	max_integrity = 300
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -591,6 +614,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/hunter)
 	name = "hunter hood"
 	desc = "A tactical hunting hood with some additional padding and a leather face guard. Commonly used by radstag hunters."
 	icon_state = "hunter"
+	slowdown = WEIGHT_LIGHT
 	max_integrity = 260
 	inhand_icon_state = "winterglovesbrown"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
@@ -616,6 +640,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/sheriff)
 	desc = "A dark, wide brimmed, padded hat normally used by sheriffs of the wastes."
 	icon_state = "sheriffhat"
 	inhand_icon_state = "sheriffhat"
+	slowdown = WEIGHT_FEATHER
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/fedora)
 	default_armor = list(
@@ -633,6 +658,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/fedora)
 	name = "gray fedora"
 	desc = "An old gray fedora."
 	icon_state = "fedold"
+	slowdown = WEIGHT_FEATHER
 
 /obj/item/clothing/head/helmet/ms13/fedora/blue
 	name = "blue fedora"
@@ -672,6 +698,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/bowler)
 	desc = "A classy gentleman's bowler hat."
 	icon_state = "bowler"
 	inhand_icon_state = "sheriffhat"
+	slowdown = WEIGHT_FEATHER
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy)
 	default_armor = list(
@@ -690,6 +717,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy)
 	desc = "A classic cowboy hat. Perhaps worn by lawmen of old."
 	icon_state = "cowboy"
 	inhand_icon_state = "sheriffhat"
+	slowdown = WEIGHT_FEATHER
 
 /obj/item/clothing/head/helmet/ms13/cowboy/black
 	name = "black cowboy hat"
@@ -713,6 +741,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/prospector)
 	desc = "A hat worn commonly by post-war prospectors. Has some added padding for braving the dangers of the wastes."
 	icon_state = "prospector"
 	inhand_icon_state = "sheriffhat"
+	slowdown = WEIGHT_FEATHER
 
 /obj/item/clothing/head/helmet/ms13/prospector/brown
 	icon_state = "prospectorbrown"
@@ -820,57 +849,67 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall/cone)
 	desc = "A classic baseball cap. A relic from pre-nuclear America."
 	icon_state = "baseball"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/deputy
 	name = "deputy's cap"
 	desc = "A refurbished, good looking pre-war police cap normally in use by the new law enforcers of the cold wastes."
 	icon_state = "deputycap"
 	inhand_icon_state = "deputycap"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/military
 	name = "military hat"
 	desc = "A military hat for off-duty soldiers."
 	icon_state = "military"
 	inhand_icon_state = "general"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/military/officer
 	name = "officer's hat"
 	desc = "A pre-war military hat likely worn by an officer."
 	icon_state = "captain"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/military/officer/white
 	name = "white officer's hat"
 	desc = "A pre-war military hat likely worn by an officer. This one is white."
 	icon_state = "captainwhite"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/military/officer/chinese
 	name = "\improper Chinese officer's hat"
 	desc = "A pre-war strange military hat, likely used by Chinese communists."
 	icon_state = "captaincommie"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/sailor
 	name = "sailor cap"
 	desc = "A light cap used by pre-war sailors."
 	icon_state = "sailor"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/postman
 	name = "postman hat"
 	desc = "A soft cap for old-school couriers of pre-war America."
 	icon_state = "postman"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/police
 	name = "police hat"
-	desc = "A lightly padded hat used by pre-war police officers."
+	desc = "A hat used by pre-war police officers."
 	icon_state = "policeman"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/fisher
 	name = "angler hat"
 	desc = "A waterproof angler's hat. About a quarter of what you need to get fishing!"
 	icon_state = "fisher"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/fisher/technobug
 	desc = "A waterproof angler's hat. About a quarter of what you need to get fishing! The name 'T. bugg' is crudely written on the inside."
@@ -880,6 +919,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall/cone)
 	desc = "A piece of cloth tied around a cap. A sense of gang activity radiates from this hat."
 	icon_state = "bandanacap"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/bandanacap/ms13
 	desc = "A piece of cloth tied around a cap. A sense of gang activity radiates from this hat. The letters and numbers 'MS13' are inscribed on the inside."
@@ -889,39 +929,46 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall/cone)
 	desc = "A plain gray beret."
 	icon_state = "beret"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/newsboy
 	name = "newsboy cap"
 	desc = "A cap made famous by newsboys, come read all about it!"
 	icon_state = "newsboy"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/trilby
 	name = "trilby hat"
 	desc = "A yellow trilby hat."
 	icon_state = "trilby"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/beanie
 	name = "beanie"
 	desc = "A typical, dark beanie."
 	icon_state = "beanie"
 	inhand_icon_state = "fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/beret/slick
 	name = "light beret"
 	desc = "A lightly colored, well kept beret."
 	icon_state = "slick_beret"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/fedora/slick
 	name = "wide brim fedora"
 	desc = "A black, wide brim fedora. An impressive fashion statement."
 	icon_state = "slick_fedora"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/newsboy/slick
 	name = "dark brown flat cap"
 	desc = "A nice looking, dark brown flat cap."
 	icon_state = "slick_flatcap"
+	slowdown = WEIGHT_NONE
 
 // Misc Hats //
 
@@ -930,11 +977,13 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall/cone)
 	desc = "A professional chef hat, hopefully there is no rat inside."
 	icon_state = "chef"
 	inhand_icon_state = "chefhat"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/ushanka
 	name = "ushanka hat"
 	desc = "Thick, warm ushanka hat. The makings of a true slav."
 	icon_state = "ushankared"
+	slowdown = WEIGHT_NONE
 
 /obj/item/clothing/head/helmet/ms13/ushanka/blue
 	name = "blue ushanka hat"
@@ -966,7 +1015,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/metal)
 	icon_state = "metalhelmet"
 	inhand_icon_state = "metalhelmet"
 	max_integrity = 375
-	slowdown = 0.2
+	slowdown = WEIGHT_MEDIUM
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -992,6 +1041,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/combat)
 	icon_state = "combathelm"
 	inhand_icon_state = "combathelmet"
 	max_integrity = 325
+	slowdown = WEIGHT_BULKY
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -1015,7 +1065,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/combat/advanced)
 	icon_state = "adv_combathelm"
 	inhand_icon_state = "combathelmet_mk2"
 	max_integrity = 375
-	slowdown = 0.1
 
 // Special Helmets //
 
@@ -1037,7 +1086,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tesla)
 	icon_state = "tesla_helmet"
 	inhand_icon_state = "tesla_helmet"
 	max_integrity = 375
-	slowdown = 0.1
+	slowdown = WEIGHT_BULKY
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -1061,7 +1110,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/eliteriot)
 	icon_state = "riotgearhelmet"
 	inhand_icon_state = "riotgearhelmet"
 	max_integrity = 375
-	slowdown = 0.1
+	slowdown = WEIGHT_MEDIUM
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -1085,6 +1134,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/vaulthelmet)
 	icon_state = "vaulthelmet"
 	inhand_icon_state = "helmet"
 	max_integrity = 325
+	slowdown = WEIGHT_BULKY
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 1.5 SECONDS
@@ -1114,6 +1164,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/enforcer)
 	desc = "A black hat and mask with quite a bit of extra padding for protection. Something about this is quite intimidating."
 	icon_state = "enforcer"
 	max_integrity = 200
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/metal/baron)
@@ -1133,7 +1184,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/metal/baron)
 	desc = "A cold, insidious metal mask belonging to a very particular and very feared man."
 	icon_state = "baron"
 	max_integrity = 325
-	slowdown = 0.15
+	slowdown = WEIGHT_MEDIUM
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 
@@ -1155,7 +1206,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/snowguard)
 	icon_state = "snow_guard"
 	inhand_icon_state = "combathelmet"
 	max_integrity = 325
-	slowdown = 0.15
+	slowdown = WEIGHT_MEDIUM
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 1.5 SECONDS
@@ -1181,7 +1232,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/firehood)
 	icon_state = "firehood"
 	inhand_icon_state = "firehood"
 	max_integrity = 260
-	slowdown = 0.1
+	slowdown = WEIGHT_BULKY
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
@@ -1206,7 +1257,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/radiationhood)
 	desc = "A hood to go along with your radiation suit. It's got a broken geiger counter mounted near the filter."
 	icon_state = "radsuithood"
 	inhand_icon_state = "radsuithood"
-	slowdown = 0.05
+	slowdown = WEIGHT_LIGHT
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -1232,7 +1283,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/hooded/ms13/hazmat)
 	desc = "The hood to a hazmat suit. You'll want to keep this close if you want the suit to actually do anything for you."
 	icon_state = "hazmathood"
 	inhand_icon_state = "hazmat"
-	slowdown = 0.05
+	slowdown = WEIGHT_LIGHT
 	resistance_flags = ACID_PROOF
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/space/ms13)
@@ -1254,7 +1305,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/space/ms13)
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	icon_state = "spacehelmet"
 	inhand_icon_state = "spacehelmet"
-	slowdown = 0.15
+	slowdown = WEIGHT_BULKY
 	flags_inv = HIDEHAIR
 
 // NCR Helmets //
@@ -1277,6 +1328,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr)
 	icon_state = "ncr_infantry_helmet"
 	inhand_icon_state = "ncr_infantry_helmet"
 	max_integrity = 260
+	slowdown = WEIGHT_LIGHT
 	flags_cover = NONE
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -1297,7 +1349,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/mp)
 	name = "\improper NCR military police helmet"
 	desc = "An NCR helmet issued to military police stationed at NCR military installations or frontier towns."
 	icon_state = "ncr_mp_helmet"
-	slowdown = 0.05
 
 /obj/item/clothing/head/helmet/ms13/ncr/medic
 	name = "\improper NCR medic helmet"
@@ -1344,7 +1395,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/goggles)
 	can_toggle = 1
 	toggle_message = "You pull the goggles down on"
 	alt_toggle_message = "You push the goggles up on"
-	slowdown = 0.05
 	actions_types = list(/datum/action/item_action/toggle)
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/beret)
@@ -1364,6 +1414,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/beret)
 	desc = "A standard padded NCR beret. Normally reserved for NCOs."
 	icon_state = "ncr_officer_beret"
 	inhand_icon_state = "ncr_officer_beret"
+	slowdown = WEIGHT_FEATHER
 	has_fov = FALSE
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
@@ -1397,6 +1448,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/vexillarius)
 	desc = "A padded headdress used by only the loudest message relayers and heartiest morale boosters of the Legion"
 	icon_state = "leg_vex"
 	inhand_icon_state = "owl_mask"
+	slowdown = WEIGHT_LIGHT
 	max_integrity = 200
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -1419,6 +1471,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/recruit)
 	icon_state = "leg_rec"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 260
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEHAIR
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
@@ -1441,11 +1494,12 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/prime)
 	icon_state = "leg_prime"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 260
+	slowdown = WEIGHT_BULKY
 	flags_inv = HIDEEARS|HIDEHAIR
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
-TYPEINFO_DEF/obj/item/clothing/head/helmet/ms13/legion/veteran)
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/veteran)
 	default_armor = list(
 	BLUNT = CLASS5_BLUNT,
 	PUNCTURE = CLASS3_PUNCTURE,
@@ -1463,7 +1517,7 @@ TYPEINFO_DEF/obj/item/clothing/head/helmet/ms13/legion/veteran)
 	icon_state = "leg_vet"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 300
-	slowdown = 0.1
+	slowdown = WEIGHT_MEDIUM
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -1486,7 +1540,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/decanus)
 	icon_state = "leg_decr"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 300
-	slowdown = 0.1
+	slowdown = WEIGHT_MEDIUM
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -1496,18 +1550,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/decanus)
 	name = "\improper Legion prime decanus helmet"
 	desc = "A feathery, quite protective helmet used by prime decanii of the Legion. It's got black feathers to signify a moderate rank."
 	icon_state = "leg_decp"
-
-TYPEINFO_DEF()
-	default_armor = list(
-	BLUNT = CLASS6_BLUNT,
-	PUNCTURE = CLASS3_PUNCTURE,
-	SLASH = CLASS5_SLASH,
-	LASER = CLASS3_LASER,
-	ENERGY = 0,
-	BOMB = 0,
-	BIO = 0,
-	FIRE = 25,
-	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/legion/decanus/veteran
 	name = "\improper Legion veteran decanus helmet"
@@ -1533,7 +1575,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/centurion)
 	icon_state = "leg_cent"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 375
-	slowdown = 0.2
+	slowdown = WEIGHT_CHUNKY
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -1556,7 +1598,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/praetorian)
 	desc = "A skillfuly forged helmet for a skill endowed man. Only the highest of guards may wear this."
 	icon_state = "leg_prae"
 	inhand_icon_state = "owl_mask"
-	slowdown = 0.15
+	slowdown = WEIGHT_CHUNKY
 	flags_inv = HIDEEARS|HIDEHAIR
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/scout)
@@ -1576,13 +1618,14 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/scout)
 	desc = "A red bandana, often seen tied aroudn the heads of Legion scouts."
 	icon_state = "leg_scout"
 	inhand_icon_state = "owl_mask"
+	slowdown = WEIGHT_FEATHER
 	flags_inv = HIDEEARS
 
 TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/explorer)
 	default_armor = list(
 	BLUNT = CLASS2_BLUNT,
 	PUNCTURE = CLASS2_PUNCTURE,
-	SLASH = CLASS3_SLASH,
+	SLASH = CLASS2_SLASH,
 	LASER = CLASS1_LASER,
 	ENERGY = 0,
 	BOMB = 0,
@@ -1596,6 +1639,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/explorer)
 	icon_state = "leg_exp"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 200
+	slowdown = WEIGHT_FEATHER
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
 
@@ -1619,6 +1663,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/initiate)
 	icon_state = "bos_kevlar_helmet"
 	inhand_icon_state = "bos_helmet"
 	max_integrity = 260
+	slowdown = WEIGHT_LIGHT
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
@@ -1640,7 +1685,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/combat/bos)
 	icon_state = "bos_helmet"
 	inhand_icon_state = "bos_helmet"
 	max_integrity = 325
-	slowdown = 0.05
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -1672,6 +1716,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy/ranger)
 	icon_state = "ranger_hat"
 	worn_icon_state = "ranger_hat"
 	max_integrity = 200
+	slowdown = WEIGHT_LIGHT
 
 // Drylander Hoods //
 
@@ -1690,6 +1735,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/drylander)
 /obj/item/clothing/head/helmet/ms13/drylander
 	name = "base type drylander hood"
 	desc = "You shouldn't be seeing this."
+	slowdown = WEIGHT_LIGHT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 
@@ -1771,6 +1817,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ushanka/mon_city)
 	desc = "Thick, padded, and warm ushanka hat. Almost as good at keeping you alive as it is at keeping you warm."
 	icon_state = "mon_ushanka"
 	max_integrity = 250
+	slowdown = WEIGHT_LIGHT
 
 /obj/item/clothing/head/helmet/ms13/ushanka/mon_city/basic
 	name = "lightly padded ushanka hat"
@@ -1787,7 +1834,6 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ushanka/mon_city)
 	desc = "A heavy duty gas mask that doubles as a protective helmet. Likely used by the pre-war military for operations in hazardous areas."
 	icon_state = "mon_captain"
 	inhand_icon_state = "metalhelmet"
-	slowdown = 0.15
 
 /obj/item/clothing/head/hooded/ms13/mon_city
 	name = "padded green winter hood"
@@ -1813,6 +1859,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy/goldman)
 	name = "padded wide brim brown hat"
 	desc = "A wide brim dark brown hat with the addition of some light protective padding."
 	icon_state = "goldman_basic"
+	slowdown = WEIGHT_LIGHT
 
 /obj/item/clothing/head/helmet/ms13/cowboy/goldman/veteran
 	name = "padded wide brim fedora"
