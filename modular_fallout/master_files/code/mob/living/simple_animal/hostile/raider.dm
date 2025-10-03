@@ -28,11 +28,11 @@
 
 /datum/outfit/raider
 	name = "Raider"
-	uniform = /obj/item/clothing/under/f13/rag
-	suit = /obj/item/clothing/suit/armor/f13/medium/iconoclast
-	shoes = /obj/item/clothing/shoes/f13/explorer
-	gloves = /obj/item/clothing/gloves/f13/leather
-	head = /obj/item/clothing/head/helmet/f13/firefighter
+	uniform = /obj/item/clothing/under/ms13/wasteland/rag
+	suit = /obj/item/clothing/suit/ms13/ljacket/reinforced
+	shoes = /obj/item/clothing/shoes/ms13/crude
+	gloves = /obj/item/clothing/gloves/ms13/baseball
+	head = /obj/item/clothing/head/helmet/ms13/firehood
 
 /obj/effect/mob_spawn/human/corpse/raider
 	name = "Raider"
@@ -88,11 +88,11 @@
 
 /datum/outfit/npc_raider
 	name = "NPC Raider"
-	uniform = /obj/item/clothing/under/f13/rag
-	suit = /obj/item/clothing/suit/armor/f13/medium/iconoclast
-	shoes = /obj/item/clothing/shoes/f13/explorer
-	gloves = /obj/item/clothing/gloves/f13/leather
-	head = /obj/item/clothing/head/helmet/f13/firefighter
+	uniform = /obj/item/clothing/under/ms13/wasteland/rag
+	suit = /obj/item/clothing/suit/ms13/ljacket/reinforced
+	shoes = /obj/item/clothing/shoes/ms13/crude
+	gloves = /obj/item/clothing/gloves/ms13/baseball
+	head = /obj/item/clothing/head/helmet/ms13/firehood
 
 /obj/effect/mob_spawn/human/corpse/npc_raider
 	name = "Raider"
@@ -165,12 +165,12 @@
 	loot = list(/obj/item/gun/ballistic/revolver/thatgun, /obj/item/clothing/suit/ms13/raider/plated, /obj/item/clothing/head/ms13/hood/sack/metal)
 
 /datum/outfit/raider_biker
-	uniform = /obj/item/clothing/under/f13/ncrcf
-	suit = /obj/item/clothing/suit/f13/medium/combat/rusted
-	shoes = /obj/item/clothing/shoes/f13/explorer
-	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
-	head = /obj/item/clothing/head/helmet/f13/raidercombathelmet
-	neck = /obj/item/clothing/neck/mantle/brown
+	uniform = /obj/item/clothing/under/ms13/wasteland/worn
+	suit = /obj/item/clothing/suit/ms13/ljacket/biker
+	shoes = /obj/item/clothing/shoes/ms13/explorer
+	gloves = /obj/item/clothing/gloves/ms13/fingerless
+	head = /obj/item/clothing/head/helmet/ms13/junk
+	neck = /obj/item/clothing/neck/cloak/ms13/mantle
 
 /obj/effect/mob_spawn/human/corpse/raider/ranged/biker
 	name = "Raider Biker"
@@ -191,11 +191,11 @@
 
 
 /datum/outfit/raider_mechanic
-	uniform = /obj/item/clothing/under/f13/mechanic
-	suit = /obj/item/clothing/suit/armor/f13/medium/yankee
-	shoes = /obj/item/clothing/shoes/f13/explorer
-	gloves = /obj/item/clothing/gloves/f13/leather/fingerless
-	head = /obj/item/clothing/head/helmet/f13/raider/yankee
+	uniform = /obj/item/clothing/under/ms13/wasteland/mechanicprewar/mechanicgrey
+	suit = /obj/item/clothing/suit/ms13/duster/reinforced
+	shoes = /obj/item/clothing/shoes/ms13/explorer
+	gloves = /obj/item/clothing/gloves/ms13/leather
+	head = /obj/item/clothing/head/welding/ms13
 
 /obj/effect/mob_spawn/human/corpse/raider/baseball
 	name = "Raider Mechanic"
@@ -211,11 +211,11 @@
 	loot = list(/obj/item/twohanded/spear)
 
 /datum/outfit/raider_tribal
-	uniform = /obj/item/clothing/under/f13/raiderrags
-	suit = /obj/item/clothing/suit/armored/light/tribalraider
-	shoes = /obj/item/clothing/shoes/f13/rag
-	mask = /obj/item/clothing/mask/facewrap
-	head = /obj/item/clothing/head/helmet/f13/fiend
+	uniform = /obj/item/clothing/under/ms13/wasteland/rag
+	suit = /obj/item/clothing/suit/ms13/drylander/hunter
+	shoes = /obj/item/clothing/shoes/ms13/rag
+	mask = /obj/item/clothing/mask/ms13/bandana/patriot
+	head = /obj/item/clothing/head/ms13/hood/sack
 
 /obj/effect/mob_spawn/human/corpse/raider/tribal
 	name = "Raider Tribal"

@@ -12,8 +12,6 @@
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
-	grid_width = 64
-	grid_height = 96
 
 /obj/item/clothing/suit/ms13/Initialize()
 	. = ..()
@@ -34,12 +32,6 @@
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
-	grid_width = 64
-	grid_height = 96
-
-/obj/item/clothing/suit/toggle/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/suits_inventory.dmi')
 
 // wasteland //
 

@@ -1,3 +1,15 @@
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = 0,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13
 	name = "generic ms13 helmet"
 	desc = "You shouldn't be seeing this helmet."
@@ -5,26 +17,23 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	dynamic_hair_suffix = "+generic"
-	dynamic_fhair_suffix = "+generic"
 	flags_inv = HIDEHAIR
 	flags_cover = 0
 	max_integrity = 150
-	grid_width = 64
-	grid_height = 64
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
-	var/has_fov = FALSE //Whether this has a grim dark FOV or not
-	var/fov_angle = 60 //What kind of FOV type it has. This should either be 60, 90, 120, or 180
 
-/obj/item/clothing/head/helmet/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/hats_inventory.dmi')
-	init_fov()
-
-/obj/item/clothing/head/helmet/ms13/proc/init_fov()
-	if (has_fov)
-		AddComponent(/datum/component/clothing_fov_visor, fov_angle)
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/ms13/hood
 	name = "generic ms13 hood"
@@ -35,25 +44,23 @@
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	flags_inv = HIDEHAIR
 	flags_cover = 0
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	max_integrity = 150
-	grid_width = 64
-	grid_height = 64
 	equip_delay_self = 1 SECONDS
 	equip_delay_other = 2 SECONDS
 	var/has_fov = FALSE //Whether this has a grim dark FOV or not
 	var/fov_angle = 60 //What kind of FOV type it has. This should either be 60, 90, 120, or 180
 
-
-/obj/item/clothing/head/ms13/hood/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/hats_inventory.dmi')
-	init_fov()
-
-/obj/item/clothing/head/ms13/hood/proc/init_fov()
-	if (has_fov)
-		AddComponent(/datum/component/clothing_fov_visor, fov_angle)
+TYPEINFO_DEF(/obj/item/clothing/head/hooded/ms13)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = 0,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/hooded/ms13
 	name = "generic ms13 suit hood"
@@ -64,8 +71,18 @@
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	flags_inv = HIDEHAIR
 	flags_cover = 0
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+
+TYPEINFO_DEF(/obj/item/clothing/head/soft/ms13)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = 0,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/soft/ms13
 	name = "generic ms13 flip cap"
@@ -74,12 +91,18 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	grid_width = 32
-	grid_height = 64
 
-/obj/item/clothing/head/soft/ms13/Initialize()
-	. = ..()
-	AddElement(/datum/element/world_icon, null, icon, 'mojave/icons/objects/clothing/clothing_inventory/hats_inventory.dmi')
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = 0,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/tall
 	worn_icon = 'mojave/icons/mob/clothing/32x64.dmi'
@@ -87,6 +110,18 @@
 	worn_y_dimension = 32
 
 // Helmets //
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/assaultron)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/assaultron
 	name = "assaultron helmet"
@@ -100,14 +135,24 @@
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/flight)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/flight
 	name = "brown flight helmet"
 	desc = "A good looking brown pre-war flight helmet in decent condition."
 	icon_state = "flightbrown"
 	inhand_icon_state = "combathelmet_mk2"
 	max_integrity = 260
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -123,6 +168,18 @@
 	desc = "A red and white pre-war flight helmet. All it's missing is some blue."
 	icon_state = "flightred"
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/bladed)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/bladed
 	name = "bladed helmet"
 	desc = "A menancing metal helmet, adorned with two huge blades on the side."
@@ -132,6 +189,18 @@
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/junk)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/junk
 	name = "junk helmet"
 	desc = "An intimidating helmet crudely made from metal scrap."
@@ -140,6 +209,18 @@
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/skull)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/skull
 	name = "radstag skull helmet"
@@ -156,18 +237,40 @@
 	desc = "The skull of a brahmiluff with some padding to be used as a makeshift helmet."
 	icon_state = "muffalo"
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/eyebot)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/eyebot
 	name = "eyebot helmet"
 	desc = "A hollowed out eyebot drone converted into a metal helmet."
 	icon_state = "eyebot"
 	inhand_icon_state = "weldingoff"
 	max_integrity = 325
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/medical)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/medical
 	name = "medical helmet"
@@ -175,11 +278,21 @@
 	icon_state = "medical"
 	inhand_icon_state = "combathelmet_mk2"
 	max_integrity = 260
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	flags_inv = HIDEEARS|HIDEHAIR
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/batter)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/batter
 	name = "batters helmet"
@@ -200,6 +313,18 @@
 	desc = "A blue pre-war baseball batters helmet, helps protect your noggin a little."
 	icon_state = "batterblue"
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/hardhat)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/hardhat
 	name = "hardhat"
 	desc = "A blue pre-war construction hat."
@@ -215,7 +340,6 @@
 	icon_state = "hardhat0_mining" //holy fuck this code is garbage
 	hat_type = "mining"
 	light_power = 0.75
-	light_range = 3.75
 	icon = 'mojave/icons/objects/clothing/clothing_world/hats_world.dmi'
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
@@ -224,6 +348,18 @@
 	max_integrity = 260
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/welding/ms13)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS3_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/welding/ms13
 	name = "welding helmet"
@@ -237,10 +373,20 @@
 	resistance_flags = FIRE_PROOF
 	max_integrity = 325
 	w_class = WEIGHT_CLASS_NORMAL
-	grid_width = 64
-	grid_height = 64
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/army)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/army
 	name = "army helmet"
@@ -259,11 +405,35 @@
 
 // Hoods //
 
+TYPEINFO_DEF(/obj/item/clothing/head/hooded/ms13/hubologist)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/hooded/ms13/hubologist
 	name = "hubologist hood"
 	desc = "A mysterious hood worn by Hubologists."
 	icon_state = "hubologist"
 	inhand_icon_state = "hubologist"
+
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/banded)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/ms13/hood/banded
 	name = "banded helmet"
@@ -276,6 +446,18 @@
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/plated)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/ms13/hood/plated
 	name = "plated cowl"
 	desc = "A cloth cowl with plated metal reinforcements."
@@ -286,12 +468,36 @@
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/cowl)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/ms13/hood/cowl
 	name = "cowl"
 	desc = "A plain cloth cowl."
 	icon_state = "cowl"
 	inhand_icon_state = "winterglovesbrown"
 	flags_inv = HIDEEARS|HIDEHAIR
+
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/inquisitor)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/ms13/hood/inquisitor
 	name = "inquisitors helm"
@@ -304,6 +510,18 @@
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/sack)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/ms13/hood/sack
 	name = "sack hood"
 	desc = "A simple sack with some holes poked in it, for concealing your identity as you pillage the wasteland."
@@ -311,12 +529,36 @@
 	inhand_icon_state = "tribalrag"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/sack/padded)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/ms13/hood/sack/padded
 	name = "padded sack hood"
 	desc = "A sack hood with the addition of some padding and leather strips for extra protection."
 	icon_state = "sackstrap"
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/sack/metal)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/ms13/hood/sack/metal
 	name = "reinforced sack hood"
@@ -333,6 +575,18 @@
 	inhand_icon_state = "winterglovesblack"
 	flags_inv = HIDEEARS|HIDEHAIR
 
+TYPEINFO_DEF(/obj/item/clothing/head/ms13/hood/hunter)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/ms13/hood/hunter
 	name = "hunter hood"
 	desc = "A tactical hunting hood with some additional padding and a leather face guard. Commonly used by radstag hunters."
@@ -345,11 +599,35 @@
 
 // Brimmed Hats //
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/sheriff)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/sheriff
 	name = "sheriff's hat"
 	desc = "A dark, wide brimmed, padded hat normally used by sheriffs of the wastes."
 	icon_state = "sheriffhat"
 	inhand_icon_state = "sheriffhat"
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/fedora)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/fedora
 	name = "gray fedora"
@@ -377,11 +655,35 @@
 	icon_state = "treasure"
 	inhand_icon_state = "sheriffhat"
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/bowler)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/bowler
 	name = "bowler hat"
 	desc = "A classy gentleman's bowler hat."
 	icon_state = "bowler"
 	inhand_icon_state = "sheriffhat"
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/cowboy
 	name = "cowboy hat"
@@ -394,6 +696,18 @@
 	desc = "A black cowboy hat. Perhaps worn by desperados of old."
 	icon_state = "cowboyblack"
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/prospector)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = 0,
+	SLASH = CLASS1_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/prospector
 	name = "prospector's hat"
 	desc = "A hat worn commonly by post-war prospectors. Has some added padding for braving the dangers of the wastes."
@@ -403,6 +717,18 @@
 /obj/item/clothing/head/helmet/ms13/prospector/brown
 	icon_state = "prospectorbrown"
 	inhand_icon_state = "sheriffhat"
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/militia)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/militia
 	name = "militia hat"
@@ -441,10 +767,34 @@
 	icon_state = "tophat"
 	inhand_icon_state = "that"
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall/tophat/slick)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/tall/tophat/slick
 	name = "\improper Slickback top hat"
 	desc = "A stylish, lightly padded top hat almost exclusively seen on the heads of respected members of the Slickback gang."
 	icon_state = "slickback_tophat"
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tall/cone)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/tall/cone
 	desc = "A once bright warning device, now a staple of wasteland fashion."
@@ -459,7 +809,6 @@
 	attack_verb_simple = list("warn", "caution", "smash")
 	resistance_flags = NONE
 	flags_inv = HIDEHAIR
-	dynamic_hair_suffix = ""
 
 /obj/item/clothing/head/helmet/ms13/tall/cone/attack_self(mob/user)
 	weldingvisortoggle(user)
@@ -599,18 +948,43 @@
 
 // Wasteland helmets //
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/metal)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS3_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/metal
 	name = "heavy metal helmet"
 	desc = "A sturdy and robust metal helmet offering excellent conventional protection."
 	icon_state = "metalhelmet"
 	inhand_icon_state = "metalhelmet"
 	max_integrity = 375
+	slowdown = 0.2
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
 // Raider Helmets //
 
 // Combat Helmets //
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/combat)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS3_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/combat
 	name = "combat helmet"
@@ -623,14 +997,39 @@
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/combat/advanced)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS4_PUNCTURE,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS4_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/combat/advanced
 	name = "advanced combat helmet"
 	desc = "An advanced combat helmet offering even better protection."
 	icon_state = "adv_combathelm"
 	inhand_icon_state = "combathelmet_mk2"
 	max_integrity = 375
+	slowdown = 0.1
 
 // Special Helmets //
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/tesla)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS7_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/tesla
 	name = "tesla helmet"
@@ -638,10 +1037,23 @@
 	icon_state = "tesla_helmet"
 	inhand_icon_state = "tesla_helmet"
 	max_integrity = 375
+	slowdown = 0.1
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/eliteriot)
+	default_armor = list(
+	BLUNT = CLASS7_BLUNT,
+	PUNCTURE = CLASS4_PUNCTURE,
+	SLASH = CLASS8_SLASH,
+	LASER = CLASS3_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/eliteriot
 	name = "elite riot helmet"
@@ -649,12 +1061,23 @@
 	icon_state = "riotgearhelmet"
 	inhand_icon_state = "riotgearhelmet"
 	max_integrity = 375
+	slowdown = 0.1
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/vaulthelmet)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/vaulthelmet
 	name = "vault security helmet"
@@ -673,8 +1096,18 @@
 	icon_state = "bountyhunter"
 	inhand_icon_state = "riotgearhelmet"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/enforcer)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/enforcer
 	name = "padded black hat and mask"
@@ -683,15 +1116,38 @@
 	max_integrity = 200
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/metal/baron)
+	default_armor = list(
+	BLUNT = CLASS5_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/metal/baron
 	name = "\improper Baron's Visage"
 	desc = "A cold, insidious metal mask belonging to a very particular and very feared man."
 	icon_state = "baron"
 	max_integrity = 325
+	slowdown = 0.15
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/snowguard)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/snowguard
 	name = "visored helmet"
@@ -699,6 +1155,7 @@
 	icon_state = "snow_guard"
 	inhand_icon_state = "combathelmet"
 	max_integrity = 325
+	slowdown = 0.15
 	flags_inv = HIDEEARS|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 1.5 SECONDS
@@ -706,39 +1163,50 @@
 
 // Enviro Helmets //
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/firehood)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS4_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/firehood
 	name = "fireproof hood"
 	desc = "The hood to a near completely fire resistent suit. Pretty heavy, but not so bad once it's on."
 	icon_state = "firehood"
 	inhand_icon_state = "firehood"
 	max_integrity = 260
+	slowdown = 0.1
 	heat_protection = HEAD
 	resistance_flags = FIRE_PROOF
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 
-/obj/item/clothing/head/helmet/ms13/firehood/equipped(mob/living/user, slot)
-	..()
-	if(slot_flags & slot)
-		var/mob/living/carbon/human/H = user
-		if(istype(H.wear_suit, /obj/item/clothing/suit/armor/ms13/firesuit))
-			ADD_TRAIT(user, TRAIT_NON_FLAMMABLE, "fire_suit")
-
-/obj/item/clothing/head/helmet/ms13/firehood/dropped(mob/living/user)
-	..()
-	if(istype(user))
-		REMOVE_TRAIT(user, TRAIT_NON_FLAMMABLE, "fire_suit")
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/radiationhood)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/radiationhood
 	name = "radiation suit hood"
 	desc = "A hood to go along with your radiation suit. It's got a broken geiger counter mounted near the filter."
 	icon_state = "radsuithood"
 	inhand_icon_state = "radsuithood"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	slowdown = 0.05
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
@@ -747,14 +1215,37 @@
 	. = ..()
 	AddElement(/datum/element/radiation_protected_clothing)
 
+TYPEINFO_DEF(/obj/item/clothing/head/hooded/ms13/hazmat)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/hooded/ms13/hazmat
 	name = "hazmat hood"
 	desc = "The hood to a hazmat suit. You'll want to keep this close if you want the suit to actually do anything for you."
 	icon_state = "hazmathood"
 	inhand_icon_state = "hazmat"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
+	slowdown = 0.05
 	resistance_flags = ACID_PROOF
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/space/ms13)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS4_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/space/ms13
 	name = "space helmet"
@@ -763,11 +1254,22 @@
 	worn_icon = 'mojave/icons/mob/clothing/head.dmi'
 	icon_state = "spacehelmet"
 	inhand_icon_state = "spacehelmet"
+	slowdown = 0.15
 	flags_inv = HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 
 // NCR Helmets //
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/ncr
 	name = "\improper NCR infantry helmet"
@@ -779,10 +1281,23 @@
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/mp)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/ncr/mp
 	name = "\improper NCR military police helmet"
 	desc = "An NCR helmet issued to military police stationed at NCR military installations or frontier towns."
 	icon_state = "ncr_mp_helmet"
+	slowdown = 0.05
 
 /obj/item/clothing/head/helmet/ms13/ncr/medic
 	name = "\improper NCR medic helmet"
@@ -804,10 +1319,22 @@
 	visor_flags_inv = HIDEEARS|HIDEEYES
 	visor_flags_cover = HEADCOVERSEYES | PEPPERPROOF
 	resistance_flags = FIRE_PROOF
-	clothing_flags = SNUG_FIT | PLASMAMAN_HELMET_EXEMPT
+	clothing_flags = SNUG_FIT
 
 /obj/item/clothing/head/helmet/ms13/ncr/engineer/attack_self(mob/user)
 	weldingvisortoggle(user)
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/goggles)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/ncr/goggles
 	name = "\improper NCR goggles helmet"
@@ -817,7 +1344,20 @@
 	can_toggle = 1
 	toggle_message = "You pull the goggles down on"
 	alt_toggle_message = "You push the goggles up on"
+	slowdown = 0.05
 	actions_types = list(/datum/action/item_action/toggle)
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ncr/beret)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/ncr/beret
 	name = "\improper NCR beret"
@@ -840,6 +1380,18 @@
 
 // Legion Helmets //
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/vexillarius)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/legion/vexillarius
 	name = "vexillarius headdress"
 	desc = "A padded headdress used by only the loudest message relayers and heartiest morale boosters of the Legion"
@@ -848,6 +1400,18 @@
 	max_integrity = 200
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/recruit)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/legion/recruit
 	name = "\improper Legion recruit helmet"
@@ -859,6 +1423,18 @@
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/prime)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/legion/prime
 	name = "\improper Legion prime helmet"
 	desc = "A red helmet used by Prime Legionaries. Has additional padding for added protection."
@@ -869,15 +1445,40 @@
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
+TYPEINFO_DEF/obj/item/clothing/head/helmet/ms13/legion/veteran)
+	default_armor = list(
+	BLUNT = CLASS5_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/legion/veteran
 	name = "\improper Legion veteran helmet"
 	desc = "A red helmet used by Veteran Legionaries with an added face guard. Only the best protection for the Legion's finest."
 	icon_state = "leg_vet"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 300
+	slowdown = 0.1
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/decanus)
+	default_armor = list(
+	BLUNT = CLASS5_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/legion/decanus
 	name = "\improper Legion recruit decanus helmet"
@@ -885,6 +1486,7 @@
 	icon_state = "leg_decr"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 300
+	slowdown = 0.1
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 	equip_delay_self = 2 SECONDS
@@ -895,10 +1497,35 @@
 	desc = "A feathery, quite protective helmet used by prime decanii of the Legion. It's got black feathers to signify a moderate rank."
 	icon_state = "leg_decp"
 
+TYPEINFO_DEF()
+	default_armor = list(
+	BLUNT = CLASS6_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS3_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/legion/decanus/veteran
 	name = "\improper Legion veteran decanus helmet"
 	desc = "A feathery helmet used by only the most experienced decanii of the Legion. It's got striped feathers to signify superior rank."
 	icon_state = "leg_decv"
+	slowdown = 0.15
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/centurion)
+	default_armor = list(
+	BLUNT = CLASS7_BLUNT,
+	PUNCTURE = CLASS4_PUNCTURE,
+	SLASH = CLASS7_SLASH,
+	LASER = CLASS3_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/legion/centurion
 	name = "\improper Legion centurion helmet"
@@ -906,17 +1533,43 @@
 	icon_state = "leg_cent"
 	inhand_icon_state = "owl_mask"
 	max_integrity = 375
+	slowdown = 0.2
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 	worn_y_offset = 16
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/praetorian)
+	default_armor = list(
+	BLUNT = CLASS7_BLUNT,
+	PUNCTURE = CLASS4_PUNCTURE,
+	SLASH = CLASS8_SLASH,
+	LASER = CLASS4_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/legion/praetorian
 	name = "\improper Legion praetorian helmet"
 	desc = "A skillfuly forged helmet for a skill endowed man. Only the highest of guards may wear this."
 	icon_state = "leg_prae"
 	inhand_icon_state = "owl_mask"
+	slowdown = 0.15
 	flags_inv = HIDEEARS|HIDEHAIR
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/scout)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/legion/scout
 	name = "\improper Legion scout bandana"
@@ -924,6 +1577,18 @@
 	icon_state = "leg_scout"
 	inhand_icon_state = "owl_mask"
 	flags_inv = HIDEEARS
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/legion/explorer)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/legion/explorer
 	name = "\improper Legion explorer hood"
@@ -936,6 +1601,18 @@
 
 // Brotherhood Helmets //
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/initiate)
+	default_armor = list(
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS3_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/initiate
 	name = "\improper Brotherhood kevlar helmet"
 	desc = "A light kevlar helmet in use by the Brotherhood of Steel, usually seen accompanying the kevlar vests of the Initiates."
@@ -945,12 +1622,25 @@
 	equip_delay_self = 1.5 SECONDS
 	equip_delay_other = 3 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/combat/bos)
+	default_armor = list(
+	BLUNT = CLASS5_BLUNT,
+	PUNCTURE = CLASS5_PUNCTURE,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS4_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/combat/bos
 	name = "\improper Brotherhood combat helmet"
 	desc = "A hard, custom built helmet issued to Brotherhood troops."
 	icon_state = "bos_helmet"
 	inhand_icon_state = "bos_helmet"
 	max_integrity = 325
+	slowdown = 0.05
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -964,6 +1654,18 @@
 	equip_delay_self = 2 SECONDS
 	equip_delay_other = 4 SECONDS
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy/ranger)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/cowboy/ranger
 	name = "\improper Desert Ranger hat"
 	desc = "A sylish hat, often worn by Desert Rangers. Made with some thick leather and small internal layer of kevlar."
@@ -973,12 +1675,22 @@
 
 // Drylander Hoods //
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/drylander)
+	default_armor = list(
+	BLUNT = CLASS1_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS2_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/drylander
 	name = "base type drylander hood"
 	desc = "You shouldn't be seeing this."
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 	flags_cover = HEADCOVERSEYES // Built in protection from the dust. yippie.
 
 /obj/item/clothing/head/helmet/ms13/drylander/hunter
@@ -987,6 +1699,18 @@
 	icon_state = "hunter_dry"
 	worn_icon_state = "hunter_dry"
 	max_integrity = 200
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/drylander/headtaker)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS4_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/drylander/headtaker
 	name = "\improper Drylander Headtaker hood"
@@ -1030,6 +1754,18 @@
 
 // Mon City Helmets //
 
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/ushanka/mon_city)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/head/helmet/ms13/ushanka/mon_city
 	name = "padded ushanka hat"
 	desc = "Thick, padded, and warm ushanka hat. Almost as good at keeping you alive as it is at keeping you warm."
@@ -1040,8 +1776,6 @@
 	name = "lightly padded ushanka hat"
 	desc = "A warm ushanka hat with some light padding for protection."
 	icon_state = "mon_basicushanka"
-	has_fov = FALSE
-	fov_angle = null
 
 /obj/item/clothing/head/helmet/ms13/cowboy/mon_city
 	name = "padded wide brim winter hat"
@@ -1053,19 +1787,27 @@
 	desc = "A heavy duty gas mask that doubles as a protective helmet. Likely used by the pre-war military for operations in hazardous areas."
 	icon_state = "mon_captain"
 	inhand_icon_state = "metalhelmet"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-	fov_angle = 120 //So basically just a combat helmet with a worse FOV
+	slowdown = 0.15
 
 /obj/item/clothing/head/hooded/ms13/mon_city
 	name = "padded green winter hood"
 	desc = "The hood to a green winter hoodie. Has some light protective padding on the inside."
 	icon_state = "mon_marksmanhood"
 	inhand_icon_state = "fedora"
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
 
 // goldman Hats //
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy/goldman)
+	default_armor = list(
+	BLUNT = CLASS2_BLUNT,
+	PUNCTURE = CLASS1_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS1_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/cowboy/goldman
 	name = "padded wide brim brown hat"
@@ -1076,6 +1818,18 @@
 	name = "padded wide brim fedora"
 	desc = "A wide brim fedora with the addition of some light protective padding."
 	icon_state = "goldman_vet"
+
+TYPEINFO_DEF(/obj/item/clothing/head/helmet/ms13/cowboy/goldman/leader)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
 
 /obj/item/clothing/head/helmet/ms13/cowboy/goldman/leader
 	name = "\improper goldman Ringleader's hat"

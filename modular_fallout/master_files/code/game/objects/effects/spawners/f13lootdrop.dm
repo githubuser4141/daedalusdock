@@ -16,6 +16,8 @@
 	----------------ARMOR SPAWNERS------------------
 	------------------------------------------------ */
 
+/* Old SS13 Costumes & Bundles
+
 /obj/effect/spawner/lootdrop/f13/armor
 	name = "armor spawners - DO NOT USE THIS"
 	icon_state = "armor_loot"
@@ -75,12 +77,16 @@
 				/obj/item/clothing/head/that
 				)
 
+*/
+
 /obj/effect/spawner/bundle/f13/benny
 	name = "checkered suit and shoes"
 	items = list(
 				/obj/item/clothing/under/suit/checkered, // It's Benny time!
 				/obj/item/clothing/shoes/laceup
 				)
+
+/*
 
 /obj/effect/spawner/bundle/f13/hoodie
 	name = "hoodie"
@@ -176,21 +182,22 @@
 				/obj/item/clothing/under/costume/pirate,
 				/obj/item/clothing/suit/pirate
 				)
-
+*/
+/* Old Fallout13 Raider Costumes
 
 /obj/effect/spawner/lootdrop/f13/armor/tier1 //TIER 1 ARMOR
 	name = "tier 1 armor"
 	loot = list(
-				/obj/item/clothing/suit/armored/light/leather_jacket,
+				/obj/item/clothing/suit/ms13/ljacket/reinforced,
 				/obj/effect/spawner/bundle/f13/armor/supafly,
 				/obj/effect/spawner/bundle/f13/armor/sadist,
 				/obj/effect/spawner/bundle/f13/armor/blastmaster,
 				/obj/effect/spawner/bundle/f13/armor/yankee,
 				/obj/effect/spawner/bundle/f13/armor/badlands,
 				/obj/effect/spawner/bundle/f13/armor/psycho,
-				/obj/item/clothing/suit/f13/duster,
+				/obj/item/clothing/suit/ms13/trench/leather,
 				/obj/effect/spawner/bundle/f13/armor/combatduster,
-				/obj/item/clothing/suit/armor/f13/medium/iconoclast
+				/obj/item/clothing/suit/armor/ms13/kit/reinf
 	)
 
 /obj/effect/spawner/bundle/f13/armor/supafly
@@ -228,6 +235,13 @@
 				/obj/item/clothing/head/helmet/f13/fiend
 				)
 
+/obj/effect/spawner/bundle/f13/armor/psycho
+	name = "knight armor spawner"
+	items = list(
+				/obj/item/clothing/suit/armor/f13/medium/painspike,
+				/obj/item/clothing/head/helmet/f13/raider/psychotic
+				)
+*/
 /obj/effect/spawner/bundle/f13/armor/combatduster
 	name = "combat duster raider armor spawner"
 	items = list(
@@ -235,64 +249,34 @@
 				/obj/item/clothing/head/helmet/f13/raidercombathelmet
 				)
 
-/obj/effect/spawner/bundle/f13/armor/psycho
-	name = "knight armor spawner"
-	items = list(
-				/obj/item/clothing/suit/armor/f13/medium/painspike,
-				/obj/item/clothing/head/helmet/f13/raider/psychotic
-				)
-
-/obj/effect/spawner/lootdrop/f13/armor/tier2 //TIER 2 ARMOR
-	name = "tier 2 armor"
-	loot = list(
-				/obj/effect/spawner/bundle/f13/armor/knight,
-				/obj/effect/spawner/bundle/f13/armor/metal,
-				/obj/item/clothing/suit/armored/light/leather,
-				/obj/item/clothing/suit/armored/light/leathermk2
-				)
-
+/*
 /obj/effect/spawner/bundle/f13/armor/knight
 	name = "knight armor spawner"
 	items = list(
 				/obj/item/clothing/suit/armored/heavy/metal,
 				/obj/item/clothing/head/helmet/knight/f13/metal
 				)
+*/
+
+#warn // This one is actually flavorful - medieval knight's costume. Requires sprite.
 
 /obj/effect/spawner/bundle/f13/armor/metal
 	name = "metal armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armored/heavy/metal,
-				/obj/item/clothing/head/helmet/f13/metalmask
-				)
-
-/obj/effect/spawner/lootdrop/f13/armor/tier3 //TIER 3 ARMOR
-	name = "tier 3 armor"
-	loot = list(
-				/obj/effect/spawner/bundle/f13/armor/metal/reinforced,
-				/obj/effect/spawner/bundle/f13/armor/swat,
-				/obj/effect/spawner/bundle/f13/armor/combat,
-				/obj/effect/spawner/bundle/f13/armor/bulletproof,
-				/obj/effect/spawner/bundle/f13/armor/combat/dark,
-				/obj/effect/spawner/bundle/f13/armor/sulphite
+				/obj/item/clothing/suit/armor/ms13/metal,
+				/obj/item/clothing/head/helmet/ms13/eyebot
 				)
 
 /obj/effect/spawner/bundle/f13/armor/metal/reinforced
 	items = list(
-				/obj/item/clothing/suit/armored/heavy/recycled_power,
-				/obj/item/clothing/head/helmet/f13/metalmask/mk2
+				/obj/item/clothing/suit/armor/ms13/metal/reinforced,
+				/obj/item/clothing/head/helmet/ms13/bladed
 				)
 
 /obj/effect/spawner/bundle/f13/armor/swat
 	items = list(
-				/obj/item/clothing/head/helmet/f13/combat/swat,
-				/obj/item/clothing/suit/f13/medium/combat/swat
-				)
-
-/obj/effect/spawner/bundle/f13/armor/combat
-	name = "combat armor spawner"
-	items = list(
-				/obj/item/clothing/suit/armor/f13/combat,
-				/obj/item/clothing/head/helmet/f13/combat
+				/obj/item/clothing/head/helmet/ms13/eliteriot,
+				/obj/item/clothing/suit/armor/ms13/vest/military
 				)
 
 /obj/effect/spawner/bundle/f13/armor/bulletproof
@@ -303,68 +287,32 @@
 				)
 
 /obj/effect/spawner/bundle/f13/armor/combat/dark
-	name = "dark combat armor spawner"
+	name = "combat armor spawner"
 	items = list(
-				/obj/item/clothing/suit/f13/medium/combat/dark,
-				/obj/item/clothing/head/helmet/f13/combat/dark
+				/obj/item/clothing/suit/armor/ms13/combat,
+				/obj/item/clothing/head/helmet/ms13/combat
 				)
 
 /obj/effect/spawner/bundle/f13/armor/sulphite
-	name = "sulphite raider armor spawner"
+	name = "heavy metal armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armored/heavy/sulphite,
-				/obj/item/clothing/head/helmet/f13/sulphitehelm
-				)
-
-/obj/effect/spawner/lootdrop/f13/armor/tier4 //TIER 4 ARMOR
-	name = "tier 4 armor"
-	loot = list(
-				/obj/effect/spawner/bundle/f13/armor/riot,
-				/obj/effect/spawner/bundle/f13/armor/combat/mk2,
-				/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark
+				/obj/item/clothing/suit/armor/ms13/metal/heavy,
+				/obj/item/clothing/head/helmet/ms13/metal
 				)
 
 /obj/effect/spawner/bundle/f13/armor/riot
-	name = "riot armor spawner"
+	name = "raider armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armored/heavy/riotpolice,
-				/obj/item/clothing/head/helmet/f13/rangerbroken
+				/obj/item/clothing/suit/ms13/raider/kevlar,
+				/obj/item/clothing/head/ms13/hood/sack/metal
 				)
 
 /obj/effect/spawner/bundle/f13/armor/combat/mk2
 	name = "MkII combat armor spawner"
 	items = list(
-				/obj/item/clothing/suit/armor/f13/combat/mk2,
-				/obj/item/clothing/head/helmet/f13/combat/mk2
+				/obj/item/clothing/suit/armor/ms13/combat/advanced,
+				/obj/item/clothing/head/helmet/ms13/combat/advanced
 				)
-
-/obj/effect/spawner/bundle/f13/armor/combat/mk2/dark
-	name = "dark MkII combat armor spawner"
-	items = list(
-				/obj/item/clothing/suit/f13/medium/combat/mk2/dark,
-				/obj/item/clothing/head/helmet/f13/combat/mk2/dark
-				)
-
-/obj/effect/spawner/lootdrop/f13/armor/random
-	name = "random armor loot"
-	lootcount = 1
-
-	loot = list(
-			/obj/effect/spawner/lootdrop/f13/armor/tier1 = 90,
-			/obj/effect/spawner/lootdrop/f13/armor/tier2 = 9,
-			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 1,
-			)
-
-/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/mid
-	name = "high tier random armor loot"
-	lootcount = 1
-
-	loot = list(
-			/obj/effect/spawner/lootdrop/f13/armor/tier2 = 70,
-			/obj/effect/spawner/lootdrop/f13/armor/tier3 = 35,
-			/obj/effect/spawner/lootdrop/f13/armor/tier4 = 10
-			///obj/item/traumapack = 1 //one ring to rule them all
-			)
 
 /*	------------------------------------------------
 	---------------MEDICAL SPAWNERS-----------------

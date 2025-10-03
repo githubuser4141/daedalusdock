@@ -47,8 +47,6 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
-	grid_width = 96
-	grid_height = 96
 	equip_delay_self = 2.5 SECONDS
 	equip_delay_other = 4 SECONDS
 
@@ -64,8 +62,6 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	hoodtype = /obj/item/clothing/head/hooded/ms13
-	grid_width = 64
-	grid_height = 96
 
 /obj/item/clothing/suit/hooded/ms13/Initialize()
 	. = ..()
@@ -204,15 +200,15 @@ TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/metal)
 	icon_state = "metalarmor"
 	inhand_icon_state = "metalarmor"
 	body_parts_covered = CHEST|LEGS|GROIN|ARM_LEFT
-	slowdown = 0.5
+	slowdown = 0.3
 	max_integrity = 500
 	equip_delay_self = 4 SECONDS
 	equip_delay_other = 6 SECONDS
 
 TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/metal/reinforced)
 	default_armor = list(
-	BLUNT = CLASS5_BLUNT,
-	PUNCTURE = CLASS4_PUNCTURE,
+	BLUNT = CLASS4_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
 	SLASH = CLASS6_SLASH,
 	LASER = CLASS3_LASER,
 	ENERGY = 0,
@@ -227,6 +223,7 @@ TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/metal/reinforced)
 	icon_state = "reinforcedmetal"
 	inhand_icon_state = "reinforcedmetal"
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
+	slowdown = 0.4
 	max_integrity = 575
 
 TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/metal/heavy)
@@ -247,14 +244,15 @@ TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/metal/heavy)
 	icon_state = "heavymetal"
 	inhand_icon_state = "heavymetal"
 	body_parts_covered = CHEST|LEGS|GROIN|ARMS
+	slowdown = 0.5
 	max_integrity = 575
 
 TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/vaultvan)
 	default_armor = list(
 	BLUNT = CLASS3_BLUNT,
 	PUNCTURE = CLASS3_PUNCTURE,
-	SLASH = CLASS4_SLASH,
-	LASER = CLASS2_LASER,
+	SLASH = CLASS5_SLASH,
+	LASER = CLASS4_LASER,
 	ENERGY = 0,
 	BOMB = 0,
 	BIO = 0,
@@ -450,9 +448,9 @@ TYPEINFO_DEF(/obj/item/clothing/suit/ms13/raider/plated)
 
 TYPEINFO_DEF(/obj/item/clothing/suit/ms13/raider/kevlar)
 	default_armor = list(
-	BLUNT = CLASS2_BLUNT,
-	PUNCTURE = CLASS3_PUNCTURE,
-	SLASH = CLASS3_SLASH,
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS2_PUNCTURE,
+	SLASH = CLASS4_SLASH,
 	LASER = CLASS2_LASER,
 	ENERGY = 0,
 	BOMB = 0,
@@ -648,18 +646,7 @@ TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/firesuit)
 	resistance_flags = FIRE_PROOF
 	equip_delay_self = 3.5 SECONDS
 	equip_delay_other = 5 SECONDS
-
-/obj/item/clothing/suit/armor/ms13/firesuit/equipped(mob/living/carbon/human/user, slot)
-	..()
-	if(slot_flags & slot)
-		var/mob/living/carbon/human/H = user
-		if(istype(H.head, /obj/item/clothing/head/helmet/ms13/firehood))
-			ADD_TRAIT(user, TRAIT_NON_FLAMMABLE, "fire_suit")
-
-/obj/item/clothing/suit/armor/ms13/firesuit/dropped(mob/living/carbon/human/user)
-	..()
-	if(istype(user))
-		REMOVE_TRAIT(user, TRAIT_NON_FLAMMABLE, "fire_suit")
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 
 TYPEINFO_DEF(/obj/item/clothing/suit/armor/ms13/radsuit)
 	default_armor = list(

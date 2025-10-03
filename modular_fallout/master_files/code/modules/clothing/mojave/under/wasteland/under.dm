@@ -9,8 +9,6 @@
 	worn_icon = 'mojave/icons/mob/clothing/uniform.dmi'
 	inhand_icon_state = null
 	w_class = WEIGHT_CLASS_NORMAL
-	grid_width = 64
-	grid_height = 96
 	///Icon file for left hand inhand overlays
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	///Icon file for right inhand overlays
@@ -70,8 +68,6 @@
 	inhand_icon_state = "tribalrag"
 	body_parts_covered = LEGS|GROIN
 	max_integrity = 220
-	grid_width = 64
-	grid_height = 64
 
 /obj/item/clothing/under/ms13/wasteland/pants
 	name = "cloth pants"
@@ -80,8 +76,6 @@
 	inhand_icon_state = "tribalrag"
 	body_parts_covered = LEGS|GROIN
 	max_integrity = 220
-	grid_width = 64
-	grid_height = 64
 
 /obj/item/clothing/under/ms13/wasteland/ghoulpants
 	name = "tattered cloth pants"
@@ -91,8 +85,6 @@
 	body_parts_covered = LEGS|GROIN
 	max_integrity = 200
 	limb_integrity = 80
-	grid_width = 64
-	grid_height = 64
 
 /obj/item/clothing/under/ms13/wasteland/warboypants
 	name = "leather pants"
@@ -101,8 +93,6 @@
 	inhand_icon_state = "petcollar"
 	body_parts_covered = LEGS|GROIN
 	max_integrity = 220
-	grid_width = 64
-	grid_height = 64
 
 // wasteland //
 

@@ -5079,6 +5079,7 @@
 #include "modular_fallout\master_files\code\modules\objects\objects.dm"
 #include "modular_fallout\master_files\code\modules\objects\items\tools\dr2_tools.dm"
 #include "modular_fallout\master_files\code\modules\power\cell.dm"
+#include "modular_fallout\master_files\code\modules\projectiles\projectile.dm"
 #include "modular_fallout\master_files\code\modules\projectiles\ammunition\ballistic\pistol.dm"
 #include "modular_fallout\master_files\code\modules\projectiles\ammunition\ballistic\revolver.dm"
 #include "modular_fallout\master_files\code\modules\projectiles\ammunition\ballistic\rifle.dm"

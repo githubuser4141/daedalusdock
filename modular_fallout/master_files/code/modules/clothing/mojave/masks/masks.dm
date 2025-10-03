@@ -6,8 +6,6 @@
 	lefthand_file = 'mojave/icons/mob/inhands/clothing_lefthand.dmi'
 	righthand_file = 'mojave/icons/mob/inhands/clothing_righthand.dmi'
 	w_class = WEIGHT_CLASS_TINY
-	grid_width = 32
-	grid_height = 32
 	equip_delay_self = 0.75 SECONDS
 	equip_delay_other = 2 SECONDS
 
@@ -177,8 +175,6 @@
 	equip_delay_other = 3 SECONDS
 	w_class = WEIGHT_CLASS_NORMAL
 	clothing_traits = list(TRAIT_WEARING_GAS_MASK)
-	grid_width = 64
-	grid_height = 64
 	slowdown = 0.05 // Will they even notice..?
 
 /obj/item/clothing/mask/gas/ms13/Initialize()
