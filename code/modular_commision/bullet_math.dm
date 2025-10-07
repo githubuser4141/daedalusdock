@@ -245,7 +245,10 @@ TYPEINFO_DEF(/obj/projectile)
 		projectile.bIntegrity = bIntegrity
 		projectile.speed = speed
 		projectile.firer = src
-		projectile.fired_from = lastHit
+		if(ismob(lastHit))
+			projectile.fired_from = src.fired_from
+		else
+			projectile.fired_from = lastHit
 		projectile.impacted = list(lastHit)
 		projectile.preparePixelProjectile(get_turf_in_angle(fragmentAngle, lastHit, 2), src)
 		projectile.adjustSpeed(-BULLET_FRAGMENT_SPEEDMALUS)
