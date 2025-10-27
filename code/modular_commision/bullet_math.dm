@@ -233,6 +233,11 @@ GLOBAL_LIST_INIT(bulletStandardFragmentAngles, list(
 TYPEINFO_DEF(/obj/projectile)
 	default_armor = list(BLUNT = 0, PUNCTURE = 50, SLASH = 0, LASER = 0, ENERGY = 0 , BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
+TYPEINFO_DEF(/mob)
+	default_armor = list(BLUNT = 3, PUNCTURE = 1, SLASH = 2, LASER = 3, ENERGY = 2 , BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+
+TYPEINFO_DEF(/atom)
+	default_armor = list(BLUNT = 5, PUNCTURE = 2, SLASH = 3, LASER = 5, ENERGY = 3 , BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
 /obj/projectile
 	var/speedLossPerTile = 0.1

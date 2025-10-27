@@ -245,8 +245,8 @@
 /obj/effect/spawner/bundle/f13/armor/combatduster
 	name = "combat duster raider armor spawner"
 	items = list(
-				/obj/item/clothing/suit/f13/medium/duster_renegade,
-				/obj/item/clothing/head/helmet/f13/raidercombathelmet
+				/obj/item/clothing/suit/ms13/trench/black/armored/enforcer,
+				/obj/item/clothing/head/helmet/ms13/army
 				)
 
 /*

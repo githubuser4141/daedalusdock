@@ -306,6 +306,18 @@
 	equip_delay_other = 5 SECONDS
 	pocket_storage_component_path = null
 
+TYPEINFO_DEF(/obj/item/clothing/suit/ms13/trench/black/armored)
+	default_armor = list(
+	BLUNT = CLASS3_BLUNT,
+	PUNCTURE = CLASS3_PUNCTURE,
+	SLASH = CLASS3_SLASH,
+	LASER = CLASS2_LASER,
+	ENERGY = 0,
+	BOMB = 0,
+	BIO = 0,
+	FIRE = 25,
+	ACID = 25)
+
 /obj/item/clothing/suit/ms13/trench/black/armored
 	name = "armored black trenchcoat"
 	desc = "A heavily armored black trenchcoat that is a near perfect balance between maximum style and maximum protection."

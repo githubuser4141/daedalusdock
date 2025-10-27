@@ -82,9 +82,9 @@
 	storage_type = /datum/storage/backpack/large
 
 /datum/storage/backpack/large
-	max_slots = 100
-	max_total_storage = 42
-	max_w_class = WEIGHT_CLASS_BULKY
+	max_total_storage = 100
+	max_slots = 42
+	max_specific_storage = WEIGHT_CLASS_BULKY
 
 /obj/item/storage/ms13/military_duffel
 	name = "military duffel bag"
@@ -98,9 +98,9 @@
 	storage_type = /datum/storage/backpack/duffel
 
 /datum/storage/backpack/duffel
-	max_slots = 140
-	max_total_storage = 60
-	max_w_class = WEIGHT_CLASS_BULKY
+	max_total_storage = 140
+	max_slots = 60
+	max_specific_storage = WEIGHT_CLASS_BULKY
 
 //HARVESTING SACK
 
@@ -108,14 +108,12 @@
 	name = "harvesting sack"
 	desc = "A crude sack intended for holding plants and seeds. Has some rope tightly attached for attaching on the hip."
 	icon_state = "sack"
-	storage_flags = 0
 	slot_flags = ITEM_SLOT_BELT
-	storage_type = /datum/storage/concrete/ms13/h_bag
 	equip_delay_self = 0.65 SECONDS
 	equip_delay_other = 1.5 SECONDS
-	storage_type = /datum/storage/harvest_sack
+	storage_type = /datum/storage/backpack/harvest_sack
 
-/datum/storage/harvest_sack
-	max_slots = 100
-	max_total_storage = 5
-	max_w_class = WEIGHT_CLASS_SMALL
+/datum/storage/backpack/harvest_sack
+	max_total_storage = 100
+	max_slots = 5
+	max_specific_storage = WEIGHT_CLASS_SMALL

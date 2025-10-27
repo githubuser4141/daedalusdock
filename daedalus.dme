@@ -4964,6 +4964,7 @@
 #include "modular_fallout\master_files\code\datums\pathogens\fev.dm"
 #include "modular_fallout\master_files\code\datums\traits\_quirk.dm"
 #include "modular_fallout\master_files\code\datums\traits\good.dm"
+#include "modular_fallout\master_files\code\game\area\areas.dm"
 #include "modular_fallout\master_files\code\game\machinery\machinery.dm"
 #include "modular_fallout\master_files\code\game\machinery\structures\doors\city_gate.dm"
 #include "modular_fallout\master_files\code\game\machinery\structures\doors\unpowered.dm"
