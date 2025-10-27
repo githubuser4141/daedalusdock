@@ -355,7 +355,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/wasteland)
 "fP" = (
-/obj/item/reagent_containers/glass/bowl{
+/obj/item/reagent_containers/cup/glass/bowl{
 	desc = "A dog bowl, used to feed dogs food.";
 	name = "Empty dog bowl";
 	pixel_y = -6
@@ -2254,10 +2254,10 @@
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
 /obj/structure/rack,
 /obj/item/book/granter/crafting_recipe/gunsmithing/gunsmith_three,
-/obj/item/reagent_containers/glass/bottle/blackpowder,
-/obj/item/reagent_containers/glass/bottle/blackpowder,
-/obj/item/reagent_containers/glass/bottle/blackpowder,
-/obj/item/reagent_containers/glass/bottle/blackpowder,
+/obj/item/reagent_containers/cup/glass/bottle/blackpowder,
+/obj/item/reagent_containers/cup/glass/bottle/blackpowder,
+/obj/item/reagent_containers/cup/glass/bottle/blackpowder,
+/obj/item/reagent_containers/cup/glass/bottle/blackpowder,
 /obj/effect/spawner/lootdrop/f13/blueprintMid,
 /obj/effect/spawner/lootdrop/f13/blueprintLowMid,
 /obj/structure/rack,
@@ -2382,7 +2382,7 @@
 "Tn" = (
 /obj/structure/rack/shelf_metal,
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/item/storage/bag/salvage,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/wasteland)

@@ -1217,7 +1217,7 @@
 "df" = (
 /obj/structure/mopbucket,
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -1708,7 +1708,7 @@
 /area/f13/bunker)
 "eB" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/rag,
+/obj/item/reagent_containers/cup/glass/rag,
 /turf/open/floor/plasteel/f13{
 	icon_state = "plating"
 	},
@@ -2447,7 +2447,7 @@
 /area/f13/bunker)
 "gn" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/rag,
+/obj/item/reagent_containers/cup/glass/rag,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},

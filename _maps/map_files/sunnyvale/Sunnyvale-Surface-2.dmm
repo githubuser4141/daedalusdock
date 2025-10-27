@@ -522,7 +522,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/item/reagent_containers/glass/bucket{
+/obj/item/reagent_containers/cup/glass/bucket{
 	desc = "It smells awful.";
 	name = "waste bucket"
 	},
@@ -948,7 +948,7 @@
 /area/f13/legioncamp)
 "aej" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_y = 16
 	},
 /turf/open/floor/wood/f13/old,
@@ -1758,9 +1758,9 @@
 "agM" = (
 /obj/structure/table/wood,
 /obj/item/radio,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker,
 /turf/open/floor/plasteel/f13{
 	icon_state = "yellowdirtysolid"
 	},
@@ -2122,7 +2122,7 @@
 	},
 /obj/structure/janitorialcart,
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -2712,7 +2712,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
 "ajD" = (
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "ajF" = (
@@ -2910,8 +2910,8 @@
 /area/f13/farmhouse)
 "akr" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/saltshaker,
-/obj/item/reagent_containers/food/condiment/peppermill,
+/obj/item/reagent_containers/condiment/saltshaker,
+/obj/item/reagent_containers/condiment/peppermill,
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13,
 /area/f13/farmhouse)
@@ -2964,7 +2964,7 @@
 /area/f13/farmhouse)
 "akC" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
@@ -3468,16 +3468,16 @@
 /area/f13/farmhouse)
 "amp" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/cup/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker/large,
 /obj/item/storage/bag/plants/portaseeder,
 /obj/item/storage/bag/plants/portaseeder,
 /obj/item/storage/bag/plants/portaseeder,
 /obj/item/storage/bag/plants/portaseeder,
 /obj/item/storage/bag/plants/portaseeder,
-/obj/item/reagent_containers/glass/beaker,
-/obj/item/reagent_containers/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker,
+/obj/item/reagent_containers/cup/glass/beaker,
 /obj/item/storage/bag/plants/portaseeder,
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
@@ -3761,7 +3761,7 @@
 /obj/item/clothing/gloves/botanic_leather,
 /obj/item/cultivator,
 /obj/item/storage/bag/plants,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
 "ani" = (
@@ -3830,7 +3830,7 @@
 /area/janitor)
 "anA" = (
 /obj/structure/reagent_dispensers/watertank,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/blue,
 /area/janitor)
@@ -3986,7 +3986,7 @@
 	dir = 4;
 	pixel_x = 12
 	},
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/item/mop,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -4408,8 +4408,8 @@
 /obj/structure/table,
 /obj/item/clothing/head/chefhat,
 /obj/item/clothing/neck/apron/chef,
-/obj/item/reagent_containers/food/condiment/yeast,
-/obj/item/reagent_containers/food/condiment/yeast,
+/obj/item/reagent_containers/condiment/yeast,
+/obj/item/reagent_containers/condiment/yeast,
 /turf/open/floor/plasteel/f13/vault_floor/misc/rarewhite,
 /area/crew_quarters/bar/atrium)
 "apf" = (
@@ -6338,14 +6338,14 @@
 /area/crew_quarters/bar/atrium)
 "aud" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/obj/item/reagent_containers/condiment/pack/ketchup,
 /obj/item/reagent_containers/food/snacks/popcorn,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/crew_quarters/bar/atrium)
 "aue" = (
 /obj/structure/table,
 /obj/item/kitchen/fork,
-/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/obj/item/reagent_containers/condiment/pack/ketchup,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/crew_quarters/bar/atrium)
 "auf" = (
@@ -10671,8 +10671,8 @@
 /obj/structure/table/glass,
 /obj/item/reagent_containers/dropper,
 /obj/item/reagent_containers/dropper,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/cup/glass/beaker/large,
+/obj/item/reagent_containers/cup/glass/beaker/large,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluerustychess"
 	},
@@ -10818,7 +10818,7 @@
 /area/f13/brotherhood)
 "aFf" = (
 /obj/structure/closet/crate/freezer/surplus_limbs,
-/obj/item/reagent_containers/glass/beaker/synthflesh,
+/obj/item/reagent_containers/cup/glass/beaker/synthflesh,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -12530,7 +12530,7 @@
 "aKX" = (
 /obj/structure/rack,
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
@@ -13293,12 +13293,12 @@
 	dir = 8
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aNJ" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
 "aNK" = (
@@ -13344,7 +13344,7 @@
 	},
 /area/f13/den)
 "aNR" = (
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/item/mop,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluerustychess"
@@ -15100,8 +15100,8 @@
 /area/f13/sunny_dale)
 "aTV" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/peppermill,
-/obj/item/reagent_containers/food/condiment/saltshaker,
+/obj/item/reagent_containers/condiment/peppermill,
+/obj/item/reagent_containers/condiment/saltshaker,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/sunny_dale)
 "aTW" = (
@@ -15123,14 +15123,14 @@
 /area/f13/sunny_dale)
 "aTZ" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/condiment/pack/ketchup,
-/obj/item/reagent_containers/food/condiment/pack/hotsauce,
-/obj/item/reagent_containers/food/condiment/pack/hotsauce,
-/obj/item/reagent_containers/food/condiment/pack/hotsauce,
-/obj/item/reagent_containers/food/condiment/pack/hotsauce,
-/obj/item/reagent_containers/food/condiment/pack/ketchup,
-/obj/item/reagent_containers/food/condiment/pack/ketchup,
-/obj/item/reagent_containers/food/condiment/pack/ketchup,
+/obj/item/reagent_containers/condiment/pack/ketchup,
+/obj/item/reagent_containers/condiment/pack/hotsauce,
+/obj/item/reagent_containers/condiment/pack/hotsauce,
+/obj/item/reagent_containers/condiment/pack/hotsauce,
+/obj/item/reagent_containers/condiment/pack/hotsauce,
+/obj/item/reagent_containers/condiment/pack/ketchup,
+/obj/item/reagent_containers/condiment/pack/ketchup,
+/obj/item/reagent_containers/condiment/pack/ketchup,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/sunny_dale)
 "aUa" = (
@@ -15151,9 +15151,9 @@
 /area/f13/sunny_dale)
 "aUe" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/condiment/yeast,
-/obj/item/reagent_containers/food/condiment/mayonnaise,
-/obj/item/reagent_containers/food/condiment/sugar,
+/obj/item/reagent_containers/condiment/yeast,
+/obj/item/reagent_containers/condiment/mayonnaise,
+/obj/item/reagent_containers/condiment/sugar,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/sunny_dale)
 "aUf" = (
@@ -16508,7 +16508,7 @@
 /area/f13/sunny_dale)
 "aYf" = (
 /obj/structure/mopbucket,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/item/mop,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
@@ -16649,7 +16649,7 @@
 	brightness = 3;
 	dir = 8
 	},
-/obj/item/reagent_containers/glass/bucket{
+/obj/item/reagent_containers/cup/glass/bucket{
 	desc = "It smells awful.";
 	name = "waste bucket"
 	},
@@ -18513,7 +18513,7 @@
 /area/f13/sunny_dale)
 "bdK" = (
 /obj/structure/janitorialcart,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/item/mop,
 /turf/open/floor/plasteel/f13{
 	icon_state = "bluefull"
@@ -18662,7 +18662,7 @@
 "bef" = (
 /obj/structure/mopbucket,
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -18670,7 +18670,7 @@
 "beg" = (
 /obj/structure/janitorialcart,
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -18787,7 +18787,7 @@
 /area/f13/desert)
 "beF" = (
 /obj/item/paper_bin,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "beH" = (
@@ -21367,7 +21367,7 @@
 "bnf" = (
 /obj/structure/janitorialcart,
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -22312,13 +22312,13 @@
 /area/f13/sunny_dale)
 "bqE" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/peppermill,
-/obj/item/reagent_containers/food/condiment/saltshaker,
+/obj/item/reagent_containers/condiment/peppermill,
+/obj/item/reagent_containers/condiment/saltshaker,
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bqF" = (
 /obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/wood/f13/old,
 /area/f13/legioncamp)
 "bqG" = (
@@ -22411,8 +22411,8 @@
 /area/f13/raider_mall)
 "bqV" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/peppermill,
-/obj/item/reagent_containers/food/condiment/saltshaker,
+/obj/item/reagent_containers/condiment/peppermill,
+/obj/item/reagent_containers/condiment/saltshaker,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluerustychess"
 	},
@@ -24993,8 +24993,8 @@
 /area/f13/prison)
 "bAD" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/condiment/peppermill,
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/peppermill,
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -3;
 	pixel_y = -3
 	},
@@ -25186,7 +25186,7 @@
 /turf/open/floor/wood/f13/old,
 /area/f13/sunny_dale)
 "bBI" = (
-/obj/item/reagent_containers/glass/bucket{
+/obj/item/reagent_containers/cup/glass/bucket{
 	desc = "It smells awful.";
 	name = "waste bucket"
 	},
@@ -26485,7 +26485,7 @@
 /area/f13/sunny_dale)
 "bFY" = (
 /obj/structure/janitorialcart,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/item/mop,
 /turf/open/floor/plasteel/f13{
 	icon_state = "whitebluerustychess"
@@ -27905,7 +27905,7 @@
 /obj/structure/reagent_dispensers/barrel/explosive{
 	pixel_x = -9
 	},
-/obj/item/reagent_containers/glass/bucket{
+/obj/item/reagent_containers/cup/glass/bucket{
 	pixel_x = 5
 	},
 /turf/open/floor/wood/f13/old,
@@ -29845,18 +29845,18 @@
 "bYv" = (
 /obj/item/storage/box/drinkingglasses,
 /obj/item/storage/box/drinkingglasses,
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = 4;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = 4;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_y = 6
 	},
 /obj/machinery/light{
@@ -29994,11 +29994,11 @@
 /area/f13/desert)
 "cdR" = (
 /obj/structure/table,
-/obj/item/reagent_containers/glass/beaker/waterbottle{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle{
 	pixel_x = 7;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/glass/beaker/waterbottle{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle{
 	pixel_x = -4;
 	pixel_y = 12
 	},
@@ -30333,8 +30333,8 @@
 /area/f13/underground/mountain)
 "cUJ" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/glass/bucket/wood,
-/obj/item/reagent_containers/glass/bucket/wood,
+/obj/item/reagent_containers/cup/glass/bucket/wood,
+/obj/item/reagent_containers/cup/glass/bucket/wood,
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/ncr)
 "cVE" = (
@@ -30507,7 +30507,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/ncr)
 "dqh" = (
-/obj/item/reagent_containers/food/condiment/saltshaker{
+/obj/item/reagent_containers/condiment/saltshaker{
 	pixel_y = 7
 	},
 /obj/structure/table/wood,
@@ -31510,7 +31510,7 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/desert)
 "fXG" = (
-/obj/item/reagent_containers/glass/bucket{
+/obj/item/reagent_containers/cup/glass/bucket{
 	desc = "It smells awful.";
 	name = "waste bucket"
 	},
@@ -32351,11 +32351,11 @@
 /area/f13/raider_mall)
 "ihI" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/beaker/waterbottle{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle{
 	pixel_x = -4;
 	pixel_y = 12
 	},
-/obj/item/reagent_containers/glass/beaker/waterbottle{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle{
 	pixel_x = 7;
 	pixel_y = 5
 	},
@@ -32772,9 +32772,9 @@
 /area/f13/desert)
 "jig" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /obj/item/shovel,
 /turf/open/floor/f13/wood,
 /area/f13/farmhouse)
@@ -32916,7 +32916,7 @@
 /area/f13/powerplant)
 "jzr" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/beaker/waterbottle/wataur{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle/wataur{
 	pixel_y = 8
 	},
 /turf/open/floor/wood/wood_large,
@@ -33333,11 +33333,11 @@
 /area/f13/sunny_dale)
 "kxP" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/beaker/waterbottle{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle{
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/glass/beaker/waterbottle{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle{
 	pixel_x = 6;
 	pixel_y = 2
 	},
@@ -34968,7 +34968,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/desert)
 "oDZ" = (
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/farmhouse)
 "oEi" = (
@@ -35619,7 +35619,7 @@
 	},
 /area/f13/desert)
 "pXP" = (
-/obj/item/reagent_containers/food/condiment/ketchup{
+/obj/item/reagent_containers/condiment/ketchup{
 	pixel_y = 11
 	},
 /obj/structure/table/wood,
@@ -35864,7 +35864,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/ncr)
 "qJD" = (
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/farm)
 "qJF" = (
@@ -36727,7 +36727,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/desert)
 "sEv" = (
-/obj/item/reagent_containers/food/condiment/soymilk,
+/obj/item/reagent_containers/condiment/soymilk,
 /mob/living/simple_animal/hostile/raider/ranged/boss,
 /turf/open/floor/f13/wood,
 /area/f13/farmhouse)
@@ -37072,7 +37072,7 @@
 /area/f13/mountain_bunker)
 "tDN" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/ketchup{
+/obj/item/reagent_containers/condiment/ketchup{
 	pixel_x = -2;
 	pixel_y = 15
 	},
@@ -37634,7 +37634,7 @@
 /area/f13/sunny_dale)
 "uHS" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/glass/beaker/waterbottle/large/empty{
+/obj/item/reagent_containers/cup/glass/beaker/waterbottle/large/empty{
 	pixel_y = 4
 	},
 /turf/open/floor/wood/wood_large,
@@ -37961,7 +37961,7 @@
 /area/f13/farmhouse)
 "vGp" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/reagent_containers/cup/glass/bucket,
 /turf/open/floor/wood/f13/old,
 /area/f13/farmhouse)
 "vGt" = (
@@ -38172,8 +38172,8 @@
 /area/f13/ncr)
 "wds" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/saltshaker,
-/obj/item/reagent_containers/food/condiment/peppermill,
+/obj/item/reagent_containers/condiment/saltshaker,
+/obj/item/reagent_containers/condiment/peppermill,
 /obj/machinery/light/small,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorrusty"
@@ -38547,7 +38547,7 @@
 /area/f13/ncr)
 "wSS" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = -7;
 	pixel_y = 16
 	},
@@ -38632,7 +38632,7 @@
 /turf/closed/wall/f13/wood,
 /area/f13/underground/mountain)
 "xcf" = (
-/obj/item/reagent_containers/food/condiment/peppermill{
+/obj/item/reagent_containers/condiment/peppermill{
 	pixel_y = 7
 	},
 /obj/structure/table/wood,
