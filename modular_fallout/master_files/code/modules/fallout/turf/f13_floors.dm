@@ -294,6 +294,11 @@
 		. = TRUE //in case we ever need this to return if we spawned
 		return.
 
+/turf/open/floor/plasteel/f13
+	name = "plasteel floor"
+	icon = 'modular_fallout/master_files/icons/fallout/turfs/f13floors2.dmi'
+	icon_state = "vault_floor"
+
 /turf/open/floor/plasteel/f13/vault_floor
 	name = "vault floor"
 	icon = 'modular_fallout/master_files/icons/fallout/turfs/f13floors2.dmi'

@@ -292,7 +292,7 @@
 /turf/open/indestructible/ground/outside/wood
 	name = "\proper wood planks"
 	icon_state = "housewood1"
-	icon = 'icons/turf/ground.dmi'
+	icon = 'icons/turf/wood.dmi'
 	//	step_sounds = list("human" = "woodfootsteps")
 
 /turf/open/indestructible/ground/outside/water
