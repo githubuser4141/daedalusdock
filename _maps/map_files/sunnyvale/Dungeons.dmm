@@ -1370,8 +1370,8 @@
 /area/f13/bunker)
 "dG" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
-/obj/item/reagent_containers/food/snacks/f13/canned/borscht,
+/obj/item/food/f13/canned/borscht,
+/obj/item/food/f13/canned/borscht,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "dH" = (
@@ -1587,8 +1587,8 @@
 /area/f13/bunker)
 "ek" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/soup/beet,
-/obj/item/reagent_containers/food/snacks/soup/beet,
+/obj/item/food/soup/beet,
+/obj/item/food/soup/beet,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "el" = (
@@ -2296,7 +2296,7 @@
 /area/f13/bunker)
 "fU" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass,
 /obj/effect/decal/cleanable/cobweb{
 	icon_state = "cobweb2"
 	},
@@ -2373,7 +2373,7 @@
 /area/f13/bunker)
 "ge" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
+/obj/item/reagent_containers/cup/glass/drinkingglass/shotglass,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -2454,7 +2454,7 @@
 /area/f13/bunker)
 "go" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},
@@ -2617,7 +2617,7 @@
 	icon_state = "syndicate";
 	name = "Vault 223 Security locker"
 	},
-/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka,
 /obj/item/food/grown/potato,
 /obj/item/clothing/under/f13/vault{
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
@@ -2733,7 +2733,7 @@
 	icon_state = "syndicate";
 	name = "Vault 223 Security locker"
 	},
-/obj/item/reagent_containers/food/drinks/bottle/vodka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka,
 /obj/item/food/grown/potato,
 /obj/effect/turf_decal/stripes/line,
 /obj/item/clothing/under/f13/vault{
@@ -5212,7 +5212,7 @@
 	pixel_x = 6;
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/food/drinks/coffee{
+/obj/item/reagent_containers/cup/glass/coffee{
 	pixel_x = -6
 	},
 /turf/open/floor/plasteel/f13/vault_floor{
@@ -5289,7 +5289,7 @@
 /area/f13/brotherhood)
 "Dp" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka/badminka,
 /turf/open/floor/plasteel/f13{
 	icon_state = "floorgrime"
 	},

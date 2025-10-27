@@ -342,7 +342,7 @@
 /area/f13/wasteland)
 "fu" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/f13/canned/ncr/yaoguai_meatballs{
+/obj/item/food/f13/canned/ncr/yaoguai_meatballs{
 	pixel_x = 4;
 	pixel_y = 6
 	},
@@ -1727,7 +1727,7 @@
 /area/f13/followers)
 "Iv" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/bottle/whiskey{
+/obj/item/reagent_containers/cup/glass/bottle/whiskey{
 	pixel_x = -8
 	},
 /obj/item/storage/box/drinkingglasses{
@@ -2356,7 +2356,7 @@
 /area/f13/wasteland)
 "SP" = (
 /obj/structure/table/booth,
-/obj/item/reagent_containers/food/drinks/bottle/f13nukacola{
+/obj/item/reagent_containers/cup/glass/bottle/f13nukacola{
 	pixel_x = 4;
 	pixel_y = 6
 	},

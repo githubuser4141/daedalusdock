@@ -138,7 +138,7 @@
 //New standard wood floor for most areas, oak for Legion and pure log cabins only, maple for NCR and mayor only, maybe a diner.
 
 /turf/open/floor/wood/f13
-	icon = 'modular_fallout/master_files/icons/fallout/turfs/floors.dmi'
+	icon = 'modular_fallout/master_files/icons/fallout/turfs/ground.dmi'
 	icon_state = "housewood1"
 
 	New()
@@ -147,7 +147,7 @@
 			icon_state = "housewood[rand(1,4)]"
 
 /turf/open/floor/wood/f13/oak
-	icon = 'modular_fallout/master_files/icons/fallout/turfs/floors.dmi'
+	icon = 'modular_fallout/master_files/icons/fallout/turfs/ground.dmi'
 	icon_state = "oakfloor1"
 
 	New()

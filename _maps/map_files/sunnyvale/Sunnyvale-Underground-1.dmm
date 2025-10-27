@@ -1156,7 +1156,7 @@
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/tunnel)
 "bCp" = (
-/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/cup/glass/drinkingglass,
 /obj/structure/railing,
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
@@ -1842,7 +1842,7 @@
 /area/f13/enclave)
 "coS" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/meatsalted,
+/obj/item/food/meatsalted,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
@@ -2986,14 +2986,14 @@
 /obj/structure/closet/secure_closet/freezer/meat{
 	anchored = 1
 	},
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
-/obj/item/reagent_containers/food/snacks/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
+/obj/item/food/meat/slab/synthmeat,
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 8
 	},
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
-/obj/item/reagent_containers/food/snacks/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
+/obj/item/food/meat/rawbacon,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/showroomfloor,
@@ -3528,7 +3528,7 @@
 /area/f13/building)
 "emq" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka/badminka,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "emB" = (
@@ -4231,7 +4231,7 @@
 "feE" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
-/obj/item/reagent_containers/cup/glass/beaker/waterbottle,
+/obj/item/reagent_containers/cup/beaker/waterbottle,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/black,
 /area/f13/enclave)
@@ -4450,8 +4450,8 @@
 /area/f13/building)
 "fwq" = (
 /obj/structure/table/abductor,
-/obj/item/reagent_containers/cup/glass/beaker/meta,
-/obj/item/reagent_containers/cup/glass/beaker/meta,
+/obj/item/reagent_containers/cup/beaker/meta,
+/obj/item/reagent_containers/cup/beaker/meta,
 /obj/item/reagent_containers/cup/glass/bottle/flu_virion,
 /turf/open/floor/f13{
 	icon_state = "purplefull"
@@ -6360,7 +6360,7 @@
 	pixel_x = 3;
 	pixel_y = 11
 	},
-/obj/item/reagent_containers/food/drinks/coffee{
+/obj/item/reagent_containers/cup/glass/coffee{
 	pixel_x = -6
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
@@ -6728,9 +6728,9 @@
 /area/f13/building)
 "ibE" = (
 /obj/structure/closet/fridge,
-/obj/item/reagent_containers/food/snacks/f13/crispysquirrel,
+/obj/item/food/f13/crispysquirrel,
 /obj/item/trash/f13/rotten,
-/obj/item/reagent_containers/food/snacks/f13/giantantegg,
+/obj/item/food/f13/giantantegg,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkrusty"
@@ -9458,7 +9458,7 @@
 /area/f13/bunker)
 "lcq" = (
 /obj/structure/table,
-/obj/item/reagent_containers/food/snacks/breadhard,
+/obj/item/food/breadhard,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "lcD" = (
@@ -11286,7 +11286,7 @@
 /area/f13/bunker)
 "npW" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/breadhard,
+/obj/item/food/breadhard,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "nrj" = (
@@ -11769,7 +11769,7 @@
 /area/f13/building)
 "nOo" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/meatsalted,
+/obj/item/food/meatsalted,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "nOB" = (
@@ -12163,8 +12163,8 @@
 /area/f13/tunnel)
 "oil" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka/badminka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka/badminka,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "oiJ" = (
@@ -12336,7 +12336,7 @@
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "otm" = (
-/obj/item/reagent_containers/cup/glass/beaker/waterbottle,
+/obj/item/reagent_containers/cup/beaker/waterbottle,
 /obj/item/flashlight/lamp/green{
 	pixel_x = -5;
 	pixel_y = 10
@@ -13719,7 +13719,7 @@
 	},
 /area/f13/building)
 "pUn" = (
-/obj/item/reagent_containers/food/snacks/bun,
+/obj/item/food/bun,
 /obj/structure/closet/fridge/meat,
 /turf/open/floor/plasteel/f13/vault_floor/misc/cafeteria,
 /area/f13/enclave)
@@ -14219,7 +14219,7 @@
 "quO" = (
 /obj/structure/table,
 /obj/item/roller,
-/obj/item/reagent_containers/food/snacks/meat/steak/plain/human{
+/obj/item/food/meat/steak/plain/human{
 	desc = "A steak with an unfamiliar flavor... almost like turkey, or veal.";
 	name = "strange meat"
 	},
@@ -14576,7 +14576,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/bunker)
 "qNc" = (
-/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/cup/glass/drinkingglass,
 /obj/item/kitchen/knife,
 /obj/structure/railing,
 /obj/structure/table/reinforced{
@@ -14623,7 +14623,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbearcore"
 	},
-/obj/item/reagent_containers/food/snacks/meat/steak/plain/human{
+/obj/item/food/meat/steak/plain/human{
 	desc = "A steak with an unfamiliar flavor... almost like turkey, or veal.";
 	name = "strange meat"
 	},
@@ -14651,8 +14651,8 @@
 /area/f13/building)
 "qSq" = (
 /obj/structure/table/abductor,
-/obj/item/reagent_containers/cup/glass/beaker/meta,
-/obj/item/reagent_containers/cup/glass/beaker/meta,
+/obj/item/reagent_containers/cup/beaker/meta,
+/obj/item/reagent_containers/cup/beaker/meta,
 /turf/open/floor/f13{
 	icon_state = "purplefull"
 	},
@@ -14778,9 +14778,9 @@
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
 /obj/effect/spawner/lootdrop/f13/foodspawner,
-/obj/item/reagent_containers/food/snacks/rawbrahminliver,
-/obj/item/reagent_containers/food/snacks/rawbrahminliver,
-/obj/item/reagent_containers/food/snacks/rawbrahminliver,
+/obj/item/food/rawbrahminliver,
+/obj/item/food/rawbrahminliver,
+/obj/item/food/rawbrahminliver,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
 /turf/open/floor/f13{
@@ -15066,7 +15066,7 @@
 /area/f13/building)
 "rtF" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka/badminka,
 /turf/open/floor/f13/wood,
 /area/f13/bunker)
 "ruv" = (
@@ -15709,7 +15709,7 @@
 "rYL" = (
 /obj/structure/table/wood,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/food/snacks/meatsalted,
+/obj/item/food/meatsalted,
 /turf/open/floor/wood/f13/oak,
 /area/f13/building)
 "rZf" = (
@@ -16384,10 +16384,10 @@
 	pixel_y = 32
 	},
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/bottle/holywater{
+/obj/item/reagent_containers/cup/glass/bottle/holywater{
 	pixel_y = 6
 	},
-/obj/item/reagent_containers/food/drinks/bottle/holywater{
+/obj/item/reagent_containers/cup/glass/bottle/holywater{
 	pixel_y = 6
 	},
 /turf/open/floor/wood,
@@ -16654,11 +16654,11 @@
 /area/f13/tcoms)
 "tbL" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "tcl" = (
@@ -16994,8 +16994,8 @@
 /area/f13/building)
 "trv" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/cup/glass/drinkingglass,
+/obj/item/reagent_containers/cup/glass/drinkingglass,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
@@ -17368,11 +17368,11 @@
 /area/f13/building)
 "tNw" = (
 /obj/structure/table/wood/settler,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
-/obj/item/reagent_containers/food/drinks/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
+/obj/item/reagent_containers/cup/glass/beer,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
@@ -17945,7 +17945,7 @@
 	layer = 2.85;
 	pixel_y = 32
 	},
-/obj/item/reagent_containers/food/drinks/bottle/brown/wine{
+/obj/item/reagent_containers/cup/glass/bottle/brown/wine{
 	pixel_x = 5;
 	pixel_y = 11
 	},
@@ -18238,7 +18238,7 @@
 "uKp" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
-/obj/item/reagent_containers/food/snacks/meat/steak/plain/human{
+/obj/item/food/meat/steak/plain/human{
 	desc = "A steak with an unfamiliar flavor... almost like turkey, or veal.";
 	name = "strange meat"
 	},
@@ -19598,8 +19598,8 @@
 /area/f13/underground/cave)
 "wac" = (
 /obj/structure/table/abductor,
-/obj/item/reagent_containers/cup/glass/beaker/bluespace,
-/obj/item/reagent_containers/cup/glass/beaker/bluespace,
+/obj/item/reagent_containers/cup/beaker/bluespace,
+/obj/item/reagent_containers/cup/beaker/bluespace,
 /turf/open/floor/plasteel/f13/vault_floor/purple,
 /area/f13/bunker)
 "wan" = (
@@ -20404,7 +20404,7 @@
 /area/f13/tunnel)
 "wUo" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/drinks/bottle/vodka/badminka,
+/obj/item/reagent_containers/cup/glass/bottle/vodka/badminka,
 /turf/open/floor/f13{
 	icon_state = "reddirtyfull"
 	},
