@@ -12270,7 +12270,7 @@
 /area/f13/enclave)
 "oor" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/food/snacks/grown/harebell,
+/obj/item/food/grown/harebell,
 /turf/open/floor/wood,
 /area/f13/building)
 "opa" = (
@@ -14038,7 +14038,7 @@
 /turf/open/water,
 /area/f13/tunnel)
 "qmb" = (
-/obj/machinery/autolathe/constructionlathe,
+/obj/machinery/autolathe,
 /turf/open/floor/f13/wood,
 /area/f13/building)
 "qmP" = (
@@ -17241,7 +17241,7 @@
 /turf/open/floor/wood,
 /area/f13/building)
 "tCR" = (
-/obj/machinery/autolathe/constructionlathe,
+/obj/machinery/autolathe,
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
 	icon_state = "yellowdirtyfull"
 	},
@@ -18692,13 +18692,13 @@
 /area/f13/tunnel)
 "viV" = (
 /obj/machinery/hydroponics/constructable,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
-/obj/item/reagent_containers/food/snacks/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
+/obj/item/food/grown/ambrosia/gaia,
 /turf/open/floor/f13{
 	icon_state = "neutraldirtyfull"
 	},

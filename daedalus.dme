@@ -5136,6 +5136,7 @@
 #include "modular_fallout\master_files\code\modules\reagents\withdrawal\_addiction.dm"
 #include "modular_fallout\master_files\code\modules\reagents\withdrawal\drugs.dm"
 #include "modular_fallout\master_files\code\modules\smithing\smith.dm"
+#include "modular_fallout\master_files\code\modules\surgery\organs\_organ.dm"
 #include "modular_pariah\master_files\code\_globalvars\lists\chat.dm"
 #include "modular_pariah\master_files\code\controllers\configuration\entries\pariah_config_entries.dm"
 #include "modular_pariah\master_files\code\game\sound.dm"

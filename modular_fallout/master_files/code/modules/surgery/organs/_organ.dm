@@ -21,3 +21,6 @@ TYPEINFO_DEF(/obj/item/organ/heart)
 
 TYPEINFO_DEF(/obj/item/organ/heart)
 	default_armor = list(BLUNT = 3, PUNCTURE = 10, SLASH = 3, LASER = 3, ENERGY = 3 , BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
+
+TYPEINFO_DEF(/obj/item/organ/heart/fake)
+	default_armor = list(BLUNT = 15, PUNCTURE = 20, SLASH = 15, LASER = 10, ENERGY = 15 , BOMB = 5, BIO = 0, FIRE = 0, ACID = 0)

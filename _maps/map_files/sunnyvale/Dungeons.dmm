@@ -1646,9 +1646,9 @@
 /area/hydroponics/garden/abandoned)
 "er" = (
 /obj/structure/rack,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
-/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
+/obj/item/food/grown/potato,
 /turf/open/floor/plasteel/freezer,
 /area/f13/bunker)
 "es" = (
@@ -2618,7 +2618,7 @@
 	name = "Vault 223 Security locker"
 	},
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
-/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/item/food/grown/potato,
 /obj/item/clothing/under/f13/vault{
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
 	name = "vault 223 jumpsuit"
@@ -2734,7 +2734,7 @@
 	name = "Vault 223 Security locker"
 	},
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
-/obj/item/reagent_containers/food/snacks/grown/potato,
+/obj/item/food/grown/potato,
 /obj/effect/turf_decal/stripes/line,
 /obj/item/clothing/under/f13/vault{
 	desc = "A blue jumpsuit with a yellow vault pattern and the number 223 printed on it.";
