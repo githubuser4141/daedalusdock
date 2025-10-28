@@ -43,7 +43,7 @@
 		padlock.forceMove(get_turf(src))
 		padlock = null
 	//fortuna edit
-	investigate_log("Door '[src]' destroyed at [AREACOORD(src)]. Last fingerprints: [src.fingerprintslast]", INVESTIGATE_DESTROYED)
+//	investigate_log("Door '[src]' destroyed at [AREACOORD(src)]. Last fingerprints: [src.fingerprintslast]", INVESTIGATE_DESTROYED)
 	message_admins("Door '[ADMIN_JMP(src)]' destroyed at [AREACOORD(src)]. Last fingerprints(If any): [src.fingerprintslast]")
 	log_game("Door '[src]' destroyed at [AREACOORD(src)]. Last fingerprints: [src.fingerprintslast]")
 	return ..()
@@ -130,7 +130,7 @@
 		Close(animate)
 	return 1
 
-/obj/structure/simple_door/attackby(obj/item/weapon/I, mob/living/user, params)
+/obj/structure/simple_door/attackby(obj/item/I, mob/living/user, params)
 	if(user.a_intent != INTENT_HARM && (istype(I, /obj/item/crowbar) || istype(I, /obj/item/twohanded/fireaxe)))
 		try_to_crowbar(I, user)
 		return TRUE
@@ -205,7 +205,7 @@
 			else
 				SwitchState(animate)
 				return 1
-	else if(istype(user, /obj/mecha))
+	else if(istype(user, /obj/vehicle))
 		SwitchState(animate)
 		return 1
 	return 0

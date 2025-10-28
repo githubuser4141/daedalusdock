@@ -1,3 +1,72 @@
+#define COMPONENT_GENERIC
+#define COMPONENT_COCKPIT
+#define COMPONENT_ENGINE
+#define COMPONENT_PROPULSION
+#define COMPONENT_BATTERY
+#define COMPONENT_SENSORS
+#define COMPONENT_IHULL
+
+/obj/vehicle/sealed/mecha
+	var/internals = /obj/item/mech_internals
+
+TYPEINFO_DEF(/obj/item/mech_internals)
+	default_armor = list(BLUNT = 20, PUNCTURE = 20, SLASH = 20, LASER = 20, ENERGY = 0, BOMB = 20, BIO = 0, FIRE = 100, ACID = 100)
+
+/obj/item/mech_internals
+	name = "generic mech component"
+	var/component_type = COMPONENT_GENERIC
+	var/container = null
+
+TYPEINFO_DEF(/obj/item/mech_internals/cockpit)
+	default_armor = list(BLUNT = 10, PUNCTURE = 10, SLASH = 10, LASER = 10, ENERGY = 0, BOMB = 5, BIO = 0, FIRE = 100, ACID = 100)
+
+/obj/item/mech_internals/cockpit
+	name = "mech cockpit"
+	component_type = COMPONENT_COCKPIT
+	container = chassis.occupant
+	max_integrity = 100
+
+TYPEINFO_DEF(/obj/item/mech_internals/engine)
+	default_armor = list(BLUNT = 30, PUNCTURE = 45, SLASH = 60, LASER = 20, ENERGY = 0, BOMB = 10, BIO = 0, FIRE = 100, ACID = 100)
+
+/obj/item/mech_internals/engine
+	name = "mech engine"
+	component_type = COMPONENT_ENGINE
+	max_integrity = 150
+
+TYPEINFO_DEF(/obj/item/mech_internals/propulsion)
+	default_armor = list(BLUNT = 15, PUNCTURE = 20, SLASH = 50, LASER = 10, ENERGY = 0, BOMB = 5, BIO = 0, FIRE = 100, ACID = 100)
+
+/obj/item/mech_internals/propulsion
+	name = "mech drivetrain"
+	component_type = COMPONENT_PROPULSION
+	max_integrity = 100
+
+TYPEINFO_DEF(/obj/item/mech_internals/battery)
+	default_armor = list(BLUNT = 5, PUNCTURE = 15, SLASH = 30, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
+
+/obj/item/mech_internals/battery
+	name = "mech battery"
+	component_type = COMPONENT_BATTERY
+	max_integrity = 50
+
+TYPEINFO_DEF(/obj/item/mech_internals/sensors)
+	default_armor = list(BLUNT = 5, PUNCTURE = 10, SLASH = 20, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, FIRE = 100, ACID = 100)
+
+/obj/item/mech_internals/sensors
+	name = "mech eyes/camera"
+	component_type = COMPONENT_SENSORS
+	max_integrity = 25
+
+TYPEINFO_DEF(/obj/item/mech_internals/inner_hull)
+	default_armor = list(BLUNT = 15, PUNCTURE = 5, SLASH = 7, LASER = 0, ENERGY = 0, BOMB = 5, BIO = 0, FIRE = 100, ACID = 100)
+
+/obj/item/mech_internals/inner_hull
+	name = "mech skin"
+	desc = "the outer and inner covering of the mech. mostly composed of thermal insulation like foam, and atmospheric sealing elements such as rubber."
+	component_type = COMPONENT_IHULL
+
+
 TYPEINFO_DEF(/obj/vehicle/sealed/mecha/combat/gygax)
 	default_armor = list(BLUNT = 40, PUNCTURE = 40, SLASH = 60, LASER = 50, ENERGY = 0, BOMB = 25, BIO = 0, FIRE = 100, ACID = 100)
 
@@ -49,7 +118,7 @@ TYPEINFO_DEF(/obj/vehicle/sealed/mecha/combat/marauder)
 	name = "\improper Marauder"
 	icon_state = "marauder"
 	base_icon_state = "marauder"
-	movedelay = 5
+	movedelay = 4
 	max_integrity = 400
 	operation_req_access = list()
 	internals_req_access = list()
