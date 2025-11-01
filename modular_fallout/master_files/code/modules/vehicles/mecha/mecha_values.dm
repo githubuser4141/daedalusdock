@@ -1,10 +1,10 @@
-#define COMPONENT_GENERIC
-#define COMPONENT_COCKPIT
-#define COMPONENT_ENGINE
-#define COMPONENT_PROPULSION
-#define COMPONENT_BATTERY
-#define COMPONENT_SENSORS
-#define COMPONENT_IHULL
+#define COMPONENT_GENERIC 1
+#define COMPONENT_COCKPIT 2
+#define COMPONENT_ENGINE 3
+#define COMPONENT_PROPULSION 4
+#define COMPONENT_BATTERY 5
+#define COMPONENT_SENSORS 6
+#define COMPONENT_IHULL 7
 
 /obj/vehicle/sealed/mecha
 	var/internals = /obj/item/mech_internals
@@ -15,7 +15,6 @@ TYPEINFO_DEF(/obj/item/mech_internals)
 /obj/item/mech_internals
 	name = "generic mech component"
 	var/component_type = COMPONENT_GENERIC
-	var/container = null
 
 TYPEINFO_DEF(/obj/item/mech_internals/cockpit)
 	default_armor = list(BLUNT = 10, PUNCTURE = 10, SLASH = 10, LASER = 10, ENERGY = 0, BOMB = 5, BIO = 0, FIRE = 100, ACID = 100)
@@ -23,7 +22,7 @@ TYPEINFO_DEF(/obj/item/mech_internals/cockpit)
 /obj/item/mech_internals/cockpit
 	name = "mech cockpit"
 	component_type = COMPONENT_COCKPIT
-	container = chassis.occupant
+//	container = chassis.occupant
 	max_integrity = 100
 
 TYPEINFO_DEF(/obj/item/mech_internals/engine)
@@ -65,7 +64,6 @@ TYPEINFO_DEF(/obj/item/mech_internals/inner_hull)
 	name = "mech skin"
 	desc = "the outer and inner covering of the mech. mostly composed of thermal insulation like foam, and atmospheric sealing elements such as rubber."
 	component_type = COMPONENT_IHULL
-
 
 TYPEINFO_DEF(/obj/vehicle/sealed/mecha/combat/gygax)
 	default_armor = list(BLUNT = 40, PUNCTURE = 40, SLASH = 60, LASER = 50, ENERGY = 0, BOMB = 25, BIO = 0, FIRE = 100, ACID = 100)

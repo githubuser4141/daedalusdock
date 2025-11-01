@@ -56,21 +56,20 @@
 		return FALSE
 	padlock = P
 	padlock.forceMove(src)
-	add_cached_overlay("padlock", "[initial(icon_state)]_padlock")
+	add_overlay("padlock", "[initial(icon_state)]_padlock")
 
 /obj/structure/simple_door/proc/remove_padlock(force = FALSE)
 	if(!force && (!padlock))
 		return FALSE
 	padlock.forceMove(get_turf(src))
 	padlock = null
-	remove_cached_overlay("padlock")
+	cut_overlay("padlock")
 
 
 /obj/structure/simple_door/bullet_act(obj/item/projectile/Proj)
 	..()
 
-/obj/structure/simple_door/Bumped(atom/user)
-	..()
+/obj/structure/simple_door/proc/Bumped(atom/user)
 	if(density)
 		if(hard_open)
 			return TryToSwitchState(user, 0)
@@ -118,7 +117,7 @@
 			if(!padlock.locked)
 				Open(animate)
 			else
-				playsound(src.loc, pick('sound/f13items/door_knock1.wav', 'sound/f13items/door_knock2.wav', 'sound/f13items/door_knock3.wav', 'sound/f13items/door_knock4.wav'), 80, 0, 0)
+				playsound(src.loc, pick('modular_fallout/master_files/sound/f13items/door_knock1.wav', 'modular_fallout/master_files/sound/f13items/door_knock2.wav', 'modular_fallout/master_files/sound/f13items/door_knock3.wav', 'modular_fallout/master_files/sound/f13items/door_knock4.wav'), 80, 0, 0)
 
 		else
 			Open(animate)
@@ -131,7 +130,7 @@
 	return 1
 
 /obj/structure/simple_door/attackby(obj/item/I, mob/living/user, params)
-	if(user.a_intent != INTENT_HARM && (istype(I, /obj/item/crowbar) || istype(I, /obj/item/twohanded/fireaxe)))
+	if(user.combat_mode && (istype(I, /obj/item/crowbar) || istype(I, /obj/item/twohanded/fireaxe)))
 		try_to_crowbar(I, user)
 		return TRUE
 	if(!istype(I, /obj/item/stack/sheet/mineral/wood))
@@ -180,7 +179,7 @@
 			return
 		else
 			return padlock.check_key(I,user)
-	if(user.a_intent == INTENT_HARM)
+	if(user.combat_mode)
 //		if(padlock)
 //			add_logs(user, src, "attacked", src)
 		return ..()
@@ -228,14 +227,14 @@
 		return 1
 	return !density
 
-/obj/structure/simple_door/CheckExit(atom/movable/O as mob|obj, target)
+/obj/structure/simple_door/proc/autoclose(atom/movable/O as mob|obj, target)
 	if(!density && !manual_opened && ishuman(O))
 		var/mob/living/carbon/human/H = O
 		if(H.client && H.stat != 2)
 			if(hard_open)
-				spawn(H.movement_delay())TryToSwitchState(H) //AutoClosing
+				spawn(H.movement_delay)TryToSwitchState(H) //AutoClosing
 			else
-				spawn(H.movement_delay())TryToSwitchState(H,1)
+				spawn(H.movement_delay)TryToSwitchState(H,1)
 	if(O.loc == loc)
 		return 1
 	return !density
@@ -250,7 +249,7 @@
 	can_disasemble = FALSE
 	can_hold_padlock = FALSE
 	open_sound = 'sound/effects/footstep/hardbarefoot4.ogg'
-	close_sound = 'sound/effects/footstep/hardbarefoot5.ogg'
+//	close_sound = 'sound/effects/footstep/hardbarefoot5.ogg'
 
 /obj/structure/simple_door/tentflap_cloth
 	name = "cotton tent entrance"
@@ -260,7 +259,7 @@
 	can_disasemble = FALSE
 	can_hold_padlock = FALSE
 	open_sound = 'sound/effects/footstep/hardbarefoot4.ogg'
-	close_sound = 'sound/effects//footstep/hardbarefoot5.ogg'
+//	close_sound = 'sound/effects//footstep/hardbarefoot5.ogg'
 
 // weathered white door
 /obj/structure/simple_door/house
@@ -310,8 +309,8 @@
 	icon_state = "metal"
 	door_type = "metal"
 	material_type = /obj/item/stack/sheet/iron
-	open_sound = "sound/f13machines/doorstore_open.ogg"
-	close_sound = "sound/f13machines/doorstore_close.ogg"
+	open_sound = "modular_fallout/master_files/sound/f13machines/doorstore_open.ogg"
+	close_sound = "modular_fallout/master_files/sound/f13machines/doorstore_close.ogg"
 	explosion_block = 1.5
 	material_count = 5
 
@@ -371,20 +370,19 @@
 	desc = "Bars. No matter which side we're on, aren't we always behind them?"
 	icon_state = "barred"
 	door_type = "barred"
-	open_sound = "sound/f13machines/doorchainlink_open.ogg"
-	close_sound = "sound/f13machines/doorchainlink_close.ogg"
+	open_sound = "modular_fallout/master_files/sound/f13machines/doorchainlink_open.ogg"
+	close_sound = "modular_fallout/master_files/sound/f13machines/doorchainlink_close.ogg"
 	opacity = FALSE
 	base_opacity = FALSE
 	can_hold_padlock = TRUE
-	proj_pass_rate = 95
 
 /obj/structure/simple_door/metal/ventilation
 	name = "ventilation system"
 	desc = "As you take a closer look, you notice a handle at the bottom of ventilation system access hatch."
 	icon_state = "ventilation"
 	door_type = "ventilation"
-	open_sound = "sound/f13machines/doorhidden_open.ogg"
-	close_sound = "sound/f13machines/doorhidden_close.ogg"
+	open_sound = "modular_fallout/master_files/sound/f13machines/doorhidden_open.ogg"
+	close_sound = "modular_fallout/master_files/sound/f13machines/doorhidden_close.ogg"
 	opening_time = 25
 	closing_time = 20
 
@@ -394,8 +392,8 @@
 	icon = 'modular_fallout/master_files/icons/fallout/turfs/walls/vault.dmi'
 	icon_state = "vaultfwall"
 	door_type = "vaultfwall"
-	open_sound = "sound/f13items/flashlight_on.ogg"
-	close_sound = "sound/f13items/flashlight_off.ogg"
+	open_sound = "modular_fallout/master_files/sound/f13items/flashlight_on.ogg"
+	close_sound = "modular_fallout/master_files/sound/f13items/flashlight_off.ogg"
 
 /obj/structure/simple_door/metal/vaultreinforced
 	name = "vault reinforced wall"
@@ -403,8 +401,8 @@
 	icon = 'modular_fallout/master_files/icons/fallout/turfs/walls/vault_reinforced.dmi'
 	icon_state = "vaultfrwall"
 	door_type = "vaultfrwall"
-	open_sound = "sound/f13items/flashlight_on.ogg"
-	close_sound = "sound/f13items/flashlight_off.ogg"
+	open_sound = "modular_fallout/master_files/sound/f13items/flashlight_on.ogg"
+	close_sound = "modular_fallout/master_files/sound/f13items/flashlight_off.ogg"
 
 /obj/structure/simple_door/blast
 	name = "blast door"
@@ -412,8 +410,8 @@
 	icon_state = "blastdoor"
 	door_type = "blastdoor"
 	material_type = /obj/item/stack/sheet/plasteel
-	open_sound = "sound/f13machines/doorblast_open.ogg"
-	close_sound = "sound/f13machines/doorblast_close.ogg"
+	open_sound = "modular_fallout/master_files/sound/f13machines/doorblast_open.ogg"
+	close_sound = "modular_fallout/master_files/sound/f13machines/doorblast_close.ogg"
 	explosion_block = 10
 	opening_time = 30
 	closing_time = 20
@@ -424,8 +422,8 @@
 	icon_state = "bunker"
 	door_type = "bunker"
 	material_type = /obj/item/stack/sheet/iron
-	open_sound = "sound/f13machines/doorairlock_open.ogg"
-	close_sound = "sound/f13machines/doorairlock_close.ogg"
+	open_sound = "modular_fallout/master_files/sound/f13machines/doorairlock_open.ogg"
+	close_sound = "modular_fallout/master_files/sound/f13machines/doorairlock_close.ogg"
 	explosion_block = 5
 
 /obj/structure/simple_door/bunker/glass
@@ -442,6 +440,6 @@
 	icon_state = "tent"
 	door_type = "tent"
 	material_type = /obj/item/stack/sheet/cloth
-	open_sound = "sound/effects/curtain.ogg"
-	close_sound = "sound/effects/curtain.ogg"
+	open_sound = "modular_fallout/master_files/sound/effects/curtain.ogg"
+	close_sound = "modular_fallout/master_files/sound/effects/curtain.ogg"
 	can_hold_padlock = TRUE
