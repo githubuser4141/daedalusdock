@@ -9,7 +9,6 @@
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
 	max_integrity = 400;
-	obj_integrity = 400;
 	req_access_txt = "123"
 	},
 /turf/open/floor/carpet/black,
@@ -411,7 +410,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -2002,7 +2000,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/legioncamp)
@@ -10811,7 +10808,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/plasteel/f13{
@@ -11987,7 +11983,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /turf/open/floor/wood/f13/old,
 /area/f13/den)
@@ -12015,7 +12010,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/wood/f13/old,
@@ -12797,7 +12791,6 @@
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
 	max_integrity = 400;
-	obj_integrity = 400;
 	req_access_txt = "123"
 	},
 /turf/open/floor/f13{
@@ -19282,7 +19275,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
@@ -20463,7 +20455,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/wood/f13/old,
@@ -24634,7 +24625,6 @@
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
 	max_integrity = 400;
-	obj_integrity = 400;
 	req_access_txt = "123"
 	},
 /turf/open/floor/wood/f13/old,
@@ -30505,12 +30495,10 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "ncrrgatehousesouth"
@@ -30766,7 +30754,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/structure/window/fulltile/wood,
 /turf/open/floor/wood/f13/old,
@@ -31026,7 +31013,6 @@
 /obj/machinery/door/unpowered/securedoor{
 	damage_deflection = 28;
 	max_integrity = 400;
-	obj_integrity = 400;
 	req_access_txt = "123"
 	},
 /obj/structure/decoration/rag,
@@ -37472,7 +37458,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/ncr_main)
@@ -37761,7 +37746,6 @@
 /obj/structure/barricade/bars{
 	max_integrity = 800;
 	name = "strong metal bars";
-	obj_integrity = 800
 	},
 /obj/machinery/door/poddoor/shutters{
 	id = "ncrrgatehousesouth"

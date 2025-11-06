@@ -33,6 +33,7 @@
 	explosion_block = TRUE
 
 /obj/machinery/door/unpowered/securedoor/update_icon()
+	.=..()
 	if(density)
 		icon_state = "secure"
 	else
