@@ -27796,7 +27796,7 @@
 /area/f13/sunny_dale)
 "gAr" = (
 /obj/machinery/door/poddoor/shutters{
-	id = s
+	id = 1
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "verticalleftborderleft0"
