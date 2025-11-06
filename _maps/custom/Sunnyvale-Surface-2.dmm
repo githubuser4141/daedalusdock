@@ -13924,11 +13924,11 @@
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
 	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	lethal_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
 	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	stun_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
 /turf/open/floor/plasteel/f13{
@@ -13940,11 +13940,11 @@
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
 	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	lethal_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
 	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	stun_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
 /obj/structure/table/reinforced,
@@ -15219,11 +15219,11 @@
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
 	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	lethal_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
 	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	stun_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
 /turf/open/floor/plasteel/f13{
@@ -15428,11 +15428,11 @@
 	desc = "An improvised ballistic turret - it looks exceptionally shoddy, yet stil functional. Safe to assume it's a repaired security system from whatever this place once was";
 	faction = list("raider");
 	lethal_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	lethal_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	lethal_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	name = "Repaired Turret";
 	scan_range = 9;
 	stun_projectile = /obj/item/projectile/bullet/a762/sport/simple;
-	stun_projectile_sound = 'sound/f13weapons/auto5.ogg';
+	stun_projectile_sound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg';
 	throw_range = 9
 	},
 /turf/open/indestructible/ground/outside/road,
