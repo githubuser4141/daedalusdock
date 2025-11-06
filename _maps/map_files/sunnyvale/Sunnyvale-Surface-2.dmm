@@ -5224,7 +5224,7 @@
 	id = "enclavefort_elevator_top";
 	json_key = null;
 	name = "enclave fort elevator top";
-	/width = 4
+	width = 4
 	},
 /turf/open/floor/plating/wooden,
 /area/f13/underground/enclave_base)
