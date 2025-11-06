@@ -5005,6 +5005,7 @@
 #include "modular_fallout\master_files\code\mob\living\simple_animal\hostile\wasteanimals.dm"
 #include "modular_fallout\master_files\code\mob\living\simple_animal\hostile\wastebots.dm"
 #include "modular_fallout\master_files\code\mob\living\simple_animal\hostile\wolf.dm"
+#include "modular_fallout\master_files\code\mob\living\simple_animal\hostile\zombie.dm"
 #include "modular_fallout\master_files\code\modules\clothing\mojave\suit.dm"
 #include "modular_fallout\master_files\code\modules\clothing\mojave\feet\ms13_shoes.dm"
 #include "modular_fallout\master_files\code\modules\clothing\mojave\glasses\glasses.dm"
