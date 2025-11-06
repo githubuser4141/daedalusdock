@@ -26871,14 +26871,14 @@
 	},
 /obj/machinery/button{
 	pixel_y = 8;
-	id = H17North;
+	id = "H17North";
 	name = "Highway 17 North Shutters"
 	},
 /obj/structure/table,
 /obj/machinery/button{
 	pixel_x = 6;
 	pixel_y = -3;
-	id = H17South;
+	id = "H17South";
 	name = "Highway 17 South Shutters"
 	},
 /turf/open/floor/plasteel/f13{
@@ -27082,7 +27082,7 @@
 /area/f13/desert)
 "ftu" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17South
+	id = "H17South"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright2"
@@ -28301,7 +28301,7 @@
 /area/f13/underground/cave/vault)
 "hlL" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17South
+	id = "H17South"
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "verticalleftborderleft0"
@@ -28858,7 +28858,7 @@
 /area/f13/desert)
 "ikk" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17South
+	id = "H17South"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
@@ -30344,7 +30344,7 @@
 /area/f13/ncr_main)
 "kvH" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17South
+	id = "H17South"
 	},
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/indestructible/ground/outside/road{
@@ -34362,7 +34362,7 @@
 /area/f13/sunny_dale)
 "rfW" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17North
+	id = "H17North"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalinnermain0"
@@ -35338,7 +35338,7 @@
 /area/f13/mountain_bunker)
 "sBv" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17North
+	id = "H17North"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalleftborderright0"
@@ -38241,7 +38241,7 @@
 /area/f13/desert)
 "wYF" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17South
+	id = "H17South"
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "verticalrightborderright0"
@@ -38451,7 +38451,7 @@
 /area/f13/desert)
 "xpC" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17North
+	id = "H17North"
 	},
 /turf/open/indestructible/ground/outside/road{
 	icon_state = "verticalrightborderleft0"
@@ -38984,7 +38984,7 @@
 /area/f13/underground/mountain)
 "yjy" = (
 /obj/machinery/door/poddoor/shutters{
-	id = H17North
+	id = "H17North"
 	},
 /turf/open/floor/plating/f13/outside/road{
 	icon_state = "verticalrightborderright0"
