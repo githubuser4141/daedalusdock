@@ -218,17 +218,17 @@ GLOBAL_LIST_INIT(bulletStandardFragmentAngles, list(
 
 #define BULLET_EXPAND_SPEEDMALUS 0.05
 
-#define BULLET_SPEED_BOOSTED -0.1
-#define BLLET_SPEED_FAST -0.3
-#define BULLET_SPEED_INSANE -0.5
-#define BULLET_SPEED_SLOWED 0.1
-#define BULLET_SPEED_SNAIL 0.4
+//#define BULLET_SPEED_BOOSTED -0.1
+//#define BLLET_SPEED_FAST -0.3
+//#define BULLET_SPEED_INSANE -0.5
+//#define BULLET_SPEED_SLOWED 0.1
+//#define BULLET_SPEED_SNAIL 0.4
 
 // threshold at which bullet is too SLOW and should be deleted
 #define BULLET_THRESHOLD_TOOSLOW 2
 
 /obj/item/gun
-	var/speedValueMod = BULLET_SPEED_INSANE
+	var/speedValueMod = BULLET_SPEED_SMG
 
 TYPEINFO_DEF(/obj/projectile)
 	default_armor = list(BLUNT = 0, PUNCTURE = 50, SLASH = 0, LASER = 0, ENERGY = 0 , BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
@@ -275,7 +275,7 @@ TYPEINFO_DEF(/atom)
 		qdel(src)
 
 /obj/projectile/proc/adjustSpeed(value)
-	speed = max(speed - value, 0.1)
+	speed = max(speed + value, 0.1)
 	if(speed > BULLET_THRESHOLD_TOOSLOW)
 		qdel(src)
 
@@ -295,6 +295,13 @@ TYPEINFO_DEF(/obj/projectile/bullet/bmg50)
 TYPEINFO_DEF(/obj/projectile/bullet/lr22)
 	default_armor = list(BLUNT = 0, PUNCTURE = 15, SLASH = 0, LASER = 0, ENERGY = 0 , BOMB = 0, BIO = 0, FIRE = 0, ACID = 0)
 
-/obj/projectile/bullet/bmg50
-	name = ".50 BMG"
+/obj/projectile/bullet/lr22
+	name = ".22 LR"
 	damage = 20
+
+TYPEINFO_DEF(/obj/structure/low_wall)
+	default_armor = list(BLUNT = 20, PUNCTURE = 20, SLASH = 90, LASER = 20, ENERGY = 10, BOMB = 25, BIO = 100, FIRE = 80, ACID = 100)
+
+/obj/structure/low_wall
+	name = "low wall"
+	desc = "A low wall, with space to mount windows or grilles on top of it."

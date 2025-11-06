@@ -10,7 +10,7 @@ prewar alloys
 	custom_materials = list()
 	throwforce = 10
 	flags_1 = CONDUCT_1
-	armor = list(BLUNT = 0, PUNCTURE = 0, SLASH = 25, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 80)
+	armor = list(BLUNT = 5, PUNCTURE = 5, SLASH = 25, LASER = 5, ENERGY = 5, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 80)
 	resistance_flags = FIRE_PROOF
 	merge_type = /obj/item/stack/sheet/prewar
 	grind_results = list(/datum/reagent/iron = 20, /datum/reagent/toxin/plasma = 20)
@@ -35,7 +35,7 @@ prewar alloys
 	throw_speed = 1
 	throw_range = 2
 	max_amount = 50 //reduced from 500, made stacks sprites irrelevant due to scaling.
-	armor = list(BLUNT = 0, PUNCTURE = 0, SLASH = 25, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 0)
+	armor = list(BLUNT = 5, PUNCTURE = 5, SLASH = 25, LASER = 5, ENERGY = 5, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 0)
 	resistance_flags = FLAMMABLE
 	attack_verb_simple = list("tickled", "poked", "whipped")
 	hitsound = 'modular_fallout/master_files/sound/weapons/grenadelaunch.ogg'

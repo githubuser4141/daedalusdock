@@ -164,8 +164,13 @@
 		if(TOOL_ANALYZER)
 			act_result = is_left_clicking ? analyzer_act(user, tool) : analyzer_act_secondary(user, tool)
 
+		if(TOOL_SHOVEL)
+			act_result = is_left_clicking ? shovel_act_secondary(user, tool) : shovel_act_secondary(user, tool)
+
 	if(!act_result)
 		return NONE
+
+#warn un-modular edit
 
 	// A tooltype_act has completed successfully
 	if(is_left_clicking)
@@ -176,6 +181,10 @@
 		SEND_SIGNAL(tool, COMSIG_TOOL_ATOM_ACTED_SECONDARY(tool_type), src)
 	SEND_SIGNAL(tool, COMSIG_ITEM_TOOL_ACTED, src, user, tool_type, act_result)
 	return act_result
+
+/// Called on an object when a tool with shovel capabilities is used to right click an object
+/atom/proc/shovel_act_secondary(mob/living/user, obj/item/tool)
+	return
 
 /**
  * Called when this atom has an item used on it.

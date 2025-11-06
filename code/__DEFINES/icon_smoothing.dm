@@ -175,3 +175,5 @@ DEFINE_BITFIELD(smoothing_flags, list(
 			assert_sorted(unwrapped, "[#smoothing_group_variable] ([type])"); \
 		} \
 	} while(FALSE)
+
+#define MAX_S_OBJ SMOOTH_GROUP_GAS_TANK //Always match this value with the one above it.

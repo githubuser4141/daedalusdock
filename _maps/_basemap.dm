@@ -2,9 +2,10 @@
 
 #ifndef LOWMEMORYMODE
 	#ifdef ALL_MAPS
-		#include "map_files\debug\runtimestation.dmm"
-		#include "map_files\debug\multiz.dmm"
-		#include "map_files\Theseus\Theseus.dmm"
+//		#include "map_files\debug\runtimestation.dmm"
+//		#include "map_files\debug\multiz.dmm"
+//		#include "map_files\Theseus\Theseus.dmm"
+		#include "map_files\sunnyvale\Sunnyvale-Surface-2.dmm"
 
 		#ifdef CIBUILDING
 			#include "templates.dm"

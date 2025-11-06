@@ -61,15 +61,15 @@
 
 
 // Rifle grade sharp
-#define BULLET_SHARP 1>>0
+#define BULLET_SHARP 1<<0
 // Riot control
-#define BULLET_ROUNDED 1>>1
+#define BULLET_ROUNDED 1<<1
 // Very sharp. Tank Ammunition grade
-#define BULLET_ULTRASHARP 1>>2
+#define BULLET_ULTRASHARP 1<<2
 // Fragmented bullet tip, unpredictable performance.
-#define BULLET_FRAGMENTED 1>>3
+#define BULLET_FRAGMENTED 1<<3
 // A flat bullet head
-#define BULLET_FLAT 1>>4
+#define BULLET_FLAT 1<<4
 
 
 #define BULLET_SPEED_PISTOL -0.1

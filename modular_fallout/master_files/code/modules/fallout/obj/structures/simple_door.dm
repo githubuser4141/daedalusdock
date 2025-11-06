@@ -32,6 +32,7 @@
 	var/close_sound = 'sound/machines/door_close.ogg'
 	var/opening_time = 2
 	var/closing_time = 4
+	var/blocked = FALSE
 
 /obj/structure/simple_door/Initialize()
 	. = ..()

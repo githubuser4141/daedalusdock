@@ -753,8 +753,8 @@ obj/item/melee/onehanded/knife/switchblade
 	icon = 'icons/obj/items_and_weapons.dmi'
 	icon_state = "hatchet"
 	inhand_icon_state  = "hatchet"
-	lefthand_file = 'icons/fallout/onmob/weapons/equipment/hydroponics_lefthand.dmi'
-	righthand_file = 'icons/fallout/onmob/weapons/equipment/hydroponics_righthand.dmi'
+	lefthand_file = 'modular_fallout/master_files/icons/fallout/onmob/weapons/equipment/hydroponics_lefthand.dmi'
+	righthand_file = 'modular_fallout/master_files/icons/fallout/onmob/weapons/equipment/hydroponics_righthand.dmi'
 	flags_1 = CONDUCT_1
 	force = 24
 	w_class = WEIGHT_CLASS_SMALL

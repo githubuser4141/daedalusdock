@@ -14,13 +14,12 @@ Format:
 endmap
 
 map theseus
-	#default
 	#voteweight 0.5
 	votable
 endmap
 
-map runtimestation
+map sunnyvale
+	#default
 endmap
 
-map multiz_debug
 endmap
