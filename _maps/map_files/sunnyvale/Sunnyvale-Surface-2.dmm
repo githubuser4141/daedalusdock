@@ -130,7 +130,6 @@
 /area/f13/desert)
 "abb" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -192,7 +191,6 @@
 /area/f13/desert)
 "abG" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -958,7 +956,6 @@
 /area/f13/desert)
 "aeX" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -1225,7 +1222,6 @@
 /area/f13/den)
 "afX" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/structure/cable{
@@ -1283,7 +1279,6 @@
 /area/f13/klamat/mine)
 "agg" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/wood/f13/old{
@@ -1309,7 +1304,6 @@
 /area/f13/klamat/mine)
 "agl" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -1501,7 +1495,6 @@
 /area/f13/klamat/mine)
 "agQ" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -2063,7 +2056,6 @@
 /area/f13/underground/cave)
 "aiD" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/structure/cable{
@@ -2159,7 +2151,6 @@
 /area/f13/deepmine)
 "aiR" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -2209,7 +2200,6 @@
 /area/f13/underground/cave)
 "aiY" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/closed/mineral/random/low_chance,
@@ -2663,7 +2653,6 @@
 /area/f13/farmhouse)
 "akP" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert,
@@ -10062,7 +10051,6 @@
 "aJV" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
@@ -11191,7 +11179,6 @@
 /area/f13/desert)
 "aOp" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -11516,7 +11503,6 @@
 /area/f13/den)
 "aPF" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -11813,7 +11799,6 @@
 "aQQ" = (
 /obj/structure/bookcase/random/reference,
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -12218,7 +12203,6 @@
 /area/f13/sunny_dale)
 "aSH" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/item/bedsheet/brown,
@@ -13518,7 +13502,6 @@
 /area/f13/desert)
 "aXl" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -15003,7 +14986,6 @@
 /area/f13/sunny_dale)
 "bcc" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -15329,7 +15311,6 @@
 /area/f13/sunny_dale)
 "bcX" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/item/restraints/handcuffs,
@@ -15693,7 +15674,6 @@
 /area/f13/sunny_dale)
 "bdY" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/plasteel/f13{
@@ -20604,7 +20584,6 @@
 	dir = 4
 	},
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/f13{
@@ -20687,7 +20666,6 @@
 /area/f13/powerplant)
 "byx" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -24774,7 +24752,6 @@
 "bWg" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/item/reagent_containers/blood/radaway,
@@ -28159,7 +28136,6 @@
 /area/f13/ncr_main)
 "hnH" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/dirt{
@@ -29762,7 +29738,6 @@
 /area/f13/legioncamp)
 "jVf" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/machinery/shower{
@@ -34360,7 +34335,6 @@
 "rRb" = (
 /obj/structure/dresser,
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/wood/f13/old,
@@ -34662,7 +34636,6 @@
 /area/f13/mountain_bunker)
 "sks" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/floor/f13/wood{
@@ -36611,7 +36584,6 @@
 /area/f13/desert)
 "vvx" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/structure/rack,
@@ -37083,7 +37055,6 @@
 /area/f13/desert)
 "wfv" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /obj/effect/overlay/junk/sink{
@@ -38093,7 +38064,6 @@
 /area/f13/powerplant)
 "xJD" = (
 /obj/machinery/light/small{
-	brightness = 3;
 	dir = 8
 	},
 /turf/open/indestructible/ground/outside/desert,
