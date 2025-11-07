@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/theseus.json"
+	var/config_filename = "_maps/sunnyvale.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -14,14 +14,14 @@
 	var/votable = FALSE
 
 	// Config actually from the JSON - should default to Theseus
-	var/map_name = "Theseus"
-	var/map_path = "map_files/Theseus"
-	var/map_file = "Theseus.dmm"
+	var/map_name = "Sunnyvale"
+	var/map_path = "map_files/sunnyvale"
+	var/map_file = "Sunnyvale-Surface-2.dmm"
 	var/webmap_id = "DaedalusMeta"
 
 	var/traits = null
-	var/space_ruin_levels = 7
-	var/space_empty_levels = 1
+	var/space_ruin_levels = 0
+	var/space_empty_levels = 0
 
 	var/minetype = "lavaland"
 

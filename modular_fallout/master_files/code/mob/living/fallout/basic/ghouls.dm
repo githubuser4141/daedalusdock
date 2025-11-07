@@ -3,30 +3,48 @@
 */
 
 //Base Ghoul
-/mob/living/simple_animal/hostile/ghoul
+/mob/living/basic/hostile/ghoul
 	name = "feral ghoul"
 	desc = "A ghoul that has lost its mind and become aggressive."
 	icon = 'modular_fallout/master_files/icons/fallout/mobs/hostile/wastemobs.dmi'
 	icon_state = "feralghoul"
-	icon_living = "feralghoul"
 	icon_dead = "feralghoul_dead"
+	density = TRUE
 	mob_biotypes = MOB_ORGANIC|MOB_HUMANOID
+	mob_size = MOB_SIZE_HUMAN
 	robust_searching = 1
-	turns_per_move = 5
-	speak_emote = list("growls")
-	emote_see = list("screeches")
-	maxHealth = 60
 	health = 60
-	move_to_delay = 3
-	harm_intent_damage = 8
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	maxHealth = 60
+	speed = 1.25
+	gold_core_spawnable = HOSTILE_SPAWN
+	pass_flags = NONE
+	speak_emote = list("gurgles")
+	verb_say = "growls"
+	verb_ask = "grows inquisitively"
+	verb_exclaim = "growls loudly"
+	verb_yell = "growls aggressively"
+	response_disarm_continous = "grapples"
+	response_disarm_simple = "grapple"
+	response_harm_continous = "punches"
+	response_harm_simple = "punch"
+	attack_verb_continous = "claws"
 	attack_verb_simple = "claw"
+	friendly_verb_continous = "pokes"
+	friendly_verb_simple = "poke"
+	basic_mob_flags = NONE
+	faction = list("ghouls")
+
 	attack_sound = 'sound/hallucinations/growl1.ogg'
+
+	melee_attack_cooldown = 3 SECONDS
+	environment_smash = ENVIRONMENT_SMASH_NONE
+	armor_penetration = 5
+	sharpness = SHARPNESS_EDGED
+
+	damage_coeff = list(BRUTE = 1.5, BURN = 0.75, TOX = 0, CLONE = 0, STAMINA = 0.5, OXY = 0.5)
+
 	atmos_requirements = list("min_oxy" = 5, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 1, "min_co2" = 0, "max_co2" = 5, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 20
-	gold_core_spawnable = HOSTILE_SPAWN
-	faction = list("hostile")
 	decompose = TRUE
 	sharpness = SHARP_EDGED //They need to cut their finger nails
 	guaranteed_butcher_results = list(/obj/item/food/meat/slab/human/ghoul = 2,
@@ -38,7 +56,25 @@
 	taunt_chance = 30
 	aggrosound = list('modular_fallout/master_files/sound/mobs/ghoul/aggro1.ogg', 'modular_fallout/master_files/sound/mobs/ghoul/aggro2.ogg')
 	idlesound = list('modular_fallout/master_files/sound/mobs/ghoul/idle.ogg')
-	deathsound = 'modular_fallout/master_files/sound/mobs/ghoul/ghoul_death.ogg'
+	death_sound = 'modular_fallout/master_files/sound/mobs/ghoul/ghoul_death.ogg'
+
+/mob/living/basic/hostile/ghoul/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/death_drops, list(/obj/item/stack/f13Cash/random/low))
+	AddElement(/datum/element/basic_body_temp_sensitive, 270, INFINITY)
+
+/datum/ai_controller/basic_controller/ghoul
+	blackboard = list(
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
+	)
+
+	ai_traits = STOP_MOVING_WHEN_PULLED
+	ai_movement = /datum/ai_movement/basic_avoidance
+	default_behavior = /datum/ai_behavior/idle_random_walk
+	planning_subtrees = list(
+		/datum/ai_planning_subtree/random_speech/cockroach,
+		/datum/ai_planning_subtree/find_and_hunt_target
+)
 
 // Ghoul Reaver
 /mob/living/simple_animal/hostile/ghoul/reaver
@@ -192,7 +228,7 @@
 	response_harm_simple = "growl"
 	move_to_delay = 4
 	faction = list("scorched", "hostile")
-	deathsound = null
+	death_sound = null
 	melee_damage_upper = 20
 	aggro_vision_range = 10
 	attack_verb_simple = "punches"

@@ -121,7 +121,8 @@
 	minimum_distance = 2
 	projectiletype = /obj/projectile/bullet/pistol/m44
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/44mag.ogg'
-	extra_projectiles = 1
+	rapid = 2
+//	extra_projectiles = 1
 	aggro_vision_range = 15
 	obj_damage = 300
 	loot = list(/obj/item/gun/ballistic/revolver/m29)
@@ -134,7 +135,8 @@
 	icon_dead = "raider_boss_dead"
 	maxHealth = 170
 	health = 170
-	extra_projectiles = 3
+	rapid = 4
+//	extra_projectiles = 3
 	projectiletype = /obj/projectile/bullet/pistol/c45/op
 	loot = list(/obj/item/gun/ballistic/automatic/smg/greasegun, /obj/item/clothing/suit/armor/ms13/combat/advanced, /obj/item/clothing/under/ms13/wasteland/warboypants)
 
@@ -331,7 +333,8 @@
 	ranged = TRUE
 	retreat_distance = 4
 	minimum_distance = 6
-	extra_projectiles = 9
+	rapid = 10
+//	extra_projectiles = 9
 	ranged_cooldown_time = 15
 	projectiletype = /obj/projectile/bullet/shrapnel
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/auto5.ogg'

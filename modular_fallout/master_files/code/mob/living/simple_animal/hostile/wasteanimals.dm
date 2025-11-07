@@ -35,7 +35,7 @@
 	faction = list("hostile", "cazador")
 	movement_type = FLYING
 	gold_core_spawnable = HOSTILE_SPAWN
-	death_sound = 'modular_fallout/master_files/sound/mobs/cazador/cazador_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/cazador/cazador_death.ogg'
 	blood_volume = 0
 	decompose = FALSE
 
@@ -150,7 +150,7 @@
 	aggrosound = list('modular_fallout/master_files/sound/mobs/scorpion/aggro.ogg', )
 	idlesound = list('modular_fallout/master_files/sound/creatures/radscorpion_snip.ogg', )
 
-	death_sound = 'modular_fallout/master_files/sound/mobs/scorpion/death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/scorpion/death.ogg'
 
 /mob/living/simple_animal/hostile/gecko
 	name = "gecko"
@@ -185,7 +185,7 @@
 	emote_taunt = list("screeches")
 	emote_taunt_sound = list('modular_fallout/master_files/sound/mobs/gecko/gecko_charge1.ogg', 'modular_fallout/master_files/sound/mobs/gecko/gecko_charge2.ogg', 'modular_fallout/master_files/sound/mobs/gecko/gecko_charge3.ogg',)
 	aggrosound = list('modular_fallout/master_files/sound/mobs/gecko/gecko_alert.ogg', )
-	death_sound = 'modular_fallout/master_files/sound/mobs/gecko/gecko_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/gecko/gecko_death.ogg'
 
 /mob/living/simple_animal/hostile/gecko/playable
 	health = 200
@@ -235,7 +235,7 @@
 
 	aggrosound = list('modular_fallout/master_files/sound/creatures/radroach_chitter.ogg',)
 	idlesound = list('modular_fallout/master_files/sound/mobs/roach/idle1.ogg', 'modular_fallout/master_files/sound/mobs/roach/idle2.ogg', 'modular_fallout/master_files/sound/mobs/roach/idle3.ogg',)
-	death_sound = 'modular_fallout/master_files/sound/mobs/roach/roach_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/roach/roach_death.ogg'
 
 /mob/living/simple_animal/hostile/giantant
 	name = "fireant"
@@ -364,7 +364,8 @@
 	attack_sound = 'modular_fallout/master_files/sound/creatures/radroach_attack.ogg'
 	projectiletype = /obj/projectile/bile
 	projectilesound = 'modular_fallout/master_files/sound/mobs/centaur/spit.ogg'
-	extra_projectiles = 2
+	rapid = 3
+//	extra_projectiles = 2
 	speak_emote = list("skitters")
 	retreat_distance = 5
 	minimum_distance = 7
@@ -468,7 +469,7 @@
 	emote_taunt = list("growls", "snarls")
 	aggrosound = list('modular_fallout/master_files/sound/mobs/nightstalker/aggro1.ogg', 'modular_fallout/master_files/sound/mobs/nightstalker/aggro2.ogg', 'modular_fallout/master_files/sound/mobs/nightstalker/aggro3.ogg')
 	idlesound = list('modular_fallout/master_files/sound/mobs/nightstalker/idle1.ogg')
-	death_sound = 'modular_fallout/master_files/sound/mobs/nightstalker/death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/nightstalker/death.ogg'
 	attack_sound = 'modular_fallout/master_files/sound/mobs/nightstalker/attack1.ogg'
 
 /mob/living/simple_animal/hostile/stalkeryoung/playable
@@ -630,7 +631,7 @@
 	taunt_chance = 30
 	aggrosound = list('modular_fallout/master_files/sound/mobs/molerat/aggro1.ogg', 'modular_fallout/master_files/sound/mobs/molerat/aggro2.ogg',)
 	idlesound = list('modular_fallout/master_files/sound/mobs/molerat/idle.ogg')
-	death_sound = 'modular_fallout/master_files/sound/mobs/molerat/death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/molerat/death.ogg'
 
 /mob/living/simple_animal/hostile/radscorpion/black
 	name = "giant rad scorpion"

@@ -8,8 +8,11 @@
 	canSmoothWith= list(SMOOTH_GROUP_MS13_WALL)
 	var/weldable = FALSE
 	var/frill_icon //MOJAVE SUN EDIT - Wallening Testmerge
-	var/girder_type = null
+	var/girder_type = /obj/structure/girder
 	var/sheet_amount = 2
+	uses_material_type = FALSE
+	use_matset_name = FALSE
+
 /*
 //MOJAVE SUN EDIT - Wallening Testmerge
 /turf/closed/wall/ms13/Initialize(mapload)

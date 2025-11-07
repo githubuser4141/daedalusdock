@@ -43,7 +43,7 @@
 
 	aggrosound = list('modular_fallout/master_files/sound/mobs/eyebot/aggro.ogg', )
 	idlesound = list('modular_fallout/master_files/sound/mobs/eyebot/idle1.ogg', 'modular_fallout/master_files/sound/mobs/eyebot/idle2.ogg')
-	death_sound = 'modular_fallout/master_files/sound/mobs/eyebot/robo_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/eyebot/robo_death.ogg'
 	speak_emote = list("states")
 
 /mob/living/simple_animal/hostile/eyebot/New()
@@ -131,7 +131,8 @@
 	maxHealth = 150
 	health = 150
 	faction = list("raider", "wastebot")
-	extra_projectiles = 1
+	rapid = 3
+//	extra_projectiles = 1
 	melee_damage_lower = 20
 	melee_damage_upper = 30
 	minimum_distance = 4

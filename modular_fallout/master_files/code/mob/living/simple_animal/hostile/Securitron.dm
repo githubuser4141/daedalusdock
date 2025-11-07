@@ -35,7 +35,8 @@
 	melee_damage_upper = 10
 	minimum_distance = 1
 	retreat_distance = 4
-	extra_projectiles = 2
+	rapid = 3
+//	extra_projectiles = 2
 	attack_verb_simple = "punches"
 	attack_sound = "punch"
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
@@ -101,7 +102,8 @@
 	del_on_death = FALSE
 	melee_damage_lower = 48
 	melee_damage_upper = 72
-	extra_projectiles = 4 //5 projectiles
+	rapid = 5
+//	extra_projectiles = 4 //5 projectiles
 	ranged_cooldown_time = 12 //brrrrrrrrrrrrt
 	retreat_distance = 2
 	minimum_distance = 2
@@ -127,7 +129,8 @@
 /mob/living/simple_animal/hostile/securitron/sentrybot/chew
 	name = "lil' chew-chew"
 	desc = "An oddly scorched pre-war military robot armed with a deadly gatling laser and covered in thick, oddly blue armor plating, the name Lil' Chew-Chew scratched onto it's front armour crudely, highlighted by small bits of white paint. There seems to be an odd pack on the monstrosity of a sentrie's back, a chute at the bottom of it - there's the most scorch-marks on the robot here, so it's safe to assume this robot is capable of explosions. Better watch out!"
-	extra_projectiles = 6
+	rapid = 7
+	//	extra_projectiles = 6
 	health = 1000
 	maxHealth = 1000 //CHONK
 	obj_damage = 300

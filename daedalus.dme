@@ -5088,6 +5088,7 @@
 #include "modular_fallout\master_files\code\modules\fallout\turf\f13_floors.dm"
 #include "modular_fallout\master_files\code\modules\fallout\turf\floor.dm"
 #include "modular_fallout\master_files\code\modules\fallout\turf\ground.dm"
+#include "modular_fallout\master_files\code\modules\fallout\turf\material_icons.dm"
 #include "modular_fallout\master_files\code\modules\fallout\turf\mojave_walls.dm"
 #include "modular_fallout\master_files\code\modules\fallout\turf\plating.dm"
 #include "modular_fallout\master_files\code\modules\fallout\turf\turf.dm"

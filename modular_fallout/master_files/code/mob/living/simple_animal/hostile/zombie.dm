@@ -34,7 +34,7 @@
 	taunt_chance = 30
 	aggrosound = list('modular_fallout/master_files/sound/mobs/ghoul/aggro1.ogg', 'modular_fallout/master_files/sound/mobs/ghoul/aggro2.ogg')
 	idlesound = list('modular_fallout/master_files/sound/mobs/ghoul/idle.ogg')
-	death_sound = 'modular_fallout/master_files/sound/mobs/ghoul/ghoul_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/ghoul/ghoul_death.ogg'
 
 /mob/living/simple_animal/hostile/headcrab/plain
 	name = "headcrab"

@@ -38635,6 +38635,7 @@
 	max_integrity = 400;
 	req_access_txt = "123"
 	},
+/turf/open/floor/plasteel/f13,
 /area/f13/legioncamp)
 "xFb" = (
 /obj/structure/cable/smart_cable,

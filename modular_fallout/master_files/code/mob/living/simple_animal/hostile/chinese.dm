@@ -45,7 +45,8 @@
 	icon_living = "chineseassault"
 	maxHealth = 200
 	health = 200
-	extra_projectiles = 2
+	rapid = 3
+//	extra_projectiles = 2
 	loot = list(/obj/item/gun/ballistic/automatic/type93, /obj/item/ammo_box/magazine/m556/rifle/assault)
 	projectiletype = /obj/projectile/bullet/rifle/a556/ap
 	projectilesound = 'modular_fallout/master_files/sound/f13weapons/assaultrifle_fire.ogg'

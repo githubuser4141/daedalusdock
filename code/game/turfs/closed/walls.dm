@@ -35,6 +35,8 @@ GLOBAL_REAL_VAR(wall_overlays_cache) = list()
 
 	rcd_memory = RCD_MEMORY_WALL
 
+	var/uses_material_type = TRUE
+
 	color = /datum/material/iron::wall_color //To display in mapping softwares
 
 	///lower numbers are harder. Used to determine the probability of a hulk smashing through.
@@ -88,7 +90,10 @@ GLOBAL_REAL_VAR(wall_overlays_cache) = list()
 
 /turf/closed/wall/update_name()
 	if(!use_matset_name)
-		return
+		return ..()
+
+	if(!matset_name) // If no matset_name is set, use initial name
+		matset_name = initial(name)
 
 	if(rusted)
 		name = "rusted "+ matset_name
@@ -100,17 +105,30 @@ GLOBAL_REAL_VAR(wall_overlays_cache) = list()
 /turf/closed/wall/Initialize(mapload)
 	color = null // Remove the color that was set for mapping clarity
 	. = ..()
-	set_materials(plating_material, reinf_material, FALSE)
+	if(uses_material_type)
+		set_materials(plating_material, reinf_material, FALSE)
+	else
+		// For non-material walls, ensure name is set
+		if(!matset_name)
+			matset_name = initial(name)
+		update_name()
 
 /turf/closed/wall/copyTurf(turf/T)
 	. = ..()
 	if(istype(., /turf/closed/wall))
 		var/turf/closed/wall/pasted_turf = .
 		pasted_turf.d_state = d_state
-		pasted_turf.set_wall_information(plating_material, reinf_material, wall_paint, stripe_paint)
+		if(uses_material_type)
+			pasted_turf.set_wall_information(plating_material, reinf_material, wall_paint, stripe_paint)
 
 /// Most of this code is pasted within /obj/structure/falsewall. Be mindful of this
 /turf/closed/wall/update_overlays()
+	// Non-material walls skip the complex overlay system
+	if(!uses_material_type)
+		if(dent_decals)
+			add_overlay(dent_decals)
+		return ..()
+
 	var/plating_color = wall_paint || material_color
 	var/stripe_color = stripe_paint || wall_paint || material_color
 
@@ -205,11 +223,15 @@ GLOBAL_REAL_VAR(wall_overlays_cache) = list()
 
 /// Most of this code is pasted within /obj/structure/falsewall. Be mindful of this
 /turf/closed/wall/proc/paint_wall(new_paint)
+	if(!uses_material_type && !wall_paint)
+		return // Non-material walls can only be painted if already painted
 	wall_paint = new_paint
 	update_appearance()
 
 /// Most of this code is pasted within /obj/structure/falsewall. Be mindful of this
 /turf/closed/wall/proc/paint_stripe(new_paint)
+	if(!uses_material_type && !stripe_paint)
+		return // Non-material walls can only have stripes painted if already painted
 	stripe_paint = new_paint
 	update_appearance()
 
@@ -217,12 +239,16 @@ GLOBAL_REAL_VAR(wall_overlays_cache) = list()
 /turf/closed/wall/proc/set_wall_information(plating_mat, reinf_mat, new_paint, new_stripe_paint)
 	wall_paint = new_paint
 	stripe_paint = new_stripe_paint
-	set_materials(plating_mat, reinf_mat)
+	if(uses_material_type)
+		set_materials(plating_mat, reinf_mat)
 
 /// Most of this code is pasted within /obj/structure/falsewall. Be mindful of this
 /turf/closed/wall/proc/set_materials(plating_mat, reinf_mat, update_appearance = TRUE)
 	if(!plating_mat)
 		CRASH("Something tried to set wall plating to null!")
+
+	if(!uses_material_type)
+		return FALSE
 
 	var/datum/material/plating_mat_ref = GET_MATERIAL_REF(plating_mat)
 	var/datum/material/reinf_mat_ref
@@ -279,15 +305,18 @@ GLOBAL_REAL_VAR(wall_overlays_cache) = list()
 	ScrapeAway()
 
 /turf/closed/wall/proc/break_wall(drop_mats = TRUE)
-	if(drop_mats)
+	if(drop_mats && uses_material_type)
 		drop_materials_used()
-	return new /obj/structure/girder(src, reinf_material, wall_paint, stripe_paint)
+	return new /obj/structure/girder(src, uses_material_type ? reinf_material : null, wall_paint, stripe_paint)
 
 /turf/closed/wall/proc/devastate_wall()
-	drop_materials_used(TRUE)
+	if(uses_material_type)
+		drop_materials_used(TRUE)
 	new /obj/item/stack/sheet/iron(src)
 
 /turf/closed/wall/proc/drop_materials_used(drop_reinf = FALSE)
+	if(!uses_material_type)
+		return
 	var/datum/material/plating_mat_ref = GET_MATERIAL_REF(plating_material)
 	new plating_mat_ref.sheet_type(src, 2)
 	if(drop_reinf && reinf_material)

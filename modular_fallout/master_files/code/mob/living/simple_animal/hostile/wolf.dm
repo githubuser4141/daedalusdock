@@ -40,7 +40,7 @@
 	taunt_chance = 30
 	aggrosound = list('modular_fallout/master_files/sound/mobs/dog/dog_alert1.ogg', 'modular_fallout/master_files/sound/mobs/dog/dog_alert2.ogg', 'modular_fallout/master_files/sound/mobs/dog/dog_alert3.ogg')
 	idlesound = list('modular_fallout/master_files/sound/mobs/dog/dog_bark1.ogg', 'modular_fallout/master_files/sound/mobs/dog/dog_bark2.ogg', 'modular_fallout/master_files/sound/mobs/dog/dog_bark3.ogg')
-	death_sound = 'modular_fallout/master_files/sound/mobs/centaur/centaur_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/centaur/centaur_death.ogg'
 
 /mob/living/simple_animal/hostile/wolf/playable
 	health = 150

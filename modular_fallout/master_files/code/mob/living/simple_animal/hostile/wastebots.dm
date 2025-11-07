@@ -40,7 +40,7 @@
 	aggrosound = list('modular_fallout/master_files/sound/mobs/handy/aggro1.ogg', 'modular_fallout/master_files/sound/mobs/handy/aggro2.ogg')
 	idlesound = list('modular_fallout/master_files/sound/mobs/handy/idle1.wav', 'modular_fallout/master_files/sound/mobs/handy/idle2.ogg', 'modular_fallout/master_files/sound/mobs/handy/idle3.ogg')
 
-	death_sound = 'modular_fallout/master_files/sound/mobs/handy/robo_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/handy/robo_death.ogg'
 	attack_sound = 'modular_fallout/master_files/sound/mobs/handy/attack.wav'
 
 	damage_coeff = list(BRUTE = 1, BURN = 1, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
@@ -86,7 +86,8 @@
 	attack_verb_simple = "shoots a burst of flame at"
 	projectilesound = 'modular_fallout/master_files/sound/weapons/laser.ogg'
 	projectiletype = /obj/projectile/f13plasma/scatter
-	extra_projectiles = 2
+	rapid = 3
+//	extra_projectiles = 2
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -138,7 +139,8 @@
 	attack_sound = 'modular_fallout/master_files/sound/weapons/punch1.ogg'
 	projectilesound = 'modular_fallout/master_files/sound/weapons/laser.ogg'
 	projectiletype = /obj/projectile/beam/laser/pistol
-	extra_projectiles = 1
+	rapid = 2
+//	extra_projectiles = 1
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -148,7 +150,7 @@
 	emote_taunt = list("levels its laser")
 	aggrosound = null
 	idlesound = null
-	death_sound = null
+	deathsound = null
 	attack_sound = null
 
 /mob/living/simple_animal/hostile/handy/liberator/yellow
@@ -172,7 +174,8 @@
 	attack_sound = 'modular_fallout/master_files/sound/weapons/punch1.ogg'
 	projectilesound = 'modular_fallout/master_files/sound/weapons/laser.ogg'
 	projectiletype = /obj/projectile/beam/laser
-	extra_projectiles = 1
+	rapid = 3
+//	extra_projectiles = 1
 	ranged = TRUE
 	retreat_distance = 2
 	minimum_distance = 2
@@ -182,7 +185,7 @@
 	emote_taunt = list("levels its laser")
 	aggrosound = null
 	idlesound = null
-	death_sound = null
+	deathsound = null
 	attack_sound = null
 
 /mob/living/simple_animal/hostile/handy/robobrain/AttackingTarget()
@@ -207,7 +210,8 @@
 	move_to_delay = 4
 	melee_damage_lower = 5 //severely reduced melee damage here because its silly to have a ranged mob also be a cqc master
 	melee_damage_upper = 10
-	extra_projectiles = 0 //removed extra projectiles to make these easier to deal with on super lowpop
+	rapid = 2
+//	extra_projectiles = 0 //removed extra projectiles to make these easier to deal with on super lowpop
 	stat_attack = CONSCIOUS
 	ranged = TRUE
 	retreat_distance = 2
@@ -319,7 +323,8 @@
 	color = "#B85C00"
 	projectilesound = 'sound/magic/fireball.ogg'
 	projectiletype = /obj/projectile/bullet/incendiary
-	extra_projectiles = 1
+	rapid = 2
+//	extra_projectiles = 1
 
 /mob/living/simple_animal/hostile/handy/assaultron/laser
 	name = "red eye assaultron"

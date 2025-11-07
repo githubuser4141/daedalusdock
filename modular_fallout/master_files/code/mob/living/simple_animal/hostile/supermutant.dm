@@ -33,7 +33,7 @@
 	attack_verb_simple = "smashes"
 	attack_sound = "punch"
 	idlesound = list('modular_fallout/master_files/sound/mobs/supermutant/idle1.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/idle2.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/idle3.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/idle4.ogg' )
-	death_sound = list('modular_fallout/master_files/sound/mobs/supermutant/death1.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/death2.ogg')
+	deathsound = list('modular_fallout/master_files/sound/mobs/supermutant/death1.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/death2.ogg')
 	aggrosound = list('modular_fallout/master_files/sound/mobs/supermutant/alert1.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/alert2.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/alert3.ogg', 'modular_fallout/master_files/sound/mobs/supermutant/alert4.ogg')
 
 /mob/living/simple_animal/hostile/supermutant/playable
@@ -191,7 +191,8 @@
 	melee_damage_upper = 55
 	attack_verb_simple = "smashes"
 	attack_sound = "punch"
-	extra_projectiles = 1
+	rapid = 2
+//	extra_projectiles = 1
 	retreat_distance = 4
 	minimum_distance = 6
 	projectiletype = /obj/projectile/bullet/rifle/a556/simple
@@ -367,7 +368,8 @@
 	damage_coeff = list(BRUTE = 1, BURN = -0.25, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 	melee_damage_lower = 60
 	melee_damage_upper = 70
-	extra_projectiles = 2
+	rapid = 3
+//	extra_projectiles = 2
 	retreat_distance = 2
 	minimum_distance = 4
 
@@ -424,7 +426,8 @@
 	damage_coeff = list(BRUTE = 0.5, BURN = 0.5, TOX = 0, CLONE = 0, STAMINA = 0, OXY = 0)
 	melee_damage_lower = 60
 	melee_damage_upper = 70
-	extra_projectiles = 1
+	rapid = 2
+//	extra_projectiles = 1
 
 /mob/living/simple_animal/hostile/supermutant/nightkin/elitemutant/rain/Initialize(mapload)
 	. = ..()

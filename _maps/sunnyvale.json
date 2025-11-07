@@ -1,26 +1,22 @@
 {
+	"version": 1,
 	"map_name": "Sunnyvale",
-	"map_path": "map_files/Sunnyvale",
-	"map_file": [
-		"Dungeons.dmm",
-		"Sunnyvale-Underground-1.dmm",
-		"Sunnyvale-Surface-2.dmm",
-		"Sunnyvale-Above-3.dmm"
-	],
-	"station_ruin_budget":0,
-	"space_ruin_levels":0,
-	"space_empty_levels":0,
+	"map_path": "map_files/sunnyvale",
+	"map_file": ["Sunnyvale-Surface-2.dmm"],
+	"station_ruin_budget": 0,
+	"space_ruin_levels": 0,
+	"space_empty_levels": 0,
 	"shuttles": {
-		"cargo":"cargo_pahrump",
+		"cargo": "cargo_pahrump",
 		"emergency": "emergency_pahrump",
 		"ferry": "ferry_fancy"
 	},
-	"traits":[
+	"traits": [
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/indestructible/ground/inside/mountain",
 			"Up": 1,
-			"Linkage" : "Cross"
+			"Linkage": "Cross"
 		},
 		{
 			"Gravity": true,
@@ -28,7 +24,7 @@
 			"Dungeons": true,
 			"Up": 1,
 			"Down": -1,
-			"Linkage" : "Cross"
+			"Linkage": "Cross"
 		},
 		{
 			"Gravity": true,
@@ -36,13 +32,13 @@
 			"Station": 1,
 			"Up": 1,
 			"Down": -1,
-			"Linkage" : "Cross"
+			"Linkage": "Cross"
 		},
 		{
 			"Gravity": true,
 			"Baseturf": "/turf/open/transparent/openspace",
 			"Down": -1,
-			"Linkage" : "Cross",
+			"Linkage": "Cross",
 			"Above": true
 		}
 	],

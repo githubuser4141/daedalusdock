@@ -68,7 +68,7 @@
 	unsuitable_atmos_damage = 5
 	faction = list("tunneler")
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/bone = 1)
-	death_sound = 'modular_fallout/master_files/sound/mobs/ghoul/ghoul_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/ghoul/ghoul_death.ogg'
 
 /mob/living/simple_animal/hostile/trog/tunneler/Aggro()
 	..()

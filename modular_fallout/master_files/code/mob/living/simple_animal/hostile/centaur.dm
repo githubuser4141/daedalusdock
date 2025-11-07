@@ -38,7 +38,7 @@
 	taunt_chance = 30
 	aggrosound = list('modular_fallout/master_files/sound/mobs/centaur/aggro1.ogg', )
 	idlesound = list('modular_fallout/master_files/sound/mobs/centaur/idle1.ogg', 'modular_fallout/master_files/sound/mobs/centaur/idle2.ogg')
-	death_sound = 'modular_fallout/master_files/sound/mobs/centaur/centaur_death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/centaur/centaur_death.ogg'
 	attack_sound = 'modular_fallout/master_files/sound/mobs/centaur/lash.ogg'
 
 /obj/projectile/neurotox

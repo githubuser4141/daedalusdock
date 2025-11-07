@@ -6,6 +6,10 @@
 	icon = 'modular_fallout/master_files/icons/fallout/turfs/walls.dmi'
 	icon_state = "matrix"
 
+	uses_material_type = FALSE
+	plating_material = null
+	use_matset_name = FALSE
+
 /turf/closed/wall/f13/TryScrapeToLattice()
 	ChangeTurf(baseturfs)
 
@@ -14,12 +18,13 @@
 	desc = "All what has left from the good old days."
 	icon = 'modular_fallout/master_files/icons/fallout/turfs/walls/f13composite.dmi'
 	icon_state = "ruins"
+	base_icon_state = "ruins"
 	hardness = 70
 	explosion_block = 2
 	smoothing_flags = SMOOTH_BITMASK
 	baseturfs = /turf/open/indestructible/ground/outside/ruins
-	plating_material = null
 	canSmoothWith = list(/turf/closed/wall/f13/ruins, /turf/closed/wall)
+//	plating_material = /datum/material/f13composite
 
 /turf/closed/wall/f13/wood
 	name = "wooden wall"
@@ -63,7 +68,6 @@
 	hardness = 80
 	//	disasemblable = 0
 	baseturfs = /turf/open/indestructible/ground/outside/ruins
-	plating_material = null
 	canSmoothWith = list(/turf/closed/wall/f13/store, /turf/closed/wall,)
 
 #warn add clean wooden walls and constructed concrete walls to smoothing
@@ -77,7 +81,6 @@
 	smoothing_flags = SMOOTH_BITMASK
 	//	disasemblable = 0
 	baseturfs = /turf/open/indestructible/ground/outside/ruins
-	plating_material = null
 	canSmoothWith = list(/turf/closed/wall/f13/tentwall, /turf/closed/wall)
 
 /turf/closed/wall/f13/supermart
@@ -89,8 +92,8 @@
 	explosion_block = 2
 	baseturfs = /turf/open/indestructible/ground/outside/ruins
 	//	disasemblable = 0
-	plating_material = null
 	canSmoothWith = list(/turf/closed/wall/f13/supermart, /turf/closed/wall,)
+	plating_material = /datum/material/superstore
 
 /turf/closed/wall/f13/tunnel
 	name = "utility tunnel wall"
@@ -99,8 +102,8 @@
 	icon_state = "tunnel0"
 	hardness = 100
 	//	disasemblable = 0
-	plating_material = null
 	canSmoothWith = list(/turf/closed/wall/f13/tunnel, /turf/closed/wall)
+	plating_material = /datum/material/tunnel
 
 /turf/closed/wall/f13/vault
 	name = "vault wall"

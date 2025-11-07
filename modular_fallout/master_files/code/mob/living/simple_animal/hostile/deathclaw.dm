@@ -46,7 +46,7 @@
 	emote_taunt_sound = list('modular_fallout/master_files/sound/mobs/deathclaw/taunt.ogg')
 	aggrosound = list('modular_fallout/master_files/sound/mobs/deathclaw/aggro1.ogg', 'modular_fallout/master_files/sound/mobs/deathclaw/aggro2.ogg', )
 	idlesound = list('modular_fallout/master_files/sound/mobs/deathclaw/idle.ogg',)
-	death_sound = 'modular_fallout/master_files/sound/mobs/deathclaw/death.ogg'
+	deathsound = 'modular_fallout/master_files/sound/mobs/deathclaw/death.ogg'
 
 /mob/living/simple_animal/hostile/deathclaw/playable
 	emote_taunt_sound = null
