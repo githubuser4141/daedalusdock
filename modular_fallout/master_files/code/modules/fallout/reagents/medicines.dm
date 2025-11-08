@@ -12,7 +12,7 @@
 	C.adjustToxLoss(3.75 * metabolization_rate, cause_of_death = "Stimpak Fluid poisoning")
 	if(prob(5))
 		to_chat(C, "<span class='warning'>You don't feel so good...</span>")
-	return TRUE
+	return ..()
 
 
 /datum/reagent/medicine/stimpak/affect_blood(mob/living/carbon/C, removed)
@@ -43,7 +43,7 @@
 
 /datum/reagent/medicine/stimpak/overdose_process(mob/living/carbon/C)
 	C.adjustToxLoss(5, FALSE, cause_of_death = "Stimpak fluid overdose")
-	C.adjustOxyLoss(8, FALSE, cause_of_death = "Stimpak fluid overdose")
+	C.adjustOxyLoss(8, FALSE)
 	C.drowsyness += 2
 	C.set_jitter_if_lower(3 SECONDS)
 	..()
@@ -98,7 +98,7 @@
 
 /datum/reagent/medicine/super_stimpak/overdose_process(mob/living/carbon/C)
 	C.adjustToxLoss(10, FALSE, cause_of_death = "Super-Stimpak fluid overdose")
-	C.adjustOxyLoss(12, FALSE, cause_of_death = "Super-Stimpak fluid overdose")
+	C.adjustOxyLoss(12, FALSE)
 	..()
 	. = TRUE
 
@@ -231,7 +231,7 @@
 
 /datum/reagent/medicine/bitter_drink/overdose_process(mob/living/carbon/C)
 	C.adjustToxLoss(1, FALSE, cause_of_death = "bitter drink overdose")
-	C.adjustOxyLoss(2, FALSE, cause_of_death = "bitter drink overdose")
+	C.adjustOxyLoss(2, FALSE)
 	..()
 	. = TRUE
 
@@ -267,7 +267,7 @@
 
 /datum/reagent/medicine/healing_powder/overdose_process(mob/living/carbon/C)
 	C.adjustToxLoss(2, FALSE, cause_of_death = "healing powder overdose")
-	C.adjustOxyLoss(4, FALSE, cause_of_death = "healing powder overdose")
+	C.adjustOxyLoss(4, FALSE)
 	..()
 	. = TRUE
 
