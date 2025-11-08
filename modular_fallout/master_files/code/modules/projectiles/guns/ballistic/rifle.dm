@@ -298,6 +298,7 @@
 	return
 
 /obj/item/gun/ballistic/rifle/mag/update_icon_state()
+	.=..()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
 
 

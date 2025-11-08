@@ -93,5 +93,5 @@
 		else
 			icon_state = "lever"
 */
-/obj/machinery/doorButtons/vaultButton/attackby(obj/item/weapon/W, mob/user, params)
+/obj/machinery/doorButtons/vaultButton/attackby(obj/item/W, mob/user, params)
 	attack_hand(user)

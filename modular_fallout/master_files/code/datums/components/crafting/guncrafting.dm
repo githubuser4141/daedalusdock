@@ -139,6 +139,7 @@
 		return TRUE
 
 /obj/machinery/workbench/fbench/Crossed(atom/movable/AM)
+	.=..()
 	for(var/A in src.loc)
 		if(A == src)
 			continue

@@ -36,6 +36,7 @@
 	spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/pistol/update_icon_state()
+	.=..()
 	icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
 
 /obj/item/gun/ballistic/automatic/pistol/suppressed/Initialize(mapload)

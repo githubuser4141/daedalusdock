@@ -84,6 +84,7 @@
 	can_be_sawn_off = TRUE
 
 /obj/item/gun/ballistic/revolver/widowmaker/update_icon_state()
+	.=..()
 	if(sawn_off)
 		icon_state = "[initial(icon_state)]-sawn"
 	else if(!magazine || !magazine.ammo_count(0))
@@ -143,6 +144,7 @@
 	update_icon()
 
 /obj/item/gun/ballistic/shotgun/police/update_icon_state()
+	.=..()
 	icon_state = "[current_skin ? unique_reskin[current_skin] : "shotgunpolice"][stock ? "" : "fold"]"
 
 
@@ -161,6 +163,7 @@
 	knife_y_offset = 22
 
 /obj/item/gun/ballistic/shotgun/trench/update_icon_state()
+	.=..()
 	if(!magazine || !magazine.ammo_count(0))
 		icon_state = "[initial(icon_state)]-e"
 	else
@@ -205,6 +208,7 @@
 
 
 /obj/item/gun/ballistic/shotgun/automatic/combat/update_icon_state()
+	.=..()
 	if(!magazine || !magazine.ammo_count(0))
 		icon_state = "[initial(icon_state)]-e"
 	else

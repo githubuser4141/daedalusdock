@@ -145,6 +145,7 @@
 	isbow = TRUE
 
 /obj/item/gun/ballistic/automatic/tribalbow/update_icon()
+	.=..()
 	return
 
 /obj/item/gun/ballistic/automatic/tribalbow/attack_self()
@@ -176,6 +177,7 @@
 	isbow = TRUE
 
 /obj/item/gun/ballistic/automatic/bonebow/update_icon()
+	.=..()
 	return
 
 /obj/item/gun/ballistic/automatic/bonebow/attack_self()
@@ -207,6 +209,7 @@
 	isbow = TRUE
 
 /obj/item/gun/ballistic/automatic/sturdybow/update_icon()
+	.=..()
 	return
 
 /obj/item/gun/ballistic/automatic/sturdybow/attack_self()
@@ -238,6 +241,7 @@
 	isbow = TRUE
 
 /obj/item/gun/ballistic/automatic/silverbow/update_icon()
+	.=..()
 	return
 
 /obj/item/gun/ballistic/automatic/silverbow/attack_self()
@@ -273,6 +277,7 @@
 	can_scope = FALSE
 
 /obj/item/gun/ballistic/automatic/crossbow/update_icon()
+	.=..()
 	return
 
 /obj/item/gun/ballistic/automatic/crossbow/attack_self()

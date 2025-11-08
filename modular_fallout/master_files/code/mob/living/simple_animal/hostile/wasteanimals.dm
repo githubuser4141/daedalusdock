@@ -105,10 +105,9 @@
 	taste_description = "pain"
 	taste_mult = 1.3
 
-/datum/reagent/toxin/cazador_venom/on_mob_life(mob/living/M)
-	.=..()
+/datum/reagent/toxin/cazador_venom/affect_blood(mob/living/carbon/C, removed)
 	if(volume >= 15)
-		M.adjustToxLoss(5, 0)
+		C.adjustToxLoss(5, 0)
 	..()
 
 /mob/living/simple_animal/hostile/radscorpion
@@ -492,10 +491,9 @@
 		var/mob/living/carbon/human/H = target
 		H.reagents.add_reagent(/datum/reagent/toxin/cazador_venom, 2)
 
-/datum/reagent/toxin/cazador_venom/on_mob_life(mob/living/M)
-	.-..()
+/datum/reagent/toxin/cazador_venom/affect_blood(mob/living/carbon/C, removed)
 	if(volume >= 20)
-		M.adjustToxLoss(5, 0)
+		C.adjustToxLoss(5, 0)
 	..()
 
 /mob/living/simple_animal/hostile/stalker
@@ -550,10 +548,9 @@
 		var/mob/living/carbon/human/H = target
 		H.reagents.add_reagent(/datum/reagent/toxin/cazador_venom, 4)
 
-/datum/reagent/toxin/cazador_venom/on_mob_life(mob/living/M)
-	.=..()
+/datum/reagent/toxin/cazador_venom/affect_blood(mob/living/carbon/C, removed)
 	if(volume >= 16)
-		M.adjustToxLoss(5, 0)
+		C.adjustToxLoss(5, 0)
 	..()
 
 /mob/living/simple_animal/hostile/bloatfly

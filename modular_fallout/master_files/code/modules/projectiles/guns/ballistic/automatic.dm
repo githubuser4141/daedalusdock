@@ -53,6 +53,7 @@
 			. += "[initial(icon_state)]burst"
 
 /obj/item/gun/ballistic/automatic/update_icon_state()
+	.=..()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
 
 /obj/item/gun/ballistic/automatic/attackby(obj/item/A, mob/user, params)
@@ -494,6 +495,7 @@
 	update_icon()
 
 /obj/item/gun/ballistic/automatic/m1carbine/compact/update_icon_state()
+	.=..()
 	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"][stock ? "" : "-f"]"
 
 
@@ -1171,6 +1173,7 @@
 	fire_sound = 'modular_fallout/master_files/sound/weapons/assaultrifle_fire.ogg'
 
 /obj/item/gun/ballistic/automatic/m1919/update_icon()
+	.=..()
 	icon_state = "M38[cover_open ? "open" : "closed"][magazine ? CEILING(get_ammo(0)/20, 1)*20 : "-empty"]"
 	base_icon_state = "M38[cover_open ? "open" : "closed"][magazine ? "mag" : "nomag"]"
 

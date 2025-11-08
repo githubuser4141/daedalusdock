@@ -63,6 +63,7 @@
 */
 
 /obj/item/bottlecap_mine/update_icon()
+	.=..()
 	switch(state)
 		if(DISABLED)
 			icon_state = "capmine"

@@ -70,6 +70,7 @@
 		update_icon()
 
 /obj/structure/flora/wasteplant/update_icon()
+	.=..()
 	if(has_plod)
 		icon_state = "[initial(icon_state)]"
 	else
