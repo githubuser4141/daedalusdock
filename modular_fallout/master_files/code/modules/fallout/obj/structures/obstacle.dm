@@ -45,7 +45,7 @@
 
 /obj/structure/obstacle/jammed_door/Initialize(mapload)
 	. = ..()
-		AddElement(/datum/element/climbable, climb_time = 10, climb_stun = 1)
+	AddElement(/datum/element/climbable, climb_time = 10, climb_stun = 1)
 
 /////////////////
 // BARBED WIRE //

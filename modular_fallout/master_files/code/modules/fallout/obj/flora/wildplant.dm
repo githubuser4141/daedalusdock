@@ -106,6 +106,7 @@
 	return
 
 /obj/structure/flora/wild_plant/update_icon()
+	.=..()
 	if(dead)
 		icon_state = icon_state = myseed.plant_datum.icon_dead
 	else if(harvest)
@@ -124,5 +125,4 @@
 	else
 		set_light(0)
 
-https://discord.gg/RYnQZvxrmH
-https://discord.gg/RYnQZvxrmH
+// https://discord.gg/RYnQZvxrmH

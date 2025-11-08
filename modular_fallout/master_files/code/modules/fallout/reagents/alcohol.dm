@@ -416,6 +416,7 @@
 	C.hallucination += 20
 	C.set_jitter(2 SECONDS)
 	ADD_TRAIT(C, TRAIT_SLEEPIMMUNE, "[type]")
+	return ..()
 
 /datum/reagent/consumable/ethanol/nukaquantum/on_mob_delete(mob/living/C, removed)
 	REMOVE_TRAIT(C, TRAIT_SLEEPIMMUNE, "[type]")
@@ -763,8 +764,9 @@
 	glass_desc = "So smooth its flakey, leaves your throat confused and your body numb."
 
 /datum/reagent/consumable/ethanol/olflakey/affect_ingest(mob/living/carbon/C, removed)
-	C.emote("laugh")
-	C.emote("cough")
+	spawn(-1)
+		C.emote("laugh")
+		C.emote("cough")
 	..()
 
 /datum/reagent/consumable/ethanol/oldpossum
@@ -920,6 +922,7 @@
 			C.adjustToxLoss(4*removed, 0)
 	ADD_TRAIT(C, TRAIT_SLEEPIMMUNE, "[type]")
 	ADD_TRAIT(C, TRAIT_STRONG_GRABBER , "[type]")
+	return ..()
 
 /datum/reagent/consumable/ethanol/henessey/on_mob_delete(mob/living/C)
 	REMOVE_TRAIT(C, TRAIT_SLEEPIMMUNE, "[type]")
@@ -1069,7 +1072,9 @@
 	C.adjustBruteLoss(-4*removed, 0)
 	C.adjustFireLoss(-4*removed, 0)
 	C.adjust_bodytemperature(-5 * TEMPERATURE_DAMAGE_COEFFICIENT, BODYTEMP_NORMAL)
-	C.emote("sigh")
+	if(prob(90))
+		spawn(-1)
+			C.emote("sigh")
 	..()
 	. = TRUE
 

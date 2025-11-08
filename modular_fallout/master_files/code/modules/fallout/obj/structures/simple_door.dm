@@ -67,7 +67,7 @@
 	cut_overlay("padlock")
 
 
-/obj/structure/simple_door/bullet_act(obj/item/projectile/Proj)
+/obj/structure/simple_door/bullet_act(obj/projectile/Proj)
 	..()
 
 /obj/structure/simple_door/proc/Bumped(atom/user)
@@ -224,6 +224,7 @@
 	..()
 
 /obj/structure/simple_door/CanPass(atom/movable/mover, border_dir, height=0)
+	.=..()
 	if(mover.loc == loc)
 		return 1
 	return !density

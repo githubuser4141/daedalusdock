@@ -553,7 +553,7 @@ TYPEINFO_DEF(/obj/structure/simple_door/seethrough/fence/wire)
 //	door_type = "barbfence"
 	max_integrity = 900
 	damage_deflection = 20
-	armor = list(MELEE = 70, BULLET = 80, LASER = 50, ENERGY = 60, BOMB = 40, BIO = 100, FIRE = 40, ACID = 100)
+//	armor = list(MELEE = 70, BULLET = 80, LASER = 50, ENERGY = 60, BOMB = 40, BIO = 100, FIRE = 40, ACID = 100)
 
 // Sand bags
 

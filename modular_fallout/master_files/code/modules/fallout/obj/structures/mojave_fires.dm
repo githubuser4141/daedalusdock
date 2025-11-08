@@ -95,7 +95,7 @@
 				span_notice("You kick at the [src] without any shoes!"),
 				span_hear("You hear wood shuffling about, with the sound of flames flickering."))
 			var/picked_def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
-			user.apply_damage(rand(5,10), BURN, picked_def_zone, wound_bonus = 5)
+			user.apply_damage(rand(5,10), BURN, picked_def_zone)
 			if(burning && prob(15))
 				extinguish()
 			return

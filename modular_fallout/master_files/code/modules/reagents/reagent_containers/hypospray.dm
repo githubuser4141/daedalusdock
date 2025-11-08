@@ -13,8 +13,9 @@
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/update_overlays()
 	. = ..()
-	var/mutable_appearance/stimpak_overlay = mutable_appearance('icons/obj/reagentfillings.dmi', "stimfilling", color = mix_color_from_reagents(reagents.reagent_list))
 	if(reagents.total_volume)
+		var/mutable_appearance/stimpak_overlay = mutable_appearance('icons/obj/reagentfillings.dmi', "stimfilling")
+		stimpak_overlay.color = mix_color_from_reagents(reagents.reagent_list)
 		. += stimpak_overlay
 
 /obj/item/reagent_containers/hypospray/medipen/stimpak/custom

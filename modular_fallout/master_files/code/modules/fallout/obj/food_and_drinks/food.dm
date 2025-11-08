@@ -676,6 +676,7 @@
 	var/is_open = FALSE
 
 /obj/item/food/f13/canned/update_icon_state()
+	.=..()
 	if(!is_open)
 		icon_state = "[icon_state]"
 	else

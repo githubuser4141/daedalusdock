@@ -88,6 +88,7 @@
 	update_icon()
 
 /obj/item/stack/f13Cash/update_desc()
+	.=..()
 	var/total_worth = get_item_credit_value()
 	desc = "It's worth [total_worth] [singular_name][ (latin) ? (( amount > 1 ) ? "i" : "us") : (( amount > 1 ) ? "s each" : "")].\n[flavor_desc]"
 
@@ -122,6 +123,7 @@
 
 /* we have 6 icons, so we will use our own, instead of stack's   */
 /obj/item/stack/f13Cash/update_icon()
+	.=..()
 	switch(amount)
 		if(1)
 			icon_state = "[initial(icon_state)]"
@@ -229,6 +231,7 @@
 	merge_type = /obj/item/stack/f13Cash/ncr
 
 /obj/item/stack/f13Cash/ncr/update_icon()
+	.=..()
 	switch(amount)
 		if(1  to 9)
 			icon_state = "[initial(icon_state)]"
