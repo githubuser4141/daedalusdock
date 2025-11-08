@@ -1,9 +1,11 @@
 // ID locked Fallout doors, CANNOT be padlocked. Its a sort of simulated key and lock system for semi-public areas.
 // Unpowered being as the name says, simple mechanical doors. Works exactly like airlocks, and less space age, so better.
 
+TYPEINFO_DEF(/obj/machinery/door/unpowered)
+	default_armor = list(BLUNT = 20, PUNCTURE = 20, SLASH = 90, LASER = 20, ENERGY = 75, BOMB = 25, BIO = 100, FIRE = 100, ACID = 70)
+
 /obj/machinery/door/unpowered
 	icon = 'modular_fallout/master_files/icons/fallout/structures/doors.dmi'
-	armor = list(BLUNT = 20, PUNCTURE = 20, SLASH = 90, LASER = 20, ENERGY = 75, BOMB = 25, BIO = 100, FIRE = 100, ACID = 70)
 	autoclose = 5 SECONDS // Difficulty: Monkey to reduce amount of secure doors left open.
 	max_integrity = 500
 	req_one_access_txt = null // Add the channel for the ID you want to lock this door to, check defines.
@@ -77,6 +79,7 @@
 	req_access_txt = "121"
 
 /obj/machinery/door/unpowered/secure_NCR/update_icon()
+	.=..()
 	if(density)
 		icon_state = "secure_NCR"
 	else
@@ -104,6 +107,7 @@
 	explosion_block = TRUE
 
 /obj/machinery/door/unpowered/secure_steeldoor/update_icon()
+	.=..()
 	if(density)
 		icon_state = "secure_steel"
 	else
@@ -134,6 +138,7 @@
 	proj_pass_rate = 95
 
 /obj/machinery/door/unpowered/celldoor/update_icon()
+	.=..()
 	if(density)
 		icon_state = "cell"
 	else
@@ -171,6 +176,7 @@
 	req_access_txt = "123"
 
 /obj/machinery/door/unpowered/secure_legion/update_icon()
+	.=..()
 	if(density)
 		icon_state = "secure_legion"
 	else
@@ -198,6 +204,7 @@
 	req_access_txt = "120"
 
 /obj/machinery/door/unpowered/secure_bos/update_icon()
+	.=..()
 	if(density)
 		icon_state = "secure_bos"
 	else

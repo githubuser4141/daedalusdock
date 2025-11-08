@@ -14,6 +14,7 @@
 	wielded = FALSE
 
 /obj/item/twohanded/update_icon_state()
+	.=..()
 	icon_state = "[inhand_icon_state ]"
 
 
@@ -36,7 +37,6 @@
 	sharpness = SHARP_EDGED
 	resistance_flags = FIRE_PROOF
 	max_integrity = 200
-	armor = list(BLUNT = 0, PUNCTURE = 0, SLASH = 25, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 100, ACID = 30)
 	attack_verb_simple = list("axed", "chopped", "cleaved", "torn", "hacked")
 	hitsound = 'modular_fallout/master_files/sound/weapons/bladeslice.ogg'
 
@@ -100,7 +100,6 @@
 	attack_verb_simple = list("attacked", "impaled", "jabbed", "torn", "gored")
 	sharpness = SHARP_POINTY
 	max_integrity = 200
-	armor = list(BLUNT = 0, PUNCTURE = 0, SLASH = 25, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 30)
 	var/obj/item/grenade/explosive = null
 	var/war_cry = "AAAAARGH!!!"
 

@@ -1,8 +1,10 @@
 // In this document: Onehanded templates, Swords, Knives, Clubs, Glove weapons, Tool weapons
 
+TYPEINFO_DEF(/obj/item/melee)
+	default_armor = list(BLUNT = 0, PUNCTURE = 0, SLASH = 25, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 90, ACID = 50)
+
 /obj/item/melee //Melee weapon template
 	max_integrity = 200
-	armor = list(BLUNT = 0, PUNCTURE = 0, SLASH = 25, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 90, ACID = 50)
 
 /obj/item/melee/onehanded
 	name = "onehand melee template"
@@ -120,7 +122,6 @@
 	throw_range = 6
 	attack_verb_simple = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	sharpness = SHARP_POINTY
-	armor = list(BLUNT = 0, PUNCTURE = 0, SLASH = 25, LASER = 0, ENERGY = 0, BOMB = 0, BIO = 0, RAD = 0, FIRE = 50, ACID = 50)
 	var/bayonet = FALSE	//Can this be attached to a gun?
 	custom_materials = list(/datum/material/iron=6000)
 	resistance_flags = FIRE_PROOF
