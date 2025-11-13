@@ -27,7 +27,7 @@
 	if(prob(40))
 		affected_carbon.emote(pick("twitch","drool","moan"))
 
-/datum/addiction/jet/withdrawal_stage_4_process(mob/living/carbon/affected_carbon, delta_time)
+/datum/addiction/jet/end_withdrawal(mob/living/carbon/affected_carbon, delta_time)
 	.=..()
 	if(!(affected_carbon.mobility_flags && MOBILITY_MOVE))
 		for(var/i = 0, i < 8, i++)
@@ -39,9 +39,6 @@
 	if(prob(50))
 		affected_carbon.emote(pick("twitch","drool","moan"))
 	. = TRUE
-
-/datum/addiction/jet/end_withdrawal(mob/living/carbon/affected_carbon)
-	. = ..()
 
 // Turbo
 /datum/addiction/turbo
@@ -70,7 +67,7 @@
 	if(prob(40))
 		affected_carbon.emote(pick("twitch","drool","moan"))
 
-/datum/addiction/turbo/withdrawal_stage_4_process(mob/living/carbon/affected_carbon, delta_time)
+/datum/addiction/turbo/end_withdrawal(mob/living/carbon/affected_carbon, delta_time)
 	.=..()
 	if(!(affected_carbon.mobility_flags && MOBILITY_MOVE))
 		for(var/i = 0, i < 8, i++)
@@ -81,9 +78,6 @@
 	if(prob(50))
 		affected_carbon.emote(pick("twitch","drool","moan"))
 	. = TRUE
-
-/datum/addiction/turbo/end_withdrawal(mob/living/carbon/affected_carbon)
-	. = ..()
 
 // Prophet
 
@@ -122,7 +116,7 @@
 		affected_carbon.emote(pick("twitch","scream","laugh"))
 	return
 
-/datum/addiction/psycho/withdrawal_stage_4_process(mob/living/carbon/affected_carbon, delta_time)
+/datum/addiction/psycho/end_withdrawal(mob/living/carbon/affected_carbon, delta_time)
 	.=..()
 	affected_carbon.hallucination += 40
 	if(!(affected_carbon.mobility_flags && MOBILITY_MOVE))
@@ -135,9 +129,6 @@
 	if(prob(50))
 		affected_carbon.emote(pick("twitch","scream","laugh"))
 	return
-
-/datum/addiction/psycho/end_withdrawal(mob/living/carbon/affected_carbon)
-	. = ..()
 
 // Buffout
 
@@ -174,7 +165,7 @@
 		affected_carbon.emote(pick("twitch"))
 	return
 
-/datum/addiction/buffout/withdrawal_stage_4_process(mob/living/carbon/affected_carbon, delta_time)
+/datum/addiction/buffout/end_withdrawal(mob/living/carbon/affected_carbon, delta_time)
 	.=..()
 	to_chat(affected_carbon, "<span class='danger'>Your muscles are in incredible pain! When will it stop!?</span>")
 	affected_carbon.adjustBruteLoss(12.5)
@@ -188,6 +179,3 @@
 		step(affected_carbon, pick(GLOB.cardinals))
 	affected_carbon.adjustOrganLoss(ORGAN_SLOT_HEART, 20)
 	return
-
-/datum/addiction/buffout/end_withdrawal(mob/living/carbon/affected_carbon)
-	. = ..()

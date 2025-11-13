@@ -5156,7 +5156,6 @@
 #include "modular_fallout\master_files\code\modules\reagents\reagent_containers\hypospray.dm"
 #include "modular_fallout\master_files\code\modules\reagents\reagent_containers\patch.dm"
 #include "modular_fallout\master_files\code\modules\reagents\reagent_containers\pill.dm"
-#include "modular_fallout\master_files\code\modules\reagents\withdrawal\_addiction.dm"
 #include "modular_fallout\master_files\code\modules\reagents\withdrawal\drugs.dm"
 #include "modular_fallout\master_files\code\modules\smithing\smith.dm"
 #include "modular_fallout\master_files\code\modules\surgery\organs\_organ.dm"
