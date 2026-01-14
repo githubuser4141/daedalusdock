@@ -11,6 +11,13 @@
 	layer = BELOW_OBJ_LAYER
 	flags_ricochet = RICOCHET_HARD
 	receive_ricochet_chance_mod = 0.6
+
+/obj/structure/Initialize()
+	.=..()
+	create_storage(storage_type = /datum/storage/artificial/small)
+
+#warn to-do: give every ingame structure a proper storage space
+
 /*
 /obj/structure/Destroy()
 	GLOB.cameranet.updateVisibility(src)

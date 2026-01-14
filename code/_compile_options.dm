@@ -251,6 +251,8 @@
 #warn LOW MEMORY MODE ENABLED.
 #endif
 
+#warn non-fallout files changed: radio/radio.dm, atom/atom_tool_acts.dm, __DEFINES/footsteps.dm,
+
 #ifdef DEBUG
 #define USE_CUSTOM_ERROR_HANDLER
 #endif

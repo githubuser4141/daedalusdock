@@ -78,6 +78,10 @@ TYPEINFO_DEF(/obj/item/radio)
 	/// Overrides the zlevel(s) that receive the signal.
 	var/list/broadcast_z_override
 
+	var/radio_broadcast = 100 //MOJAVE EDIT: 100 means it cannot broadcast and if someone somehow manages a work around, the message comes out as complete static.
+
+	var/force_superspace = FALSE // MOJAVE EDIT: set true to ignore z levels and tcom machinery, we aren't in space
+
 /obj/item/radio/Initialize(mapload)
 	wires = new /datum/wires/radio(src)
 	if(prison_radio)
@@ -242,6 +246,14 @@ TYPEINFO_DEF(/obj/item/radio)
 
 	SEND_SIGNAL(src, COMSIG_RADIO_NEW_MESSAGE, talking_movable, message, channel)
 
+	//MOJAVE: START EDIT
+	if(radio_broadcast)
+		if(radio_broadcast == 100)
+			return FALSE
+		if(radio_broadcast < 100)
+			message = stars(message, radio_broadcast)
+	//MOJAVE: END EDIT
+
 	if(!spans)
 		spans = list(talking_movable.speech_span)
 
@@ -298,7 +310,7 @@ TYPEINFO_DEF(/obj/item/radio)
 	var/datum/signal/subspace/vocal/signal = new(src, freq, speaker, language, message, spans, message_mods, broadcast_levels)
 
 	// Independent radios, on the CentCom frequency, reach all independent radios
-	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_CTF_RED || freq == FREQ_CTF_BLUE || freq == FREQ_CTF_GREEN || freq == FREQ_CTF_YELLOW))
+	if (force_superspace || independent && (freq == FREQ_CENTCOM || freq == FREQ_CTF_RED || freq == FREQ_CTF_BLUE || freq == FREQ_CTF_GREEN || freq == FREQ_CTF_YELLOW)) // MOJAVE SUN EDIT
 		signal.data["compression"] = 0
 		signal.transmission_method = TRANSMISSION_SUPERSPACE
 		signal.levels = list(0)
@@ -423,8 +435,13 @@ TYPEINFO_DEF(/obj/item/radio)
 			set_listening(!listening, TRUE)
 			. = TRUE
 		if("broadcast")
-			set_broadcasting(!broadcasting, TRUE)
-			. = TRUE
+		//MOJAVE: START EDIT
+			if(radio_broadcast == 100)
+				. = FALSE
+			else
+				set_broadcasting(!broadcasting)
+				. = TRUE
+		//MOJAVE: START EDIT
 		if("channel")
 			var/channel = params["channel"]
 			if(!(channel in channels))
