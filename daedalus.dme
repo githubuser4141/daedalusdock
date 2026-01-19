@@ -4962,6 +4962,7 @@
 #include "modular_fallout\master_files\code\datums\components\crafting\guncrafting.dm"
 #include "modular_fallout\master_files\code\datums\components\crafting\recipes.dm"
 #include "modular_fallout\master_files\code\datums\components\crafting\recipes\recipes_weapon_and_ammo.dm"
+#include "modular_fallout\master_files\code\datums\components\looping_sounds\machinery.dm"
 #include "modular_fallout\master_files\code\datums\components\storage\concrete\pockets.dm"
 #include "modular_fallout\master_files\code\datums\looping_sounds\fires.dm"
 #include "modular_fallout\master_files\code\datums\materials\basemats.dm"

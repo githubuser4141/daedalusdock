@@ -4,10 +4,11 @@
 	pixel_y = 32
 	density = FALSE
 	hitted_sound = 'mojave/sound/ms13effects/impact/metal/metal_sheet_2.wav'
+	wall_mounted = TRUE
 
-/obj/structure/closet/ms13/wall/Initialize()
-	. = ..()
-	AddElement(/datum/element/wall_mount)
+///obj/structure/closet/ms13/wall/Initialize()
+//	. = ..()
+//	AddElement(/datum/element/wall_mount)
 
 /obj/structure/closet/ms13/wall/firstaid
 	name = "emergency aid kit"
@@ -58,6 +59,8 @@
 	var/working = FALSE
 	var/busy = FALSE
 	var/datum/looping_sound/ms13/washing_machine/soundloop
+
+datum/looping_sound/ms13/washing_machine/soundloop
 
 /obj/structure/ms13/storage/washingmachine/working
 	working = TRUE
@@ -162,9 +165,9 @@
 	src.visible_message(span_notice("The [src] finishes its washing cycle."))
 	for(var/X in contents)
 		var/atom/movable/AM = X
-		if(AM.GetComponent(/datum/component/machine_washable))
-			var/datum/component/machine_washable/machine_washable = AM.GetComponent(/datum/component/machine_washable)
-			machine_washable.washed = TRUE
+//		if(AM.GetComponent(/datum/component/machine_washable))
+//			var/datum/component/machine_washable/machine_washable = AM.GetComponent(/datum/component/machine_washable)
+//			machine_washable.washed = TRUE
 		AM.wash(CLEAN_WASH)
 
 /obj/structure/ms13/storage/washingmachine/process(delta_time)
@@ -251,7 +254,7 @@
 	. += "Alt+left click this to connect to power armor."
 
 /obj/structure/ms13/pa_jack/AltClick(mob/user)
-	if(!user.canUseTopic(src, BE_CLOSE, NO_DEXTERITY))
+	if(!user.canUseTopic(src, USE_CLOSE|USE_DEXTERITY))
 		return
 	if(!obj_connected)
 		playsound(src, 'mojave/sound/ms13effects/chain_jostle.ogg', 25, TRUE)

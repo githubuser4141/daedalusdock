@@ -25,7 +25,9 @@
 	ADD_TRAIT(src, TRAIT_NODROP, STICKY_NODROP) //Somehow it's stuck to your body, no questioning.
 	radio = new radiotype(src)
 	AddElement(/datum/element/radiation_protected_clothing)
-	AddComponent(/datum/component/clothing_fov_visor, FOV_180_DEGREES)
+//	AddComponent(/datum/component/clothing_fov_visor, FOV_180_DEGREES)
+
+#warn add fov
 
 /obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/Destroy()
 	if(suit.helmet)
@@ -44,7 +46,7 @@
 		play_attack_sound(damage_amount, damage_type, damage_flag)
 	if(resistance_flags & INDESTRUCTIBLE)
 		return
-	damage_amount = run_atom_subarmor(damage_amount, damage_type, damage_flag, attack_dir, subtractible_armour_penetration)
+	damage_amount = run_atom_armor(damage_amount, damage_type, damage_flag, attack_dir, subtractible_armour_penetration)
 	if(damage_amount < DAMAGE_PRECISION)
 		return
 	if(SEND_SIGNAL(src, COMSIG_ATOM_TAKE_DAMAGE, damage_amount, damage_type, damage_flag, sound_effect, attack_dir, subtractible_armour_penetration) & COMPONENT_NO_TAKE_DAMAGE)
@@ -164,7 +166,7 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	helmettype = null //no helmet; default PA is frame = /obj/item/clothing/head/helmet/space/hardsuit/power_armor
 	clothing_traits = list()
 	item_flags = NO_PIXEL_RANDOM_DROP
-	ms13_flags_1 = LOCKABLE_1
+//	ms13_flags_1 = LOCKABLE_1
 	clothing_flags = LARGE_WORN_ICON | STOPSPRESSUREDAMAGE | THICKMATERIAL | SNUG_FIT | BLOCKS_SHOVE_KNOCKDOWN
 	slowdown = 1.55
 	/// Literally just whether or not we allow fatties to wear this power armor
@@ -172,13 +174,14 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	var/mob/listeningTo
 	var/obj/structure/ms13/pa_jack/link_to
 	var/list/actions_modules = list()
+	move_resist = MOVE_FORCE_VERY_STRONG
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/Initialize()
 	. = ..()
 	interaction_flags_item &= ~INTERACT_ITEM_ATTACK_HAND_PICKUP
 	ADD_TRAIT(src, TRAIT_NODROP, STICKY_NODROP) //Somehow it's stuck to your body, no questioning.
 	AddElement(/datum/element/radiation_protected_clothing)
-	RegisterSignal(src, COMSIG_ATOM_CAN_BE_PULLED, PROC_REF(reject_pulls))
+//	RegisterSignal(src, COMSIG_ATOM_CAN_BE_PULLED, PROC_REF(reject_pulls))
 
 	for(var/i in module_armor)
 		if(isnull(module_armor[i]))
@@ -212,7 +215,7 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 		qdel(module_armor[i])
 	actions_modules = list()
 	listeningTo = null
-	UnregisterSignal(src, COMSIG_ATOM_CAN_BE_PULLED)
+//	UnregisterSignal(src, COMSIG_ATOM_CAN_BE_PULLED)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/proc/update_actions()
 	actions_modules = null
@@ -294,23 +297,23 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	return TRUE
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/attackby(obj/item/I, mob/user, params)
-	if(I.item_flags & LOCKING_ITEM && ms13_flags_1 & LOCKABLE_1)
-		if(lock_locked)
-			to_chat(user, span_warning("The [name] already has a lock."))
-			return
-		if(!can_be_picked)
-			return
+//	if(I.item_flags & LOCKING_ITEM && ms13_flags_1 & LOCKABLE_1)
+//		if(lock_locked)
+//			to_chat(user, span_warning("The [name] already has a lock."))
+//			return
+//		if(!can_be_picked)
+//			return
 //		var/obj/item/ms13/lock/L = I
 //		if(!L.lock_open)
 //			to_chat(user, span_warning("The [name] is closed."))
 //			return
-		if(!user.transferItemToLoc(L, src))
-			return
-		lock = I
-		to_chat(user, span_notice("You attach the [lock.name] to the [name]."))
-		update_appearance()
-		return
-	else if(I.tool_behaviour == TOOL_CROWBAR)
+//		if(!user.transferItemToLoc(L, src))
+//			return
+//		lock = I
+//		to_chat(user, span_notice("You attach the [lock.name] to the [name]."))
+//		update_appearance()
+//		return
+	if(I.tool_behaviour == TOOL_CROWBAR)
 		toggle_spacesuit_cell(user)
 		return
 	else if(cell_cover_open && istype(I, /obj/item/stock_parts/cell))
@@ -458,7 +461,7 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	if(atom_integrity <= 0)
 		return damage_amount
 
-	damage_amount = run_atom_subarmor(damage_amount, damage_type, damage_flag, attack_dir, subtractible_armour_penetration)
+	damage_amount = run_atom_armor(damage_amount, damage_type, damage_flag, attack_dir, subtractible_armour_penetration)
 	if(damage_amount < DAMAGE_PRECISION)
 		return
 	if(SEND_SIGNAL(src, COMSIG_ATOM_TAKE_DAMAGE, damage_amount, damage_type, damage_flag, sound_effect, attack_dir, subtractible_armour_penetration) & COMPONENT_NO_TAKE_DAMAGE)
@@ -481,7 +484,8 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 		do_sparks(2, FALSE, src)
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/atom_destruction(damage_flag)
-	listeningTo?.add_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
+//	listeningTo?.add_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
+	slowdown *= 1.5
 
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/equipped(mob/living/carbon/human/user, slot)
 	if(actions_modules)
@@ -496,8 +500,8 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	user.can_buckle_to = FALSE
 	user.base_pixel_y = user.base_pixel_y + 6
 	user.pixel_y = user.base_pixel_y
-	if(atom_integrity == 0)
-		listeningTo.add_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
+//	if(atom_integrity == 0)
+//		listeningTo.add_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
 	ADD_TRAIT(user, TRAIT_FORCED_STANDING, "power_armor") //It's a suit of armor, it ain't going to fall over just because the pilot is dead
 	ADD_TRAIT(user, TRAIT_NO_SLIP_ALL, "power_armor")
 	ADD_TRAIT(user, TRAIT_STUNIMMUNE, "power_armor")
@@ -508,9 +512,9 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	ADD_TRAIT(user, TRAIT_NON_FLAMMABLE, "power_armor")
 	ADD_TRAIT(user, TRAIT_IN_POWERARMOUR, "power_armor")
 	ADD_TRAIT(user, TRAIT_SHOVEIMMUNE, "power_armor")
-	RegisterSignal(user, COMSIG_ATOM_CAN_BE_PULLED, PROC_REF(reject_pulls))
+//	RegisterSignal(user, COMSIG_ATOM_CAN_BE_PULLED, PROC_REF(reject_pulls))
 
-/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/dropped(mob/living/carbon/human/user)
+/obj/item/clothing/suit/space/hardsuit/ms13/power_armor/unequipped(mob/living/carbon/human/user)
 	. = ..()
 	// So that you can be buckled again on leaving the suit of armor.
 	user.can_buckle_to = TRUE
@@ -518,8 +522,8 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	user.pixel_y = user.base_pixel_y
 	user.RemoveElement(/datum/element/footstep, FOOTSTEP_PA, 1, -6, sound_vary = TRUE)
 	user.AddElement(/datum/element/footstep, FOOTSTEP_MOB_HUMAN, 1, -6)
-	listeningTo.remove_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
-	listeningTo = null
+//	listeningTo.remove_movespeed_modifier(/datum/movespeed_modifier/ms13/pa_broken)
+//	listeningTo = null
 	REMOVE_TRAIT(user, TRAIT_FORCED_STANDING, "power_armor") //It's a suit of armor, it ain't going to fall over just because the pilot is dead
 	REMOVE_TRAIT(user, TRAIT_NO_SLIP_ALL, "power_armor")
 	REMOVE_TRAIT(user, TRAIT_STUNIMMUNE, "power_armor")
@@ -530,14 +534,14 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 	REMOVE_TRAIT(user, TRAIT_NON_FLAMMABLE, "power_armor")
 	REMOVE_TRAIT(user, TRAIT_IN_POWERARMOUR, "power_armor")
 	REMOVE_TRAIT(user, TRAIT_SHOVEIMMUNE, "power_armor")
-	UnregisterSignal(user, COMSIG_ATOM_CAN_BE_PULLED)
-
+//	UnregisterSignal(user, COMSIG_ATOM_CAN_BE_PULLED)
+/*
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/proc/reject_pulls(datum/source, mob/living/puller)
 	SIGNAL_HANDLER
 	if(puller != loc) // != the wearer
 		to_chat(puller, span_warning("The power armor resists your attempt at pulling it!"))
 		return COMSIG_ATOM_CANT_PULL
-
+*/
 //No helmet toggles for now when helmet is up
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/ToggleHelmet()
 	if(helmet_on || (helmettype == null))
@@ -546,16 +550,16 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 
 //Let's get into the power armor (or not)
 /obj/item/clothing/suit/space/hardsuit/ms13/power_armor/AltClick(mob/living/carbon/human/user)
-	if(ms13_flags_1 & LOCKABLE_1 && lock_locked)
-		to_chat(user, span_warning("The [name] is locked."))
-		playsound(src, 'mojave/sound/ms13effects/door_locked.ogg', 50, TRUE)
-		return
+//	if(ms13_flags_1 & LOCKABLE_1 && lock_locked)
+//		to_chat(user, span_warning("The [name] is locked."))
+//		playsound(src, 'mojave/sound/ms13effects/door_locked.ogg', 50, TRUE)
+//		return
 	if(!istype(user))
 		return FALSE
 	else
 		if(user.wear_suit == src)
 			to_chat(user, "You begin exiting the [src].")
-			if(do_after(user, 8 SECONDS, user) && !density && (get_dist(user, src) <= 1))
+			if(do_after(user, src, 8 SECONDS) && !density && (get_dist(user, src) <= 1))
 				GetOutside(user)
 				return TRUE
 			return FALSE
@@ -566,7 +570,7 @@ TYPEINFO_DEF(/obj/item/clothing/suit/space/hardsuit/ms13/power_armor)
 //		to_chat(user, span_warning("Your fat ass is too huge to fit in."))
 //		return FALSE
 	to_chat(user, "You begin entering the [src].")
-	if(do_after(user, 8 SECONDS, user) && CheckEquippedClothing(user) && density)
+	if(do_after(user, src, 8 SECONDS) && CheckEquippedClothing(user) && density)
 		GetInside(user)
 		return TRUE
 	return FALSE
@@ -644,7 +648,7 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/t51)
 	desc = "A more advanced helmet for a more advanced piece of power armor. Comes with a high quality headlamp and integrated radio."
 	icon_state = "helmet0-t51"
 	hardsuit_type = "t51" //Determines used sprites: hardsuit[on]-[type]
-	light_range = 4.20
+	light_outer_range = 4.20
 	light_power = 0.9
 	light_color = "#d1c58d"
 	max_integrity = 340
@@ -842,5 +846,5 @@ TYPEINFO_DEF(/obj/item/clothing/head/helmet/space/hardsuit/ms13/power_armor/adva
 
 // PA Slowdowns
 
-/datum/movespeed_modifier/ms13/pa_broken
-	multiplicative_slowdown = 3
+///datum/movespeed_modifier/ms13/pa_broken
+//	multiplicative_slowdown = 3

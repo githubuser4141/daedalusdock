@@ -14,7 +14,7 @@
 
 /obj/structure/Initialize()
 	.=..()
-	create_storage(storage_type = /datum/storage/artificial/small)
+	create_storage(type = /datum/storage/artificial/small)
 
 #warn to-do: give every ingame structure a proper storage space
 

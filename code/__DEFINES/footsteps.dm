@@ -26,6 +26,7 @@
 #define FOOTSTEP_MOB_SLIME "footstep_slime"
 #define FOOTSTEP_OBJ_MACHINE "footstep_machine"
 #define FOOTSTEP_OBJ_ROBOT "footstep_robot"
+#define FOOTSTEP_PA // MOJAVE
 
 #define STEP_IDX_SOUNDS 1
 #define STEP_IDX_VOL 2
